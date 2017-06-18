@@ -29,6 +29,7 @@ source activate python27
         "/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/"
 ```
 at the end of `setupInclusion(self)` in its `setup.py`. Now rerun `sudo -E pythoon ./setup.py install` 
+
   4. I was also forced to install a legacy Java 1.6 when I attempted to run the unit test below.
 
 Prerequisites
