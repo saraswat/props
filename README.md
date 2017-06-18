@@ -41,6 +41,6 @@ Prerequisites
 Testing 
 -------
 
-Run 'python ./unit_tests/sanity_test.py'
+Run `python ./unit_tests/sanity_test.py`
 
 
