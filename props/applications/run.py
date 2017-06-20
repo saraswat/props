@@ -15,6 +15,7 @@ global parser,opts
 
 
 BASE_PATH = os.path.join(os.path.dirname(__file__), '../')
+opts = None
 
 def load_berkeley(tokenize=True,
                   path_to_berkeley = os.path.join(BASE_PATH, 'berkeleyparser/')):
@@ -32,8 +33,10 @@ def load_berkeley(tokenize=True,
     
     # Load the grammar file and initialize the parser with our options
     global parser
-    parser = loadGrammar(opts)
-
+    my_parser = loadGrammar(opts)
+    parser = my_parser
+    #vj
+    return (my_parser, opts)
 
 def parseSentences(sent, HOME_DIR = BASE_PATH):
     orig_Stdin = sys.stdin
