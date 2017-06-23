@@ -80,7 +80,6 @@ for k in inverse_labels:
     for v in inverse_labels[k]:
         normalize_labels_dic[v] = k
 
-
 class GraphWrapper(digraph):
     """
     save nodes by uid, to make it possible to have different nodes with same str value
@@ -234,6 +233,80 @@ class GraphWrapper(digraph):
         for i,node in enumerate(self.nodesMap.values()):
             ret+= node.to_conll_like()+"\n"
         return ret
+
+    def move_to_target(self, target, rel, value):
+        if rel in target:
+            if isinstance(target[rel], list):
+                target[rel].append(value)
+            else:
+                target[rel]=[target[rel],value]
+        else:
+            target[rel]=value
+    #end def move_to_target
+    
+    def tojson(self):
+        return [node.tojson() for _, node in enumerate(self.nodesMap.values())]
+
+    def lf_clean(self, lf):
+        if isinstance(lf, dict):
+            if len(lf)==1 and 'word' in lf:
+                return lf['word']
+            return dict([(k, self.lf_clean(lf[k])) for k in lf.keys()])
+        if isinstance(lf, list):
+            return [self.lf_clean(v) for v in lf]
+        return lf
+            
+    def toLogicForm(self, lf_compact=True):
+        alist = [(n['uid'], n)
+                 for _,node in enumerate(self.nodesMap.values())
+                 for n in [node.tojson(lf_compact)]]
+        for i, (_, n) in enumerate(alist):
+            del n['uid']
+        dic = dict(alist)
+        n = 0
+        while True:
+            n = n+1
+            incoming = set() # nodes into which nodes are to be moved
+            outgoing = set() # the nods that are going to move
+            for k in dic.keys():
+                item = dic[k]
+                if 'rel' in item:
+                    for edge in item['rel']:
+                        incoming.add(edge['parent'])
+                        outgoing.add(k)
+            movers = outgoing - incoming
+            if len(movers) == 0:
+                for k in dic.keys():
+                    item = dic[k]
+                    if not 'top' in item:
+                        item['top']= 0                    
+                    if 'rel' in item:
+                        for edge in item['rel']: 
+                            self.move_to_target(dic[edge['parent']], edge['rel'],{'xref':k})
+                            item['xtarget']=k
+                        del item['rel']
+                forms = self.lf_clean([dic[k] for k in dic.keys()])
+                for form in forms:
+                    if form['top'] == 1:
+                        del form['top']
+                forms = forms if len(forms) > 1 else forms[0]
+                return {"sentence": self.originalSentence, "lf": forms}
+            for m in movers:
+                edge = dic[m]['rel'][0]
+                self.move_to_target(dic[edge['parent']], edge['rel'], dic[m])
+                # If there are other rels, then bring back the uid, and use {"xref":<uid>}
+                # elements in target to refer to this node.
+                remainder = dic[m]['rel'][1:]
+                if len(remainder) > 0:
+                    dic[m]['xtarget']=m
+                    for edge in remainder:
+                        self.move_to_target(dic[edge['parent']], edge['rel'], {'xref': m})
+                del dic[m]['rel']
+                del dic[m] # remove this entry from dic, it is now moved to a subterm
+            # end for
+        # endpa while
+    # end toLogicForm
+
     
     def edge_label(self, edge):
         """

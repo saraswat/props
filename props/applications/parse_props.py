@@ -1,6 +1,6 @@
 """
 Usage:
-  parse_props.py [FILE] (-g|-t) [--original] [--oie] [--dep] [--tokenized] [--dontfilter]
+  parse_props.py [FILE] (-g|-t|-l|-c) [--original] [--oie] [--dep] [--tokenized] [--dontfilter] 
   parse_props.py (-h|--help)
 
 Parse sentences into the PropS representation scheme
@@ -12,6 +12,8 @@ Options:
   -h             display this help
   -t             print textual PropS representation
   -g             print graphical representation (in svg format)
+  -l             print logical form 
+  -c             print compact logical form 
   --original     print original sentence
   --oie          print open-ie like extractions
   --dep          print the intermediate dependency representation 
@@ -21,7 +23,7 @@ Options:
 
 #!/usr/bin/env python
 #coding:utf8
-
+from __future__ import print_function
 import os, sys, string
 HOME_DIR = os.environ.get("PROPEXTRACTION_HOME_DIR", './')+"/"
 
@@ -39,8 +41,15 @@ from subprocess import call
 import svg_stack as ss
 from docopt import docopt
 from props.applications.run import parseSentences
+from pprint import pprint
+import json
 
 
+import sys
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+    
 def main(arguments):
     
     load_berkeley(not arguments["--tokenized"])
@@ -59,7 +68,10 @@ def main(arguments):
         sents = [filter(lambda x: x in string.printable, s) for s in arguments["FILE"]] 
         
     for sent in sents:
-        
+        eprint('< |' + sent + '|')
+        # be kind to the downstream chain -- do not send blank lines!
+        if sent.strip() == '':
+            continue
         gs = parseSentences(sent,HOME_DIR)
         g,tree = gs[0]
         dot = g.drawToFile("","svg")   
@@ -77,12 +89,12 @@ def main(arguments):
                 print(d.as_svg(compact=True,flat=True)+sep)
             else:
                 print(tree)
-        
-        #print PropS output
-        if graphical:        
-            print(dot.create(format='svg')+sep)
+
+        if (arguments['-l'] or arguments['-c']):
+            pprint(g.toLogicForm(arguments['-c']))
         else:
-            print(g)
+            #print PropS output
+            print(dot.create(format='svg')+sep if graphical else g)
         
         #print open ie like extractions
         if (arguments["--oie"]):
