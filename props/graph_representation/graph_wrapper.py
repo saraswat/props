@@ -25,6 +25,11 @@ from itertools import product
 from props.graph_representation.proposition import Proposition
 from copy import copy, deepcopy
 from props.graph_representation import newNode
+
+from props.utils.lf_utils import simplify_single_dict
+
+from pprint import pprint
+
 # from ctypes.wintypes import WORD
 
 
@@ -247,19 +252,21 @@ class GraphWrapper(digraph):
     def tojson(self):
         return [node.tojson() for _, node in enumerate(self.nodesMap.values())]
 
-    def lf_clean(self, lf):
-        if isinstance(lf, dict):
-            if len(lf)==1 and 'word' in lf:
-                return lf['word']
-            return dict([(k, self.lf_clean(lf[k])) for k in lf.keys()])
-        if isinstance(lf, list):
-            return [self.lf_clean(v) for v in lf]
-        return lf
-            
-    def toLogicForm(self, lf_compact=True):
+    def lf_get_node_data(self, node):
+        dic = node.lf_tojson()
+        feats = self.getFeatsDic(node)
+        if 'text' in feats:
+            del feats['text'] # being handled as a sibling
+            if 'pos' in feats and feats['pos']=='':
+                del feats['pos']
+        dic['feats'] = dict([(k, v) for k in feats for v in [feats[k]]
+                             if v != ''])
+        return dic
+    
+    def toLogicForm(self):
         alist = [(n['uid'], n)
                  for _,node in enumerate(self.nodesMap.values())
-                 for n in [node.tojson(lf_compact)]]
+                 for n in [self.lf_get_node_data(node)]]
         for i, (_, n) in enumerate(alist):
             del n['uid']
         dic = dict(alist)
@@ -285,12 +292,17 @@ class GraphWrapper(digraph):
                             self.move_to_target(dic[edge['parent']], edge['rel'],{'xref':k})
                             item['xtarget']=k
                         del item['rel']
-                forms = self.lf_clean([dic[k] for k in dic.keys()])
-                for form in forms:
-                    if form['top'] == 1:
-                        del form['top']
-                forms = forms if len(forms) > 1 else forms[0]
-                return {"sentence": self.originalSentence, "lf": forms}
+
+                forms=[dic[k] for k in dic.keys()]
+                forms_top = [form for form in forms if form['top']==1]
+                forms_bot = [form for form in forms if form['top']==0]
+                for form in forms_top:
+                    del form['top']
+                for form in forms_bot:
+                    del form['top']
+                forms_top = forms_top if len(forms_top) > 1 else forms_top[0]
+                return {"sentence": self.originalSentence,
+                        "lf": forms_top if len(forms_bot)==0 else {'lf':forms_top, 'def':forms_bot}}
             for m in movers:
                 edge = dic[m]['rel'][0]
                 self.move_to_target(dic[edge['parent']], edge['rel'], dic[m])

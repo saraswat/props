@@ -13,9 +13,11 @@ import os,sys
 from BerkeleyInterface import *
 global parser,opts
 
+#from parse_props import eprint
 
 BASE_PATH = os.path.join(os.path.dirname(__file__), '../')
 opts = None
+
 
 def load_berkeley(tokenize=True,
                   path_to_berkeley = os.path.join(BASE_PATH, 'berkeleyparser/')):
@@ -47,7 +49,8 @@ def parseSentences(sent, HOME_DIR = BASE_PATH):
     sys.stdin = orig_Stdin
     # Now we can retrieve the output as a string:
     result = strOut.getvalue()
-#     print result
+    #print >>sys.stderr, result
+    #print result    
     tmp_fn = "./tmp.tmp"
     fout = open(tmp_fn,'w')
     fout.write(result)

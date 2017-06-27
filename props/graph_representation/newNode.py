@@ -180,14 +180,12 @@ class Node:
                           ";".join([",".join([self.gr.edge_label((father,self)),str(father.uid)]) for father in self.gr.incidents(self)])
         ])
 
-    def tojson(self,lf_compact):
+    def lf_tojson(self):
         words = sorted([(str(w.index), w.word) for w in self.text], key=lambda h:h[0])
-        words = [w if lf_compact else {'word':w, 'index':index}
-                 for (index, w) in words]
+        words = [{'word':w, 'index':index} for (index, w) in words]
         words = words[0] if len(words)==1 else words
         isPred = int(bool(self.isPredicate))
         top = int(self.features.get('top', False))
-        pos = self.pos()
         wordKey = 'pred' if isPred else 'word'
         js = {'uid': str(self.uid),
               wordKey: words,
@@ -195,8 +193,6 @@ class Node:
                       for father in self.gr.incidents(self)]}
         if top == 1:
             js['top']=1
-        if pos != '' and not lf_compact:
-            js['pos'] = pos
         return js
 
     def neighbors(self):

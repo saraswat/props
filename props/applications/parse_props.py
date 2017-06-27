@@ -1,6 +1,6 @@
 """
 Usage:
-  parse_props.py [FILE] (-g|-t|-l|-c) [--original] [--oie] [--dep] [--tokenized] [--dontfilter] 
+  parse_props.py [FILE] [-g|-t] [-l] [-c] [--original] [--oie] [--dep] [--tokenized] [--dontfilter] 
   parse_props.py (-h|--help)
 
 Parse sentences into the PropS representation scheme
@@ -44,12 +44,11 @@ from props.applications.run import parseSentences
 from pprint import pprint
 import json
 
-
 import sys
 
-def eprint(*args, **kwargs):
-    print(*args, file=sys.stderr, **kwargs)
-    
+from props.utils.lf_utils import lf_clean
+from props.utils.lf_utils import to_de_bruijn
+
 def main(arguments):
     
     load_berkeley(not arguments["--tokenized"])
@@ -68,10 +67,14 @@ def main(arguments):
         sents = [filter(lambda x: x in string.printable, s) for s in arguments["FILE"]] 
         
     for sent in sents:
-        eprint('< |' + sent + '|')
         # be kind to the downstream chain -- do not send blank lines!
         if sent.strip() == '':
             continue
+
+        # print sentence (only if in graphical mode)
+        if (arguments["--original"]):
+            print(sent)
+
         gs = parseSentences(sent,HOME_DIR)
         g,tree = gs[0]
         dot = g.drawToFile("","svg")   
@@ -79,9 +82,6 @@ def main(arguments):
         # deptree to svg file
         d = DepTreeVisualizer.from_conll_str(tree)
         
-        # print sentence (only if in graphical mode)
-        if (arguments["--original"]):
-            print(sent+sep)
             
         #print dependency tree
         if (arguments['--dep']):
@@ -89,12 +89,16 @@ def main(arguments):
                 print(d.as_svg(compact=True,flat=True)+sep)
             else:
                 print(tree)
-
-        if (arguments['-l'] or arguments['-c']):
-            pprint(g.toLogicForm(arguments['-c']))
-        else:
-            #print PropS output
+        if (arguments['-t']):
             print(dot.create(format='svg')+sep if graphical else g)
+
+        if arguments['-l'] or arguments['-c']:
+            lf = to_de_bruijn(g.toLogicForm())
+            if arguments['-l']:
+                pprint(lf)
+            if arguments['-c']:
+                lf = lf_clean(lf)
+                pprint(lf)
         
         #print open ie like extractions
         if (arguments["--oie"]):
