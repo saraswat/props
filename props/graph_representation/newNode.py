@@ -4,6 +4,7 @@ from copy import deepcopy, copy
 from props.dependency_tree.definitions import time_prep, definite_label,\
     adjectival_mod_dependencies
 
+
 COPULA = "SameAs"          # the textual value of a copula node
 PROP = "PROP"          # the textual value of a property node
 RCMOD_PROP = "PROP"    # the textual value of a property for rcmod node
@@ -172,6 +173,8 @@ class Node:
         ret +="</TABLE>" 
         return ret
     
+    def lf_get_text(self, g):
+        return getattr(self, 'lf_text', g.lf_get_node_string(self))
     
     def to_conll_like(self):
         return "\t".join([str(self.uid),
@@ -195,8 +198,8 @@ class Node:
                       for father in self.gr.incidents(self)]}
         if top == 1:
             js['top']=1
-            assert hasattr(self, 'propositions'), 'setPropositions should have been called'
-            js['propositions']=self.propositions
+#            assert hasattr(self, 'propositions'), 'setPropositions should have been called'
+#            js['propositions']=self.propositions
         return js
 
     def neighbors(self):

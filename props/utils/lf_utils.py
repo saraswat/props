@@ -163,7 +163,8 @@ def to_de_bruijn(lf):
 def lf_clean(lf):
     "Clean up the logical form, removing clutter."
     lf=remove_paths(lf, [['index'],
-#                         ['node'],
+                         ['node'],
+                         ['propositions'], 
                          ['feats','definite'],
                          ['feats','implicit'],
                          ['feats','passive'],

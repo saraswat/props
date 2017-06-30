@@ -263,6 +263,21 @@ class GraphWrapper(digraph):
                              if v != ''])
         return dic
 
+    def lf_get_node_string(self, node, exclude=[]):
+        return subgraph_to_string(self, node, exclude=exclude)
+    def lf_fix_nodes(self, lf):
+        "Replace nodes with their .lf_texts"
+        if isinstance(lf, dict):
+            for k in lf.keys():
+                if k == 'node':
+                    lf['text'] = lf[k].lf_get_text(self)
+                else:
+                    self.lf_fix_nodes(lf[k])
+        if isinstance(lf, list):
+            for e in lf:
+                self.lf_fix_nodes(e)
+    #end def
+
     def lf_fix_propositions(self, lf):
         "Push the surface string down to relations from the propositions"
         if isinstance(lf, dict):
@@ -320,7 +335,8 @@ class GraphWrapper(digraph):
                         del item['rel']
 
                 forms=[dic[k] for k in dic.keys()]
-                self.lf_fix_propositions(forms)
+                #self.lf_fix_propositions(forms)
+                self.lf_fix_nodes(forms)
                 forms_top = [form for form in forms if form['top']==1]
                 forms_bot = [form for form in forms if form['top']==0]
                 for form in forms_top:
@@ -328,8 +344,7 @@ class GraphWrapper(digraph):
                 for form in forms_bot:
                     del form['top']
                 forms_top = forms_top if len(forms_top) > 1 else forms_top[0]
-                return {"sentence": self.originalSentence,
-                        "lf": forms_top if len(forms_bot)==0 else {'lf':forms_top, 'def':forms_bot}}
+                return {"lf": forms_top if len(forms_bot)==0 else {'lf':forms_top, 'def':forms_bot}}
             for m in movers:
                 edge = dic[m]['rel'][0]
                 self.move_to_target(dic[edge['parent']], edge['rel'], dic[m])
@@ -656,11 +671,12 @@ class GraphWrapper(digraph):
                 for k, curNeighbour in sorted(nlist, key=lambda(k, n):get_min_max_span(self, n)[0]):
                     curExclude = [n for n in all_neighbours if n != curNeighbour] + [topNode]
                     #vj for lf processing, store text in the node, and retrieve when needed
-                    text = subgraph_to_string(self, curNeighbour, exclude=curExclude)
+                    text = self.lf_get_node_string(curNeighbour, exclude=curExclude)
                     curNeighbour.lf_text =  text
                     argList.append([k, text])
                 curProp = Proposition(topNode.get_original_text(), argList, outputType)
                 props.append(curProp)
+            #vj No need to do this anymore, just need to set curNeighbour.lf_text.
             topNode.propositions=props
 
     def getPropositions(self, outputType):
