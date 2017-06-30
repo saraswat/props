@@ -188,11 +188,15 @@ class Node:
         top = int(self.features.get('top', False))
         wordKey = 'pred' if isPred else 'word'
         js = {'uid': str(self.uid),
+              'node': self,
               wordKey: words,
+#              'orig': self.get_original_text(),
               'rel': [{'rel': self.gr.edge_label((father,self)),'parent': str(father.uid)}
                       for father in self.gr.incidents(self)]}
         if top == 1:
             js['top']=1
+            assert hasattr(self, 'propositions'), 'setPropositions should have been called'
+            js['propositions']=self.propositions
         return js
 
     def neighbors(self):

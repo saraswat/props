@@ -13,6 +13,16 @@ def simplify_single_dict(lf, feat):
     if isinstance(lf, list):
         return [simplify_single_dict(v,feat) for v in lf]
     return lf
+def update_fields(lf, f1, f2):
+    "Replace f1:text by f1:text1 where text1 is value of f2 field, if on stripping it is the same as text."
+    if isinstance(lf, dict):
+        if f1 in lf and f2 in lf and lf[f1]==lf[f2].strip():
+            lf[f1]=lf[f2]
+            del lf[f2]
+        return dict([(k, update_fields(lf[k], f1, f2)) for k in lf.keys()])
+    if isinstance(lf, list):
+        return [update_fields(v,f1,f2) for v in lf]
+    return lf
 
 def remove_empty_dict(lf):
     """
@@ -153,11 +163,13 @@ def to_de_bruijn(lf):
 def lf_clean(lf):
     "Clean up the logical form, removing clutter."
     lf=remove_paths(lf, [['index'],
+#                         ['node'],
                          ['feats','definite'],
                          ['feats','implicit'],
                          ['feats','passive'],
                          ['feats','tense'],
                          ['feats','pos']])
+    lf=update_fields(lf, 'word', 'text')
     lf=simplify_single_dict(lf, 'word')
     lf=remove_empty_dict(lf)
     return lf

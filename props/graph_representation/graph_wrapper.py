@@ -262,19 +262,45 @@ class GraphWrapper(digraph):
         dic['feats'] = dict([(k, v) for k in feats for v in [feats[k]]
                              if v != ''])
         return dic
-    
+
+    def lf_fix_propositions(self, lf):
+        "Push the surface string down to relations from the propositions"
+        if isinstance(lf, dict):
+            for k in lf.keys():
+                self.lf_fix_propositions(lf[k])
+            if 'node' in lf and hasattr(lf['node'],'propositions'):
+                props = lf['node'].propositions
+                assert len(props)==1, 'Golden -- multiple propositions: ' + str(lf)
+                prop = props[0]
+                for rel,_ in prop.args:
+                    target = lf[rel]
+                    if isinstance(target, dict):
+                        if 'node' in target:
+                            target['text'] = target['node'].lf_text
+                    else:
+                        assert isinstance(target, list), "Golden, {0} must be a list".format(target)
+                        for target0 in target:
+                            if 'node' in target0: # may be an xref, so may not have node
+                                target0['text'] = target0['node'].lf_text
+                del lf['propositions']
+        if isinstance(lf, list):
+            for e in lf:
+                self.lf_fix_propositions(e)
+    #end def
+        
     def toLogicForm(self):
+        self.setPropositions('pdf')
         alist = [(n['uid'], n)
                  for _,node in enumerate(self.nodesMap.values())
                  for n in [self.lf_get_node_data(node)]]
-        for i, (_, n) in enumerate(alist):
+        for _, n in alist:
             del n['uid']
         dic = dict(alist)
         n = 0
         while True:
             n = n+1
             incoming = set() # nodes into which nodes are to be moved
-            outgoing = set() # the nods that are going to move
+            outgoing = set() # the nodes that are going to move
             for k in dic.keys():
                 item = dic[k]
                 if 'rel' in item:
@@ -282,7 +308,7 @@ class GraphWrapper(digraph):
                         incoming.add(edge['parent'])
                         outgoing.add(k)
             movers = outgoing - incoming
-            if len(movers) == 0:
+            if len(movers) == 0: # terminated... post process and return
                 for k in dic.keys():
                     item = dic[k]
                     if not 'top' in item:
@@ -294,6 +320,7 @@ class GraphWrapper(digraph):
                         del item['rel']
 
                 forms=[dic[k] for k in dic.keys()]
+                self.lf_fix_propositions(forms)
                 forms_top = [form for form in forms if form['top']==1]
                 forms_bot = [form for form in forms if form['top']==0]
                 for form in forms_top:
@@ -606,30 +633,41 @@ class GraphWrapper(digraph):
                     for n in self.neighbors(topNode):
                         change = n.makeTopNode()
     
+
+    def setPropositions(self, outputType):
+        for topNode in [n for n in self.nodes() if n.features.get("top", False)]:
+            props = []
+            #             if "dups" in topNode.features:
+            dups = topNode.features.get("dups", [])
+            allDups = reduce(lambda x, y:list(x) + list(y), dups, [])
+            rest = [n for n in self.neighbors(topNode) if n not in allDups]
+            neigboursList = []
+            for combination in product(*dups):
+                curNeigbourList = []
+                ls = list(combination) + rest
+                for curNode in ls:
+                    curNeigbourList.append((self.edge_label((topNode, curNode)), curNode))
+                neigboursList.append(curNeigbourList)
+                
+            for nlist in neigboursList:
+                argList = []
+                nodeList = []
+                all_neighbours = [n for _, n in nlist]
+                for k, curNeighbour in sorted(nlist, key=lambda(k, n):get_min_max_span(self, n)[0]):
+                    curExclude = [n for n in all_neighbours if n != curNeighbour] + [topNode]
+                    #vj for lf processing, store text in the node, and retrieve when needed
+                    text = subgraph_to_string(self, curNeighbour, exclude=curExclude)
+                    curNeighbour.lf_text =  text
+                    argList.append([k, text])
+                curProp = Proposition(topNode.get_original_text(), argList, outputType)
+                props.append(curProp)
+            topNode.propositions=props
+
     def getPropositions(self, outputType):
+        self.setPropositions(outputType)
         ret = []
         for topNode in [n for n in self.nodes() if n.features.get("top", False)]:
-#             if "dups" in topNode.features:
-                dups = topNode.features.get("dups", [])
-                allDups = reduce(lambda x, y:list(x) + list(y), dups, [])
-                rest = [n for n in self.neighbors(topNode) if n not in allDups]
-                neigboursList = []
-                for combination in product(*dups):
-                    curNeigbourList = []
-                    ls = list(combination) + rest
-                    for curNode in ls:
-                        curNeigbourList.append((self.edge_label((topNode, curNode)), curNode))
-                    neigboursList.append(curNeigbourList)
-                
-                for nlist in neigboursList:
-                    argList = []
-                    all_neighbours = [n for _, n in nlist]
-                    for k, curNeighbour in sorted(nlist, key=lambda(k, n):get_min_max_span(self, n)[0]):
-                        curExclude = [n for n in all_neighbours if n != curNeighbour] + [topNode]
-                        argList.append([k, subgraph_to_string(self, curNeighbour, exclude=curExclude)])
-                    curProp = Proposition(topNode.get_original_text(), argList, outputType)
-                    ret.append(curProp)
-                    
+            ret.extend(topNode.propositions)
         return ret
     
     def normalize_labels(self):

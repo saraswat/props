@@ -4,7 +4,9 @@ from props.dependency_tree.definitions import subject_dependencies, ARG_LABEL,\
 class Proposition:
     def __init__(self,pred,args,outputType):
         self.pred = pred
+#        self.arg_nodes = nodes
         self.args = args
+#        print(('Golden -- proposition constructor:', args))
         self.outputType = outputType
         for ent in self.args:
             (rel,arg) = ent
@@ -32,7 +34,11 @@ class Proposition:
             return 5
         else:
             return 4
-        
+
+    def rel_str(self, node):
+        d = dict(self.args)
+        return d[rel]
+    
     def __str__(self):
         PDF = (self.outputType == "pdf")
         HTML = (self.outputType == "html")

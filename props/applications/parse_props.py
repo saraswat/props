@@ -55,7 +55,7 @@ def main(arguments):
     
     outputType = 'html'
     sep = "<br>"
-    if arguments['-t']:
+    if True or arguments['-t']:
         outputType = 'pdf'
         sep = "\n"
         
