@@ -164,6 +164,7 @@ def lf_clean(lf):
     "Clean up the logical form, removing clutter."
     lf=remove_paths(lf, [['index'],
                          ['node'],
+                         ['text'],                         
                          ['propositions'], 
                          ['feats','definite'],
                          ['feats','implicit'],
