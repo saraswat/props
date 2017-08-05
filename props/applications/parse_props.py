@@ -65,12 +65,13 @@ def main(arguments):
         sents = [x for x in arguments["FILE"]]
     else:    
         sents = [filter(lambda x: x in string.printable, s) for s in arguments["FILE"]] 
-        
+
+    numSent = 0
     for sent in sents:
         # be kind to the downstream chain -- do not send blank lines!
         if sent.strip() == '':
             continue
-
+        numSent=numSent+1
         # print sentence (only if in graphical mode)
         if (arguments["--original"]):
             print(sent)
@@ -93,7 +94,7 @@ def main(arguments):
             print(dot.create(format='svg')+sep if graphical else g)
 
         if arguments['-l'] or arguments['-c']:
-            lf = to_de_bruijn(g.toLogicForm())
+            lf = g.toLogicForm() # to_de_bruijn(g.toLogicForm())
             if arguments['-l']:
                 pprint(lf)
             if arguments['-c']:
@@ -103,6 +104,8 @@ def main(arguments):
         #print open ie like extractions
         if (arguments["--oie"]):
             print(sep.join([str(prop) for prop in g.getPropositions(outputType)]))
+    #end for loop
+    print('Processed {0} sentences.'.format(numSent))
             
     
 
