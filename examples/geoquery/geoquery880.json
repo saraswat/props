@@ -1,0 +1,4010 @@
+1	name	_	VB	VB	_	0	root	_	_
+2	all	_	PDT	PDT	_	4	predet	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	rivers	_	NNS	NNS	_	1	dobj	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	colorado	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'dobj': {'prep_in': 'colorado', 'word': ['all', 'rivers']},
+        'pred': 'name'}}
+name:(dobj:all the rivers in colorado )
+1	count	_	VB	VB	_	0	root	_	_
+2	the	_	DT	DT	_	3	det	_	_
+3	states	_	NNS	NNS	_	1	dobj	_	_
+4	which	_	WDT	WDT	_	5	nsubj	_	_
+5	have	_	VBP	VBP	_	3	rcmod	_	_
+6	elevations	_	NNS	NNS	_	5	dobj	_	_
+7	lower	_	JJR	JJR	_	6	amod	_	_
+8	than	_	IN	IN	_	7	prep	_	_
+9	what	_	WP	WP	_	11	dobj	_	_
+10	alabama	_	PRP	PRP	_	11	nsubj	_	_
+11	has	_	VBZ	VBZ	_	8	pcomp	_	_
+12	?	_	.	.	_	1	punct	_	_
+
+{'def': [{'mod': {'xref': '12'}, 'word': 'states', 'xtarget': '10'}],
+ 'lf': [{'dobj': {'mod': {'prepc_than': {'dobj': 'what',
+                                         'pred': 'has',
+                                         'subj': 'alabama'},
+                          'word': 'lower'},
+                  'word': 'elevations'},
+         'pred': 'have',
+         'subj': {'xref': '10'},
+         'xtarget': '12'},
+        {'dobj': {'xref': '10'}, 'pred': 'count'}],
+ 'sentence': 'count the states which have elevations lower than what alabama has ?'}
+count:(dobj:the states which have elevations lower than what alabama has )
+have:(subj:the states , dobj:elevations lower than what alabama has )
+1	give	_	VB	VB	_	0	root	_	_
+2	me	_	PRP	PRP	_	1	iobj	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	number	_	NN	NN	_	1	dobj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	rivers	_	NNS	NNS	_	5	pobj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	california	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'dobj': {'prep_of': {'prep_in': 'california', 'word': 'rivers'},
+                 'word': 'number'},
+        'iobj': 'me',
+        'pred': 'give'}}
+give:(iobj:me , dobj:the number of rivers in california )
+1	give	_	VB	VB	_	0	root	_	_
+2	me	_	PRP	PRP	_	1	iobj	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	states	_	NNS	NNS	_	1	dobj	_	_
+5	that	_	IN	IN	_	7	dobj	_	_
+6	border	_	NN	NN	_	7	nsubj	_	_
+7	utah	_	VBP	VBP	_	4	rcmod	_	_
+8	?	_	.	.	_	1	punct	_	_
+
+{'def': [{'mod': {'xref': '32'}, 'word': 'states', 'xtarget': '30'}],
+ 'lf': [{'dobj': {'xref': '30'},
+         'pred': 'utah',
+         'subj': 'border',
+         'xtarget': '32'},
+        {'dobj': {'xref': '30'}, 'iobj': 'me', 'pred': 'give'}],
+ 'sentence': 'give me the states that border utah ?'}
+utah:(subj:border , dobj:the states )
+give:(iobj:me , dobj:the states that border utah )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	high	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	mount_mckinley	_	NN	NN	_	3	nsubj	_	_
+5	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'high'},
+        'pred': 'is',
+        'subj': 'mount_mckinley'}}
+is:(subj:mount_mckinley , mod:how high )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	high	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	highest	_	JJS	JJS	_	6	amod	_	_
+6	point	_	NN	NN	_	3	nsubj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	america	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'high'},
+        'pred': 'is',
+        'subj': {'mod': 'highest', 'prep_in': 'america', 'word': 'point'}}}
+is:(subj:the highest point in america , mod:how high )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	high	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	highest	_	JJS	JJS	_	6	amod	_	_
+6	point	_	NN	NN	_	3	nsubj	_	_
+7	of	_	IN	IN	_	6	prep	_	_
+8	alabama	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'high'},
+        'pred': 'is',
+        'subj': {'mod': 'highest', 'prep_of': 'alabama', 'word': 'point'}}}
+is:(subj:the highest point of alabama , mod:how high )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	large	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	alaska	_	NN	NN	_	3	nsubj	_	_
+5	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'large'},
+        'pred': 'is',
+        'subj': 'alaska'}}
+is:(subj:alaska , mod:how large )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	large	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	texas	_	NNS	NNS	_	3	nsubj	_	_
+5	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'large'}, 'pred': 'is', 'subj': 'texas'}}
+is:(subj:texas , mod:how large )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	long	_	RB	RB	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	colorado_river	_	NN	NN	_	3	nsubj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'long'},
+        'pred': 'is',
+        'subj': 'colorado_river'}}
+is:(subj:the colorado_river , mod:how long )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	long	_	RB	RB	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	delaware_river	_	NN	NN	_	3	nsubj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'long'},
+        'pred': 'is',
+        'subj': 'delaware_river'}}
+is:(subj:the delaware_river , mod:how long )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	long	_	RB	RB	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	longest	_	JJS	JJS	_	6	amod	_	_
+6	river	_	NN	NN	_	3	nsubj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	california	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'long'},
+        'pred': 'is',
+        'subj': {'mod': 'longest', 'prep_in': 'california', 'word': 'river'}}}
+is:(subj:the longest river in california , mod:how long )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	long	_	RB	RB	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	longest	_	JJS	JJS	_	6	amod	_	_
+6	river	_	NN	NN	_	3	nsubj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	usa	_	NN	NN	_	7	pobj	_	_
+10	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'long'},
+        'pred': 'is',
+        'subj': {'mod': 'longest', 'prep_in': 'usa', 'word': 'river'}}}
+is:(subj:the longest river in the usa , mod:how long )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	long	_	RB	RB	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	north_platte	_	JJ	JJ	_	6	amod	_	_
+6	river	_	NN	NN	_	3	nsubj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'long'},
+        'pred': 'is',
+        'subj': {'mod': 'north_platte', 'word': 'river'}}}
+is:(subj:the north_platte river , mod:how long )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	long	_	RB	RB	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	ohio_river	_	NN	NN	_	3	nsubj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'long'},
+        'pred': 'is',
+        'subj': 'ohio_river'}}
+is:(subj:the ohio_river , mod:how long )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	capitals	_	NNS	NNS	_	6	dobj	_	_
+4	does	_	VBZ	VBZ	_	6	aux	_	_
+5	rhode_island	_	NN	NN	_	6	nsubj	_	_
+6	have	_	VB	VB	_	0	root	_	_
+7	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'capitals'},
+        'pred': 'have',
+        'subj': 'rhode_island'}}
+have:(subj:rhode_island , dobj:how many capitals )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	cities	_	NNS	NNS	_	4	nsubj	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	there	_	EX	EX	_	4	expl	_	_
+6	in	_	IN	IN	_	4	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	united	_	VBN	VBN	_	9	amod	_	_
+9	states	_	NNS	NNS	_	6	pobj	_	_
+10	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'pred': 'Exists',
+        'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'},
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'cities'}}}
+Exists:(subj:how many cities , prep_in:the united states )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	citizens	_	NNS	NNS	_	8	dobj	_	_
+4	does	_	VBZ	VBZ	_	8	aux	_	_
+5	the	_	DT	DT	_	7	det	_	_
+6	biggest	_	JJS	JJS	_	7	amod	_	_
+7	city	_	NN	NN	_	8	nsubj	_	_
+8	have	_	VB	VB	_	0	root	_	_
+9	in	_	IN	IN	_	8	prep	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	usa	_	NN	NN	_	9	pobj	_	_
+12	?	_	.	.	_	8	punct	_	_
+
+{'lf': {'dobj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'citizens'},
+        'pred': 'have',
+        'prep_in': 'usa',
+        'subj': {'mod': 'biggest', 'word': 'city'}}}
+have:(subj:the biggest city , dobj:how many citizens , prep_in:the usa )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	colorado_rivers	_	NNS	NNS	_	4	nsubj	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	there	_	RB	RB	_	4	advmod	_	_
+6	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'mod': 'there',
+        'pred': 'are',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'},
+                 'word': 'colorado_rivers'}}}
+are:(subj:how many colorado_rivers , mod:there )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	detroit	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': 'detroit'}}
+live:(prep_in:detroit , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	houston	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': 'houston'}}
+live:(prep_in:houston , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	minneapolis	_	JJ	JJ	_	7	amod	_	_
+7	minnesota	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': {'mod': 'minneapolis', 'word': 'minnesota'}}}
+live:(prep_in:minneapolis minnesota , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	mississippi	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': 'mississippi'}}
+live:(prep_in:mississippi , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	rhode_island	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': 'rhode_island'}}
+live:(prep_in:rhode_island , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	biggest	_	JJS	JJS	_	8	amod	_	_
+8	city	_	NN	NN	_	5	pobj	_	_
+9	in	_	IN	IN	_	8	prep	_	_
+10	new_york	_	JJ	JJ	_	11	amod	_	_
+11	state	_	NN	NN	_	9	pobj	_	_
+12	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': {'mod': 'biggest',
+                    'prep_in': {'mod': 'new_york', 'word': 'state'},
+                    'word': 'city'}}}
+live:(prep_in:the biggest city in new_york state , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	capital	_	NN	NN	_	5	pobj	_	_
+8	of	_	IN	IN	_	7	prep	_	_
+9	texas	_	NNS	NNS	_	8	pobj	_	_
+10	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': {'prep_of': 'texas', 'word': 'capital'}}}
+live:(prep_in:the capital of texas , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	united	_	VBN	VBN	_	8	amod	_	_
+8	states	_	NNS	NNS	_	5	pobj	_	_
+9	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'},
+        'pred': 'live',
+        'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'}}}
+live:(prep_in:the united states , dep:how many people )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	nsubj	_	_
+4	lived	_	VBD	VBD	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	austin	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'pred': 'lived',
+        'prep_in': 'austin',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'people'}}}
+lived:(subj:how many people , prep_in:austin )
+1	how	_	WRB	WRB	_	4	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	people	_	NNS	NNS	_	4	nsubj	_	_
+4	reside	_	VB	VB	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	utah	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'mod': 'how',
+        'pred': 'reside',
+        'prep_in': 'utah',
+        'subj': {'mod': 'many', 'word': 'people'}}}
+reside:(subj:many people , prep_in:utah , mod:how )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	residents	_	NNS	NNS	_	4	dep	_	_
+4	live	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	texas	_	NNS	NNS	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'residents'},
+        'pred': 'live',
+        'prep_in': 'texas'}}
+live:(prep_in:texas , dep:how many residents )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	rivers	_	NNS	NNS	_	4	dep	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	iowa	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'rivers'},
+        'pred': 'are',
+        'prep_in': 'iowa'}}
+are:(prep_in:iowa , dep:how many rivers )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	rivers	_	NNS	NNS	_	4	nsubj	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	that	_	WDT	WDT	_	9	nsubj	_	_
+9	has	_	VBZ	VBZ	_	4	ccomp	_	_
+10	the	_	DT	DT	_	12	det	_	_
+11	most	_	JJS	JJS	_	12	amod	_	_
+12	rivers	_	NNS	NNS	_	9	dobj	_	_
+13	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': {'mod': 'most', 'word': 'rivers'},
+        'pred': 'has',
+        'prep_in': 'state',
+        'prop_of': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'rivers'},
+        'subj': 'that'}}
+has:(prop_of:how many rivers , subj:that , dobj:the most rivers , prep_in:the state )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	rivers	_	NNS	NNS	_	6	dobj	_	_
+4	does	_	VBZ	VBZ	_	6	aux	_	_
+5	colorado	_	NN	NN	_	6	nsubj	_	_
+6	have	_	VB	VB	_	0	root	_	_
+7	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'rivers'},
+        'pred': 'have',
+        'subj': 'colorado'}}
+have:(subj:colorado , dobj:how many rivers )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	4	dep	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	usa	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'},
+        'pred': 'are',
+        'prep_in': 'usa'}}
+are:(prep_in:the usa , dep:how many states )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	4	nsubj	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	there	_	RB	RB	_	4	advmod	_	_
+6	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'mod': 'there',
+        'pred': 'are',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'}}}
+are:(subj:how many states , mod:there )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	4	nsubj	_	_
+4	are	_	VBP	VBP	_	0	root	_	_
+5	there	_	EX	EX	_	4	expl	_	_
+6	in	_	IN	IN	_	4	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	usa	_	NN	NN	_	6	pobj	_	_
+9	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'pred': 'Exists',
+        'prep_in': 'usa',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'}}}
+Exists:(subj:how many states , prep_in:the usa )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	5	advmod	_	_
+3	states	_	NNS	NNS	_	5	dep	_	_
+4	border	_	NN	NN	_	5	nsubj	_	_
+5	iowa	_	VB	VB	_	0	root	_	_
+6	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'dep': 'states',
+        'mod': {'mod': 'how', 'word': 'many'},
+        'pred': 'iowa',
+        'subj': 'border'}}
+iowa:(subj:border , mod:how many , dep:states )
+1	how	_	WRB	WRB	_	4	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	4	nsubj	_	_
+4	border	_	NN	NN	_	0	root	_	_
+5	the	_	DT	DT	_	6	det	_	_
+6	state	_	NN	NN	_	4	dobj	_	_
+7	with	_	IN	IN	_	4	prep	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	largest	_	JJS	JJS	_	10	amod	_	_
+10	population	_	NN	NN	_	7	pobj	_	_
+11	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': 'state',
+        'mod': 'how',
+        'prep_with': {'mod': 'largest', 'word': 'population'},
+        'subj': {'mod': 'many', 'word': 'states'},
+        'word': 'border'}}
+border:(subj:many states , dobj:the state , prep_with:the largest population , mod:how )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	6	nsubj	_	_
+4	do	_	VBP	VBP	_	6	aux	_	_
+5	not	_	RB	RB	_	6	neg	_	_
+6	have	_	VB	VB	_	0	root	_	_
+7	rivers	_	NNS	NNS	_	6	dobj	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': 'rivers',
+        'feats': {'negated': 'negated'},
+        'pred': 'have',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'}}}
+have:(subj:how many states , dobj:rivers )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	4	nsubj	_	_
+4	does	_	VBZ	VBZ	_	0	root	_	_
+5	tennessee	_	JJ	JJ	_	6	amod	_	_
+6	border	_	NN	NN	_	4	dobj	_	_
+7	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': {'mod': 'tennessee', 'word': 'border'},
+        'pred': 'does',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'}}}
+does:(subj:how many states , dobj:tennessee border )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	6	dobj	_	_
+4	does	_	VBZ	VBZ	_	6	aux	_	_
+5	usa	_	NN	NN	_	6	nsubj	_	_
+6	have	_	VB	VB	_	0	root	_	_
+7	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'},
+        'pred': 'have',
+        'subj': 'usa'}}
+have:(subj:usa , dobj:how many states )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	many	_	JJ	JJ	_	3	amod	_	_
+3	states	_	NNS	NNS	_	4	nsubj	_	_
+4	have	_	VBP	VBP	_	0	root	_	_
+5	a	_	DT	DT	_	7	det	_	_
+6	higher	_	JJR	JJR	_	7	amod	_	_
+7	point	_	NN	NN	_	4	dobj	_	_
+8	than	_	IN	IN	_	7	prep	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	highest	_	JJS	JJS	_	11	amod	_	_
+11	point	_	NN	NN	_	8	pobj	_	_
+12	of	_	IN	IN	_	11	prep	_	_
+13	the	_	DT	DT	_	14	det	_	_
+14	state	_	NN	NN	_	12	pobj	_	_
+15	with	_	IN	IN	_	11	prep	_	_
+16	the	_	DT	DT	_	19	det	_	_
+17	largest	_	JJS	JJS	_	19	amod	_	_
+18	capital	_	NN	NN	_	19	nn	_	_
+19	city	_	NN	NN	_	15	pobj	_	_
+20	in	_	IN	IN	_	19	prep	_	_
+21	the	_	DT	DT	_	22	det	_	_
+22	us	_	PRP	PRP	_	20	pobj	_	_
+23	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': {'mod': 'higher',
+                 'prep_than': {'mod': 'highest',
+                               'prep_of': 'state',
+                               'prep_with': {'mod': 'largest',
+                                             'prep_in': 'us',
+                                             'word': ['capital', 'city']},
+                               'word': 'point'},
+                 'word': 'point'},
+        'pred': 'have',
+        'subj': {'mod': {'mod': 'how', 'word': 'many'}, 'word': 'states'}}}
+have:(subj:how many states , dobj:a higher point than the highest point of the state with the largest capital city in the us )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	much	_	JJ	JJ	_	6	advmod	_	_
+3	population	_	NN	NN	_	2	dep	_	_
+4	does	_	VBZ	VBZ	_	6	aux	_	_
+5	texas	_	NNS	NNS	_	6	nsubj	_	_
+6	have	_	VB	VB	_	0	root	_	_
+7	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'mod': {'dep': 'population', 'mod': 'how', 'word': 'much'},
+        'pred': 'have',
+        'subj': 'texas'}}
+have:(subj:texas , mod:how much population )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	tall	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	mount_mckinley	_	NN	NN	_	3	nsubj	_	_
+5	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'tall'},
+        'pred': 'is',
+        'subj': 'mount_mckinley'}}
+is:(subj:mount_mckinley , mod:how tall )
+1	how	_	WRB	WRB	_	2	advmod	_	_
+2	tall	_	JJ	JJ	_	3	advmod	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	highest	_	JJS	JJS	_	6	amod	_	_
+6	point	_	NN	NN	_	3	nsubj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	montana	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'mod': {'mod': 'how', 'word': 'tall'},
+        'pred': 'is',
+        'subj': {'mod': 'highest', 'prep_in': 'montana', 'word': 'point'}}}
+is:(subj:the highest point in montana , mod:how tall )
+1	iowa	_	VB	VB	_	0	root	_	_
+2	borders	_	NNS	NNS	_	1	dobj	_	_
+3	how	_	WRB	WRB	_	4	advmod	_	_
+4	many	_	JJ	JJ	_	5	amod	_	_
+5	states	_	NNS	NNS	_	2	rcmod	_	_
+6	?	_	.	.	_	1	punct	_	_
+
+{'def': [{'mod': {'xref': '386'}, 'word': 'borders', 'xtarget': '383'}],
+ 'lf': [{'dobj': {'xref': '383'}, 'pred': 'iowa'},
+        {'arg': {'xref': '383'},
+         'mod': {'mod': 'how', 'word': 'many'},
+         'word': 'states',
+         'xtarget': '386'}],
+ 'sentence': 'iowa borders how many states ?'}
+states:(arg:borders , mod:how many )
+iowa:(dobj:borders how many states )
+1	name	_	VB	VB	_	0	root	_	_
+2	the	_	DT	DT	_	4	det	_	_
+3	major	_	JJ	JJ	_	4	amod	_	_
+4	rivers	_	NNS	NNS	_	1	dobj	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	florida	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'dobj': {'mod': 'major', 'prep_in': 'florida', 'word': 'rivers'},
+        'pred': 'name'}}
+name:(dobj:the major rivers in florida )
+1	number	_	NN	NN	_	0	root	_	_
+2	of	_	IN	IN	_	1	prep	_	_
+3	people	_	NNS	NNS	_	2	pobj	_	_
+4	in	_	IN	IN	_	3	prep	_	_
+5	boulder	_	NN	NN	_	4	pobj	_	_
+6	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'prep_of': {'prep_in': 'boulder', 'word': 'people'}, 'word': 'number'}}
+number:(prep_of:people in boulder )
+1	number	_	NN	NN	_	0	root	_	_
+2	of	_	IN	IN	_	1	prep	_	_
+3	states	_	NNS	NNS	_	2	pobj	_	_
+4	bordering	_	VBG	VBG	_	3	vmod	_	_
+5	iowa	_	NN	NN	_	4	dobj	_	_
+6	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'prep_of': {'mod': {'dobj': 'iowa', 'pred': 'bordering'},
+                    'word': 'states'},
+        'word': 'number'}}
+number:(prep_of:states bordering iowa )
+1	rivers	_	NNS	NNS	_	0	root	_	_
+2	in	_	IN	IN	_	1	prep	_	_
+3	new_york	_	NN	NN	_	2	pobj	_	_
+4	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'prep_in': 'new_york', 'word': 'rivers'}}
+rivers:(prep_in:new_york )
+1	san_antonio	_	NN	NN	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	in	_	IN	IN	_	2	prep	_	_
+4	what	_	WP	WP	_	5	nsubj	_	_
+5	state	_	VBP	VBP	_	3	dep	_	_
+6	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'pred': 'is',
+        'prep': {'dep': {'pred': 'state', 'subj': 'what'}, 'word': 'in'},
+        'subj': 'san_antonio'}}
+is:(subj:san_antonio , prep:in what state ? )
+1	tell	_	VB	VB	_	0	root	_	_
+2	me	_	PRP	PRP	_	1	dobj	_	_
+3	what	_	WP	WP	_	5	dobj	_	_
+4	cities	_	NNS	NNS	_	5	nsubj	_	_
+5	are	_	VBP	VBP	_	1	dep	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	texas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	1	punct	_	_
+
+{'lf': {'dep': {'dobj': 'what',
+                'pred': 'are',
+                'prep_in': 'texas',
+                'subj': 'cities'},
+        'dobj': 'me',
+        'pred': 'tell'}}
+tell:(dobj:me , dep:what cities are in texas )
+1	through	_	IN	IN	_	10	prep	_	_
+2	which	_	WDT	WDT	_	3	det	_	_
+3	states	_	NNS	NNS	_	1	pobj	_	_
+4	does	_	VBZ	VBZ	_	10	aux	_	_
+5	the	_	DT	DT	_	7	det	_	_
+6	longest	_	JJS	JJS	_	7	amod	_	_
+7	river	_	NN	NN	_	10	nsubj	_	_
+8	in	_	IN	IN	_	7	prep	_	_
+9	texas	_	NNS	NNS	_	8	pobj	_	_
+10	run	_	VB	VB	_	0	root	_	_
+11	?	_	.	.	_	10	punct	_	_
+
+{'lf': {'pred': 'run',
+        'prep_through': 'states',
+        'subj': {'mod': 'longest', 'prep_in': 'texas', 'word': 'river'}}}
+run:(subj:the longest river in texas , prep_through:which states )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	all	_	PDT	PDT	_	5	predet	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	rivers	_	NNS	NNS	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	texas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'prep_in': 'texas', 'word': ['all', 'rivers']}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:all the rivers in texas )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	capital	_	NN	NN	_	5	nn	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	texas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_in': 'texas', 'word': ['capital', 'city']}}}
+what:(prop_of:the capital city in texas )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capitals	_	NNS	NNS	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	states	_	NNS	NNS	_	5	pobj	_	_
+7	that	_	IN	IN	_	9	dobj	_	_
+8	border	_	NN	NN	_	9	nsubj	_	_
+9	missouri	_	VBP	VBP	_	6	rcmod	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '460'}, 'word': 'states', 'xtarget': '459'},
+         {'prep_of': {'xref': '459'}, 'word': 'capitals', 'xtarget': '457'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '457'}]},
+        {'dobj': {'xref': '459'},
+         'pred': 'missouri',
+         'subj': 'border',
+         'xtarget': '460'}],
+ 'sentence': 'what are the capitals of states that border missouri ?'}
+missouri:(subj:border , dobj:states )
+SameAs:(sameAs_arg:what , sameAs_arg:the capitals of states that border missouri )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	cities	_	NNS	NNS	_	2	xcomp	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	states	_	NNS	NNS	_	5	pobj	_	_
+7	through	_	IN	IN	_	11	prep	_	_
+8	which	_	WDT	WDT	_	7	pobj	_	_
+9	the	_	DT	DT	_	10	det	_	_
+10	mississippi	_	NN	NN	_	11	nsubj	_	_
+11	runs	_	VBZ	VBZ	_	6	rcmod	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '470'}, 'word': 'states', 'xtarget': '469'},
+         {'prep_in': {'xref': '469'}, 'word': 'cities', 'xtarget': '467'}],
+ 'lf': [{'pred': 'runs',
+         'prep_through': {'xref': '469'},
+         'subj': 'mississippi',
+         'xtarget': '470'},
+        {'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '467'}]}],
+ 'sentence': 'what are the cities in states through which the mississippi runs ?'}
+runs:(subj:the mississippi , prep_through:states )
+SameAs:(sameAs_arg:what , sameAs_arg:the cities in states through the mississippi runs )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	cities	_	NNS	NNS	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	with	_	IN	IN	_	4	prep	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	highest	_	JJS	JJS	_	11	amod	_	_
+11	point	_	NN	NN	_	8	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'prep_of': 'state',
+                        'prep_with': {'mod': 'highest', 'word': 'point'},
+                        'word': 'cities'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the cities of the state with the highest point )
+1	what	_	WP	WP	_	2	dep	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	points	_	NNS	NNS	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	all	_	PDT	PDT	_	9	predet	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	states	_	NNS	NNS	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_of': ['all', 'states'],
+                    'word': 'points'}}}
+what:(prop_of:the highest points of all the states )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	alabama	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': 'alabama',
+        'subj': ['what', {'mod': 'major', 'word': 'cities'}]}}
+are:(subj:what , subj:the major cities , prep_in:alabama )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	alaska	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': 'alaska',
+        'subj': ['what', {'mod': 'major', 'word': 'cities'}]}}
+are:(subj:what , subj:the major cities , prep_in:alaska )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	new_york	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': 'new_york',
+        'subj': ['what', {'mod': 'major', 'word': 'cities'}]}}
+are:(subj:what , subj:the major cities , prep_in:new_york )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	states	_	NNS	NNS	_	6	pobj	_	_
+8	through	_	IN	IN	_	12	prep	_	_
+9	which	_	WDT	WDT	_	8	pobj	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	mississippi	_	NN	NN	_	12	nsubj	_	_
+12	runs	_	VBZ	VBZ	_	5	rcmod	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['major', {'xref': '528'}],
+          'prep_in': 'states',
+          'word': 'cities',
+          'xtarget': '525'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '525'}]},
+        {'pred': 'runs',
+         'prep_through': {'xref': '525'},
+         'subj': 'mississippi',
+         'xtarget': '528'}],
+ 'sentence': 'what are the major cities in states through which the mississippi runs ?'}
+runs:(subj:the mississippi , prep_through:the major cities in states )
+SameAs:(sameAs_arg:what , sameAs_arg:the major cities in states through the mississippi runs )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	of	_	IN	IN	_	8	prep	_	_
+10	california	_	NN	NN	_	9	pobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': {'prep_of': 'california', 'word': 'state'},
+        'subj': ['what', {'mod': 'major', 'word': 'cities'}]}}
+are:(subj:what , subj:the major cities , prep_in:the state of california )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	usa	_	NN	NN	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': 'usa',
+        'subj': ['what', {'mod': 'major', 'word': 'cities'}]}}
+are:(subj:what , subj:the major cities , prep_in:the usa )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	cities	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	vermont	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': 'vermont',
+        'subj': ['what', {'mod': 'major', 'word': 'cities'}]}}
+are:(subj:what , subj:the major cities , prep_in:vermont )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	major	_	JJ	JJ	_	5	amod	_	_
+5	rivers	_	NNS	NNS	_	2	nsubj	_	_
+6	in	_	IN	IN	_	2	prep	_	_
+7	ohio	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are',
+        'prep_in': 'ohio',
+        'subj': ['what', {'mod': 'major', 'word': 'rivers'}]}}
+are:(subj:what , subj:the major rivers , prep_in:ohio )
+1	what	_	WP	WP	_	2	dobj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	densities	_	NNS	NNS	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	each	_	DT	DT	_	6	pobj	_	_
+8	us	_	PRP	PRP	_	2	nsubj	_	_
+9	state	_	VB	VB	_	2	dep	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'state',
+        'prop_of': ['population',
+                    'what',
+                    'us',
+                    {'prep_of': 'each', 'word': 'densities'}]}}
+state:(prop_of:what , prop_of:the population , prop_of:densities of each , prop_of:us )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	mississippi	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'mississippi', 'word': 'population'}}}
+what:(prop_of:the population of mississippi )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	populations	_	NNS	NNS	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	states	_	NNS	NNS	_	5	pobj	_	_
+7	through	_	IN	IN	_	11	prep	_	_
+8	which	_	WDT	WDT	_	7	pobj	_	_
+9	the	_	DT	DT	_	10	det	_	_
+10	mississippi_river	_	NN	NN	_	11	nsubj	_	_
+11	runs	_	VBZ	VBZ	_	6	rcmod	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '592'}, 'word': 'states', 'xtarget': '591'},
+         {'prep_of': {'xref': '591'},
+          'word': 'populations',
+          'xtarget': '589'}],
+ 'lf': [{'pred': 'runs',
+         'prep_through': {'xref': '591'},
+         'subj': 'mississippi_river',
+         'xtarget': '592'},
+        {'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '589'}]}],
+ 'sentence': 'what are the populations of states through which the mississippi_river runs ?'}
+runs:(subj:the mississippi_river , prep_through:states )
+SameAs:(sameAs_arg:what , sameAs_arg:the populations of states through the mississippi_river runs )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	populations	_	NNS	NNS	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	states	_	NNS	NNS	_	5	pobj	_	_
+7	through	_	IN	IN	_	11	prep	_	_
+8	which	_	WDT	WDT	_	7	pobj	_	_
+9	the	_	DT	DT	_	10	det	_	_
+10	mississippi	_	NN	NN	_	11	nsubj	_	_
+11	runs	_	VBZ	VBZ	_	6	rcmod	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'prep_of': {'xref': '602'},
+          'word': 'populations',
+          'xtarget': '600'},
+         {'mod': {'xref': '603'}, 'word': 'states', 'xtarget': '602'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '600'}]},
+        {'pred': 'runs',
+         'prep_through': {'xref': '602'},
+         'subj': 'mississippi',
+         'xtarget': '603'}],
+ 'sentence': 'what are the populations of states through which the mississippi runs ?'}
+runs:(subj:the mississippi , prep_through:states )
+SameAs:(sameAs_arg:what , sameAs_arg:the populations of states through the mississippi runs )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	populations	_	NNS	NNS	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	states	_	NNS	NNS	_	5	pobj	_	_
+7	which	_	WDT	WDT	_	9	dobj	_	_
+8	border	_	NN	NN	_	9	nsubj	_	_
+9	texas	_	VBZ	VBZ	_	6	rcmod	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '614'}, 'word': 'states', 'xtarget': '613'},
+         {'prep_of': {'xref': '613'},
+          'word': 'populations',
+          'xtarget': '611'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '611'}]},
+        {'dobj': {'xref': '613'},
+         'pred': 'texas',
+         'subj': 'border',
+         'xtarget': '614'}],
+ 'sentence': 'what are the populations of states which border texas ?'}
+texas:(subj:border , dobj:states )
+SameAs:(sameAs_arg:what , sameAs_arg:the populations of states which border texas )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	populations	_	NNS	NNS	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	major	_	JJ	JJ	_	8	amod	_	_
+8	cities	_	NNS	NNS	_	5	pobj	_	_
+9	of	_	IN	IN	_	8	prep	_	_
+10	texas	_	NNS	NNS	_	9	pobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'prep_of': {'mod': 'major',
+                                    'prep_of': 'texas',
+                                    'word': 'cities'},
+                        'word': 'populations'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the populations of the major cities of texas )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	rivers	_	NNS	NNS	_	2	nsubj	_	_
+5	in	_	IN	IN	_	2	prep	_	_
+6	alaska	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'are', 'prep_in': 'alaska', 'subj': ['what', 'rivers']}}
+are:(subj:what , subj:the rivers , prep_in:alaska )
+1	what	_	WP	WP	_	2	det	_	_
+2	city	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	people	_	NNS	NNS	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'most', 'word': 'people'},
+        'pred': 'has',
+        'subj': 'city'}}
+has:(subj:what city , dobj:the most people )
+1	what	_	WP	WP	_	2	det	_	_
+2	city	_	NN	NN	_	7	nsubj	_	_
+3	in	_	IN	IN	_	2	prep	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	united	_	VBN	VBN	_	6	amod	_	_
+6	states	_	NNS	NNS	_	3	pobj	_	_
+7	has	_	VBZ	VBZ	_	0	root	_	_
+8	the	_	DT	DT	_	11	det	_	_
+9	highest	_	JJS	JJS	_	11	amod	_	_
+10	population	_	NN	NN	_	11	nn	_	_
+11	density	_	NN	NN	_	7	dobj	_	_
+12	?	_	.	.	_	7	punct	_	_
+
+{'lf': {'dobj': {'mod': 'highest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': {'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'},
+                 'word': 'city'}}}
+has:(subj:what city in the united states , dobj:the highest population density )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	capital	_	NN	NN	_	2	xcomp	_	_
+4	of	_	IN	IN	_	3	prep	_	_
+5	the	_	DT	DT	_	6	det	_	_
+6	state	_	NN	NN	_	4	pobj	_	_
+7	with	_	IN	IN	_	6	prep	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	lowest	_	JJS	JJS	_	10	amod	_	_
+10	point	_	NN	NN	_	7	pobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'capital',
+        'prep_of': {'prep_with': {'mod': 'lowest', 'word': 'point'},
+                    'word': 'state'},
+        'prop_of': 'what'}}
+capital:(prop_of:what , prep_of:the state with the lowest point )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	area	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	florida	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'florida', 'word': 'area'}}}
+what:(prop_of:the area of florida )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	area	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	ohio	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'ohio', 'word': 'area'}}}
+what:(prop_of:the area of ohio )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	area	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	texas	_	NNS	NNS	_	8	nn	_	_
+8	state	_	NN	NN	_	5	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': ['texas', 'state'], 'word': 'area'}}}
+what:(prop_of:the area of the texas state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	area	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	wisconsin	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'wisconsin', 'word': 'area'}}}
+what:(prop_of:the area of wisconsin )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	biggest	_	JJS	JJS	_	6	amod	_	_
+5	american	_	JJ	JJ	_	6	amod	_	_
+6	city	_	NN	NN	_	2	xcomp	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	a	_	DT	DT	_	9	det	_	_
+9	state	_	NN	NN	_	7	pobj	_	_
+10	with	_	IN	IN	_	9	prep	_	_
+11	a	_	DT	DT	_	12	det	_	_
+12	river	_	NN	NN	_	10	pobj	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': ['american', 'biggest'],
+                        'prep_in': {'prep_with': 'river', 'word': 'state'},
+                        'word': 'city'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the biggest american city in a state with a river )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	biggest	_	JJS	JJS	_	6	amod	_	_
+5	capital	_	NN	NN	_	6	nn	_	_
+6	city	_	NN	NN	_	2	xcomp	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	us	_	PRP	PRP	_	7	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'biggest',
+                        'prep_in': 'us',
+                        'word': ['capital', 'city']}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the biggest capital city in the us )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	biggest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	kansas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'biggest', 'prep_in': 'kansas', 'word': 'city'}}}
+what:(prop_of:the biggest city in kansas )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	biggest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	louisiana	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'biggest', 'prep_in': 'louisiana', 'word': 'city'}}}
+what:(prop_of:the biggest city in louisiana )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	california	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'california', 'word': 'capital'}}}
+what:(prop_of:the capital of california )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	colorado	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'colorado', 'word': 'capital'}}}
+what:(prop_of:the capital of colorado )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	illinois	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'illinois', 'word': 'capital'}}}
+what:(prop_of:the capital of illinois )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	iowa	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'iowa', 'word': 'capital'}}}
+what:(prop_of:the capital of iowa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	massachusetts	_	NNS	NNS	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'massachusetts', 'word': 'capital'}}}
+what:(prop_of:the capital of massachusetts )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	new_jersey	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'new_jersey', 'word': 'capital'}}}
+what:(prop_of:the capital of new_jersey )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	new_york	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'new_york', 'word': 'capital'}}}
+what:(prop_of:the capital of new_york )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	north_dakota	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'north_dakota', 'word': 'capital'}}}
+what:(prop_of:the capital of north_dakota )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	ohio	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'ohio', 'word': 'capital'}}}
+what:(prop_of:the capital of ohio )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	states	_	NNS	NNS	_	5	pobj	_	_
+7	that	_	WDT	WDT	_	8	nsubj	_	_
+8	have	_	VBP	VBP	_	6	rcmod	_	_
+9	cities	_	NNS	NNS	_	8	dobj	_	_
+10	named	_	VBN	VBN	_	9	vmod	_	_
+11	durham	_	NN	NN	_	10	dep	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '808'}, 'word': 'states', 'xtarget': '807'},
+         {'prep_of': {'xref': '807'}, 'word': 'capital', 'xtarget': '805'}],
+ 'lf': [{'dobj': {'mod': {'dep': 'durham', 'pred': 'named'},
+                  'word': 'cities'},
+         'pred': 'have',
+         'subj': {'xref': '807'},
+         'xtarget': '808'},
+        {'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '805'}]}],
+ 'sentence': 'what is the capital of states that have cities named durham ?'}
+have:(subj:states , dobj:cities named durham )
+SameAs:(sameAs_arg:what , sameAs_arg:the capital of states that have cities named durham )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	florida	_	JJ	JJ	_	8	amod	_	_
+8	state	_	NN	NN	_	5	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'florida', 'word': 'state'},
+                    'word': 'capital'}}}
+what:(prop_of:the capital of the florida state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	smallest	_	JJS	JJS	_	8	amod	_	_
+8	state	_	NN	NN	_	5	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'smallest', 'word': 'state'},
+                    'word': 'capital'}}}
+what:(prop_of:the capital of the smallest state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	with	_	IN	IN	_	7	prep	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	largest	_	JJS	JJS	_	11	amod	_	_
+11	population	_	NN	NN	_	8	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'prep_with': {'mod': 'largest',
+                                              'word': 'population'},
+                                'word': 'state'},
+                    'word': 'capital'}}}
+what:(prop_of:the capital of the state with the largest population )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	with	_	IN	IN	_	7	prep	_	_
+9	the	_	DT	DT	_	12	det	_	_
+10	largest	_	JJS	JJS	_	12	amod	_	_
+11	population	_	NN	NN	_	12	nn	_	_
+12	density	_	NN	NN	_	8	pobj	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'prep_with': {'mod': 'largest',
+                                              'word': ['population',
+                                                       'density']},
+                                'word': 'state'},
+                    'word': 'capital'}}}
+what:(prop_of:the capital of the state with the largest population density )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	with	_	IN	IN	_	4	prep	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	longest	_	JJS	JJS	_	11	amod	_	_
+11	river	_	NN	NN	_	8	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'state',
+                    'prep_with': {'mod': 'longest', 'word': 'river'},
+                    'word': 'capital'}}}
+what:(prop_of:the capital of the state with the longest river )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	capital	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	with	_	IN	IN	_	2	prep	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	most	_	JJS	JJS	_	11	amod	_	_
+11	inhabitants	_	NNS	NNS	_	8	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'is',
+        'prep_with': {'mod': 'most', 'word': 'inhabitants'},
+        'subj': ['what', {'prep_of': 'state', 'word': 'capital'}]}}
+is:(subj:what , subj:the capital of the state , prep_with:the most inhabitants )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	combined	_	VBN	VBN	_	5	amod	_	_
+5	area	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	all	_	DT	DT	_	9	det	_	_
+8	50	_	CD	CD	_	9	num	_	_
+9	states	_	NNS	NNS	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'pred': 'combined'},
+                    'prep_of': ['50', 'states'],
+                    'word': 'area'}}}
+what:(prop_of:the combined area of all 50 states )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	density	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	new_york	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'new_york', 'word': 'density'}}}
+what:(prop_of:the density of the new_york )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	high_point	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	wyoming	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'wyoming', 'word': 'high_point'}}}
+what:(prop_of:the high_point of wyoming )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	elevation	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	texas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_in': 'texas',
+                    'word': 'elevation'}}}
+what:(prop_of:the highest elevation in texas )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	elevation	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	united	_	VBN	VBN	_	9	amod	_	_
+9	states	_	NNS	NNS	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'},
+                    'word': 'elevation'}}}
+what:(prop_of:the highest elevation in the united states )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	mountain	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	us	_	PRP	PRP	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'highest',
+                        'prep_in': 'us',
+                        'word': 'mountain'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the highest mountain in the us )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	mountain	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	us	_	PRP	PRP	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'us', 'word': 'mountain'}}}
+what:(prop_of:the highest mountain in us )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	delaware	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'delaware', 'word': 'point'}}}
+what:(prop_of:the highest point in delaware )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	iowa	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'iowa', 'word': 'point'}}}
+what:(prop_of:the highest point in iowa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	maine	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'maine', 'word': 'point'}}}
+what:(prop_of:the highest point in maine )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	montana	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'montana', 'word': 'point'}}}
+what:(prop_of:the highest point in montana )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	nevada	_	NN	NN	_	6	pobj	_	_
+8	in	_	IN	IN	_	7	prep	_	_
+9	meters	_	NNS	NNS	_	8	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_in': {'prep_in': 'meters', 'word': 'nevada'},
+                    'word': 'point'}}}
+what:(prop_of:the highest point in nevada in meters )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	states	_	NNS	NNS	_	6	pobj	_	_
+8	bordering	_	VBG	VBG	_	7	vmod	_	_
+9	georgia	_	NN	NN	_	8	dobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'highest',
+                        'prep_in': {'mod': {'dobj': 'georgia',
+                                            'pred': 'bordering'},
+                                    'word': 'states'},
+                        'word': 'point'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the highest point in states bordering georgia )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	with	_	IN	IN	_	8	prep	_	_
+10	capital	_	NN	NN	_	11	nn	_	_
+11	austin	_	NN	NN	_	9	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'highest',
+                        'prep_in': {'prep_with': ['capital', 'austin'],
+                                    'word': 'state'},
+                        'word': 'point'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the highest point in the state with capital austin )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	states	_	NNS	NNS	_	6	pobj	_	_
+9	bordering	_	VBG	VBG	_	8	vmod	_	_
+10	colorado	_	NN	NN	_	9	dobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'highest',
+                        'prep_in': {'mod': {'dobj': 'colorado',
+                                            'pred': 'bordering'},
+                                    'word': 'states'},
+                        'word': 'point'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the highest point in the states bordering colorado )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	usa	_	NN	NN	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'usa', 'word': 'point'}}}
+what:(prop_of:the highest point in the usa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	virginia	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'virginia', 'word': 'point'}}}
+what:(prop_of:the highest point in virginia )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	with	_	IN	IN	_	8	prep	_	_
+10	the	_	DT	DT	_	13	det	_	_
+11	smallest	_	JJS	JJS	_	13	amod	_	_
+12	population	_	NN	NN	_	13	nn	_	_
+13	density	_	NN	NN	_	9	pobj	_	_
+14	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_of': {'prep_with': {'mod': 'smallest',
+                                              'word': ['population',
+                                                       'density']},
+                                'word': 'state'},
+                    'word': 'point'}}}
+what:(prop_of:the highest point of the state with the smallest population density )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	usa	_	NN	NN	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_of': 'usa', 'word': 'point'}}}
+what:(prop_of:the highest point of the usa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	largest	_	JJS	JJS	_	6	amod	_	_
+5	capital	_	NN	NN	_	6	nn	_	_
+6	city	_	NN	NN	_	2	nsubj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	usa	_	NN	NN	_	7	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': 'usa',
+                    'word': ['capital', 'city']}}}
+what:(prop_of:the largest capital city in the usa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	california	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': 'california',
+                    'word': 'city'}}}
+what:(prop_of:the largest city in california )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	rhode_island	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': 'rhode_island',
+                    'word': 'city'}}}
+what:(prop_of:the largest city in rhode_island )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	smallest	_	JJS	JJS	_	8	amod	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	through	_	IN	IN	_	13	prep	_	_
+10	which	_	WDT	WDT	_	9	pobj	_	_
+11	the	_	DT	DT	_	12	det	_	_
+12	mississippi	_	NN	NN	_	13	nsubj	_	_
+13	runs	_	VBZ	VBZ	_	5	rcmod	_	_
+14	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['largest', {'xref': '1090'}],
+          'prep_in': {'mod': 'smallest', 'word': 'state'},
+          'word': 'city',
+          'xtarget': '1087'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1087'}]},
+        {'pred': 'runs',
+         'prep_through': {'xref': '1087'},
+         'subj': 'mississippi',
+         'xtarget': '1090'}],
+ 'sentence': 'what is the largest city in smallest state through which the mississippi runs ?'}
+runs:(subj:the mississippi , prep_through:the largest city in smallest state )
+SameAs:(sameAs_arg:what , sameAs_arg:the largest city in smallest state through the mississippi runs )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	smallest	_	JJS	JJS	_	9	amod	_	_
+9	state	_	NN	NN	_	6	pobj	_	_
+10	in	_	IN	IN	_	9	prep	_	_
+11	the	_	DT	DT	_	12	det	_	_
+12	usa	_	NN	NN	_	10	pobj	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': {'mod': 'smallest',
+                                'prep_in': 'usa',
+                                'word': 'state'},
+                    'word': 'city'}}}
+what:(prop_of:the largest city in the smallest state in the usa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	washington	_	JJ	JJ	_	8	amod	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': {'mod': 'washington', 'word': 'state'},
+                    'word': 'river'}}}
+what:(prop_of:the largest river in washington state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	state	_	NN	NN	_	2	nsubj	_	_
+6	bordering	_	VBG	VBG	_	5	vmod	_	_
+7	arkansas	_	NNS	NNS	_	6	dobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': ['largest',
+                            {'dobj': 'arkansas', 'pred': 'bordering'}],
+                    'word': 'state'}}}
+what:(prop_of:the largest state bordering arkansas )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	largest	_	JJS	JJS	_	5	amod	_	_
+5	state	_	NN	NN	_	2	xcomp	_	_
+6	that	_	WDT	WDT	_	7	nsubj	_	_
+7	borders	_	NNS	NNS	_	5	rcmod	_	_
+8	texas	_	NNS	NNS	_	7	dobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['largest', {'xref': '1133'}],
+          'word': 'state',
+          'xtarget': '1130'}],
+ 'lf': [{'dobj': 'texas',
+         'subj': {'xref': '1130'},
+         'word': 'borders',
+         'xtarget': '1133'},
+        {'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1130'}]}],
+ 'sentence': 'what is the largest state that borders texas ?'}
+borders:(subj:the largest state , dobj:texas )
+SameAs:(sameAs_arg:what , sameAs_arg:the largest state that borders texas )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	least	_	JJS	JJS	_	5	dep	_	_
+5	populous	_	JJ	JJ	_	6	amod	_	_
+6	state	_	NN	NN	_	2	nsubj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'dep': 'least', 'word': 'populous'},
+                    'word': 'state'}}}
+what:(prop_of:the least populous state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	length	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	colorado_river	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'colorado_river', 'word': 'length'}}}
+what:(prop_of:the length of the colorado_river )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	length	_	NN	NN	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	longest	_	JJS	JJS	_	8	amod	_	_
+8	river	_	NN	NN	_	5	pobj	_	_
+9	that	_	WDT	WDT	_	10	nsubj	_	_
+10	runs	_	VBZ	VBZ	_	8	rcmod	_	_
+11	through	_	IN	IN	_	10	prep	_	_
+12	texas	_	NNS	NNS	_	11	pobj	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['longest', {'xref': '1161'}],
+          'word': 'river',
+          'xtarget': '1158'},
+         {'prep_of': {'xref': '1158'}, 'word': 'length', 'xtarget': '1156'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1156'}]},
+        {'pred': 'runs',
+         'prep_through': 'texas',
+         'subj': {'xref': '1158'},
+         'xtarget': '1161'}],
+ 'sentence': 'what is the length of the longest river that runs through texas ?'}
+runs:(subj:the longest river , prep_through:texas )
+SameAs:(sameAs_arg:what , sameAs_arg:the length of the longest river that runs through texas )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	length	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	mississippi_river	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'mississippi_river', 'word': 'length'}}}
+what:(prop_of:the length of the mississippi_river )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	length	_	NN	NN	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	river	_	NN	NN	_	5	pobj	_	_
+8	that	_	WDT	WDT	_	9	nsubj	_	_
+9	flows	_	VBZ	VBZ	_	4	rcmod	_	_
+10	through	_	IN	IN	_	9	prep	_	_
+11	the	_	DT	DT	_	13	det	_	_
+12	most	_	JJS	JJS	_	13	amod	_	_
+13	states	_	NNS	NNS	_	10	pobj	_	_
+14	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '1178'},
+          'prep_of': 'river',
+          'word': 'length',
+          'xtarget': '1176'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1176'}]},
+        {'pred': 'flows',
+         'prep_through': {'mod': 'most', 'word': 'states'},
+         'subj': {'xref': '1176'},
+         'xtarget': '1178'}],
+ 'sentence': 'what is the length of the river that flows through the most states ?'}
+SameAs:(sameAs_arg:what , sameAs_arg:the length of the river that flows through the most states )
+flows:(subj:the length of the river , prep_through:the most states )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	length	_	NN	NN	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	river	_	NN	NN	_	5	pobj	_	_
+8	that	_	WDT	WDT	_	9	nsubj	_	_
+9	runs	_	VBZ	VBZ	_	4	rcmod	_	_
+10	through	_	IN	IN	_	9	prep	_	_
+11	the	_	DT	DT	_	13	det	_	_
+12	most	_	JJS	JJS	_	13	amod	_	_
+13	states	_	NNS	NNS	_	10	pobj	_	_
+14	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '1191'},
+          'prep_of': 'river',
+          'word': 'length',
+          'xtarget': '1189'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1189'}]},
+        {'pred': 'runs',
+         'prep_through': {'mod': 'most', 'word': 'states'},
+         'subj': {'xref': '1189'},
+         'xtarget': '1191'}],
+ 'sentence': 'what is the length of the river that runs through the most states ?'}
+runs:(subj:the length of the river , prep_through:the most states )
+SameAs:(sameAs_arg:what , sameAs_arg:the length of the river that runs through the most states )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	longest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	florida	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'longest', 'prep_in': 'florida', 'word': 'river'}}}
+what:(prop_of:the longest river in florida )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	longest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	largest	_	JJS	JJS	_	9	amod	_	_
+9	state	_	NN	NN	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'longest',
+                    'prep_in': {'mod': 'largest', 'word': 'state'},
+                    'word': 'river'}}}
+what:(prop_of:the longest river in the largest state )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	longest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	with	_	IN	IN	_	5	prep	_	_
+10	the	_	DT	DT	_	13	det	_	_
+11	most	_	RBS	RBS	_	12	advmod	_	_
+12	major	_	JJ	JJ	_	13	amod	_	_
+13	cities	_	NNS	NNS	_	9	pobj	_	_
+14	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'longest',
+                        'prep_in': 'state',
+                        'prep_with': {'mod': {'mod': 'most',
+                                              'word': 'major'},
+                                      'word': 'cities'},
+                        'word': 'river'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the longest river in the state with the most major cities )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	longest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	states	_	NNS	NNS	_	6	pobj	_	_
+9	that	_	IN	IN	_	5	prep	_	_
+10	border	_	NN	NN	_	11	nn	_	_
+11	nebraska	_	NN	NN	_	9	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'longest',
+                        'prep_in': 'states',
+                        'prep_that': ['border', 'nebraska'],
+                        'word': 'river'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the longest river in the states that border nebraska )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	longest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	xcomp	_	_
+6	that	_	WDT	WDT	_	7	nsubj	_	_
+7	flows	_	VBZ	VBZ	_	5	rcmod	_	_
+8	through	_	IN	IN	_	7	prep	_	_
+9	a	_	DT	DT	_	10	det	_	_
+10	state	_	NN	NN	_	8	pobj	_	_
+11	that	_	IN	IN	_	13	dobj	_	_
+12	borders	_	NNS	NNS	_	13	nsubj	_	_
+13	indiana	_	VBP	VBP	_	10	rcmod	_	_
+14	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['longest', {'xref': '1250'}],
+          'word': 'river',
+          'xtarget': '1247'},
+         {'mod': {'xref': '1253'}, 'word': 'state', 'xtarget': '1251'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1247'}]},
+        {'dobj': {'xref': '1251'},
+         'pred': 'indiana',
+         'subj': 'borders',
+         'xtarget': '1253'},
+        {'pred': 'flows',
+         'prep_through': {'xref': '1251'},
+         'subj': {'xref': '1247'},
+         'xtarget': '1250'}],
+ 'sentence': 'what is the longest river that flows through a state that borders indiana ?'}
+flows:(subj:the longest river , prep_through:a state that borders indiana )
+indiana:(subj:borders , dobj:a state )
+SameAs:(sameAs_arg:what , sameAs_arg:the longest river that flows through a state that borders indiana )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	arkansas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest', 'prep_in': 'arkansas', 'word': 'point'}}}
+what:(prop_of:the lowest point in arkansas )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	massachusetts	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': 'massachusetts',
+                    'word': 'point'}}}
+what:(prop_of:the lowest point in massachusetts )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	mississippi	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': 'mississippi',
+                    'word': 'point'}}}
+what:(prop_of:the lowest point in mississippi )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	nebraska	_	NN	NN	_	6	pobj	_	_
+8	in	_	IN	IN	_	7	prep	_	_
+9	meters	_	NNS	NNS	_	8	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': {'prep_in': 'meters', 'word': 'nebraska'},
+                    'word': 'point'}}}
+what:(prop_of:the lowest point in nebraska in meters )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	state	_	NN	NN	_	6	pobj	_	_
+9	of	_	IN	IN	_	8	prep	_	_
+10	california	_	NN	NN	_	9	pobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': {'prep_of': 'california', 'word': 'state'},
+                    'word': 'point'}}}
+what:(prop_of:the lowest point in the state of california )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	usa	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest', 'prep_in': 'usa', 'word': 'point'}}}
+what:(prop_of:the lowest point in usa )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	xcomp	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	all	_	DT	DT	_	8	det	_	_
+8	states	_	NNS	NNS	_	6	pobj	_	_
+9	through	_	IN	IN	_	13	prep	_	_
+10	which	_	WDT	WDT	_	9	pobj	_	_
+11	the	_	DT	DT	_	12	det	_	_
+12	colorado_river	_	NN	NN	_	13	nsubj	_	_
+13	runs	_	VBZ	VBZ	_	8	rcmod	_	_
+14	through	_	RB	RB	_	13	advmod	_	_
+15	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': 'lowest',
+          'prep_of': {'xref': '1314'},
+          'word': 'point',
+          'xtarget': '1311'},
+         {'mod': {'xref': '1316'}, 'word': 'states', 'xtarget': '1314'}],
+ 'lf': [{'mod': 'through',
+         'pred': 'runs',
+         'prep_through': {'xref': '1314'},
+         'subj': 'colorado_river',
+         'xtarget': '1316'},
+        {'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1311'}]}],
+ 'sentence': 'what is the lowest point of all states through which the colorado_river runs through ?'}
+runs:(subj:the colorado_river , prep_through:all states , mod:through )
+SameAs:(sameAs_arg:what , sameAs_arg:the lowest point of all states through the colorado_river runs through )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	maximum	_	JJ	JJ	_	5	amod	_	_
+5	elevation	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	san_francisco	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'maximum',
+                    'prep_of': 'san_francisco',
+                    'word': 'elevation'}}}
+what:(prop_of:the maximum elevation of san_francisco )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	most	_	RBS	RBS	_	5	advmod	_	_
+5	dense	_	JJ	JJ	_	6	amod	_	_
+6	state	_	NN	NN	_	2	nsubj	_	_
+7	in	_	IN	IN	_	6	prep	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	usa	_	NN	NN	_	7	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'mod': 'most', 'word': 'dense'},
+                    'prep_in': 'usa',
+                    'word': 'state'}}}
+what:(prop_of:the most dense state in the usa )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	most	_	RBS	RBS	_	5	advmod	_	_
+5	populous	_	JJ	JJ	_	6	amod	_	_
+6	city	_	NN	NN	_	2	nsubj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'mod': 'most', 'word': 'populous'},
+                    'word': 'city'}}}
+what:(prop_of:the most populous city )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	most	_	RBS	RBS	_	5	advmod	_	_
+5	populous	_	JJ	JJ	_	6	amod	_	_
+6	state	_	NN	NN	_	2	nsubj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'mod': 'most', 'word': 'populous'},
+                    'word': 'state'}}}
+what:(prop_of:the most populous state )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	most	_	RBS	RBS	_	5	advmod	_	_
+5	populous	_	JJ	JJ	_	6	amod	_	_
+6	state	_	NN	NN	_	2	xcomp	_	_
+7	through	_	IN	IN	_	11	prep	_	_
+8	which	_	WDT	WDT	_	7	pobj	_	_
+9	the	_	DT	DT	_	10	det	_	_
+10	mississippi	_	NN	NN	_	11	nsubj	_	_
+11	runs	_	VBZ	VBZ	_	6	rcmod	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': [{'mod': 'most', 'word': 'populous'}, {'xref': '1363'}],
+          'word': 'state',
+          'xtarget': '1359'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1359'}]},
+        {'pred': 'runs',
+         'prep_through': {'xref': '1359'},
+         'subj': 'mississippi',
+         'xtarget': '1363'}],
+ 'sentence': 'what is the most populous state through which the mississippi runs ?'}
+runs:(subj:the mississippi , prep_through:the most populous state )
+SameAs:(sameAs_arg:what , sameAs_arg:the most populous state through the mississippi runs )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	population	_	NN	NN	_	5	nn	_	_
+5	density	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	maine	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'maine', 'word': ['population', 'density']}}}
+what:(prop_of:the population density of maine )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	population	_	NN	NN	_	5	nn	_	_
+5	density	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	largest	_	JJS	JJS	_	9	amod	_	_
+9	state	_	NN	NN	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'largest', 'word': 'state'},
+                    'word': ['population', 'density']}}}
+what:(prop_of:the population density of the largest state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	alaska	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'alaska', 'word': 'population'}}}
+what:(prop_of:the population of alaska )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	boulder	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'boulder', 'word': 'population'}}}
+what:(prop_of:the population of boulder )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	erie	_	JJ	JJ	_	7	amod	_	_
+7	pennsylvania	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'erie', 'word': 'pennsylvania'},
+                    'word': 'population'}}}
+what:(prop_of:the population of erie pennsylvania )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	hawaii	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'hawaii', 'word': 'population'}}}
+what:(prop_of:the population of hawaii )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	houston	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'houston', 'word': 'population'}}}
+what:(prop_of:the population of houston )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	maryland	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'maryland', 'word': 'population'}}}
+what:(prop_of:the population of maryland )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	new_mexico	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'new_mexico', 'word': 'population'}}}
+what:(prop_of:the population of new_mexico )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	new_york	_	JJ	JJ	_	7	amod	_	_
+7	city	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'new_york', 'word': 'city'},
+                    'word': 'population'}}}
+what:(prop_of:the population of new_york city )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	san_antonio	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'san_antonio', 'word': 'population'}}}
+what:(prop_of:the population of san_antonio )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	tempe	_	JJ	JJ	_	7	amod	_	_
+7	arizona	_	NN	NN	_	5	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'tempe', 'word': 'arizona'},
+                    'word': 'population'}}}
+what:(prop_of:the population of tempe arizona )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	largest	_	JJS	JJS	_	8	amod	_	_
+8	city	_	NN	NN	_	5	pobj	_	_
+9	in	_	IN	IN	_	8	prep	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	state	_	NN	NN	_	9	pobj	_	_
+12	with	_	IN	IN	_	8	prep	_	_
+13	the	_	DT	DT	_	15	det	_	_
+14	largest	_	JJS	JJS	_	15	amod	_	_
+15	area	_	NN	NN	_	12	pobj	_	_
+16	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'largest',
+                                'prep_in': 'state',
+                                'prep_with': {'mod': 'largest',
+                                              'word': 'area'},
+                                'word': 'city'},
+                    'word': 'population'}}}
+what:(prop_of:the population of the largest city in the state with the largest area )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	smallest	_	JJS	JJS	_	8	amod	_	_
+8	state	_	NN	NN	_	5	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'smallest', 'word': 'state'},
+                    'word': 'population'}}}
+what:(prop_of:the population of the smallest state )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	that	_	WDT	WDT	_	9	nsubj	_	_
+9	borders	_	VBD	VBD	_	4	rcmod	_	_
+10	the	_	DT	DT	_	12	det	_	_
+11	most	_	JJS	JJS	_	12	amod	_	_
+12	states	_	NNS	NNS	_	9	dobj	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '1489'},
+          'prep_of': 'state',
+          'word': 'population',
+          'xtarget': '1487'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1487'}]},
+        {'dobj': {'mod': 'most', 'word': 'states'},
+         'pred': 'borders',
+         'subj': {'xref': '1487'},
+         'xtarget': '1489'}],
+ 'sentence': 'what is the population of the state that borders the most states ?'}
+borders:(subj:the population of the state , dobj:the most states )
+SameAs:(sameAs_arg:what , sameAs_arg:the population of the state that borders the most states )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	with	_	IN	IN	_	7	prep	_	_
+9	the	_	DT	DT	_	12	det	_	_
+10	highest	_	JJS	JJS	_	12	amod	_	_
+11	population	_	NN	NN	_	12	nn	_	_
+12	density	_	NN	NN	_	8	pobj	_	_
+13	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'prep_with': {'mod': 'highest',
+                                              'word': ['population',
+                                                       'density']},
+                                'word': 'state'},
+                    'word': 'population'}}}
+what:(prop_of:the population of the state with the highest population density )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	tucson	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'tucson', 'word': 'population'}}}
+what:(prop_of:the population of tucson )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	utah	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'utah', 'word': 'population'}}}
+what:(prop_of:the population of utah )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	population	_	NN	NN	_	2	nsubj	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	washington	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'washington', 'word': 'population'}}}
+what:(prop_of:the population of washington )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	xcomp	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	us	_	PRP	PRP	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'SameAs',
+        'sameAs_arg': ['what',
+                       {'mod': 'smallest', 'prep_in': 'us', 'word': 'city'}]}}
+SameAs:(sameAs_arg:what , sameAs_arg:the smallest city in the us )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	usa	_	NN	NN	_	6	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'smallest', 'prep_in': 'usa', 'word': 'city'}}}
+what:(prop_of:the smallest city in the usa )
+1	what	_	WP	WP	_	6	dep	_	_
+2	is	_	VBZ	VBZ	_	6	aux	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	state	_	NN	NN	_	6	nsubj	_	_
+6	bordering	_	VBG	VBG	_	0	root	_	_
+7	wyoming	_	NN	NN	_	6	dobj	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dep': 'what',
+        'dobj': 'wyoming',
+        'pred': 'bordering',
+        'subj': {'mod': 'smallest', 'word': 'state'}}}
+bordering:(subj:the smallest state , dobj:wyoming , dep:what )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	state	_	NN	NN	_	2	xcomp	_	_
+6	that	_	WDT	WDT	_	7	nsubj	_	_
+7	borders	_	VBD	VBD	_	5	rcmod	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	most	_	JJS	JJS	_	10	amod	_	_
+10	states	_	NNS	NNS	_	7	dobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['smallest', {'xref': '1565'}],
+          'word': 'state',
+          'xtarget': '1562'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1562'}]},
+        {'dobj': {'mod': 'most', 'word': 'states'},
+         'pred': 'borders',
+         'subj': {'xref': '1562'},
+         'xtarget': '1565'}],
+ 'sentence': 'what is the smallest state that borders the most states ?'}
+SameAs:(sameAs_arg:what , sameAs_arg:the smallest state that borders the most states )
+borders:(subj:the smallest state , dobj:the most states )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	state	_	NN	NN	_	2	xcomp	_	_
+6	that	_	IN	IN	_	9	dobj	_	_
+7	the	_	DT	DT	_	8	det	_	_
+8	mississippi_river	_	NN	NN	_	9	nsubj	_	_
+9	runs	_	VBZ	VBZ	_	5	rcmod	_	_
+10	through	_	RB	RB	_	9	advmod	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': ['smallest', {'xref': '1577'}],
+          'word': 'state',
+          'xtarget': '1574'}],
+ 'lf': [{'pred': 'SameAs', 'sameAs_arg': ['what', {'xref': '1574'}]},
+        {'dobj': {'xref': '1574'},
+         'mod': 'through',
+         'pred': 'runs',
+         'subj': 'mississippi_river',
+         'xtarget': '1577'}],
+ 'sentence': 'what is the smallest state that the mississippi_river runs through ?'}
+runs:(subj:the mississippi_river , dobj:the smallest state , mod:through )
+SameAs:(sameAs_arg:what , sameAs_arg:the smallest state that the mississippi_river runs through )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	state	_	NN	NN	_	2	nsubj	_	_
+5	with	_	IN	IN	_	2	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	largest	_	JJS	JJS	_	8	amod	_	_
+8	area	_	NN	NN	_	5	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'is',
+        'prep_with': {'mod': 'largest', 'word': 'area'},
+        'subj': ['state', 'what']}}
+is:(subj:what , subj:the state , prep_with:the largest area )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	state	_	NN	NN	_	2	nsubj	_	_
+5	with	_	IN	IN	_	2	prep	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	smallest	_	JJS	JJS	_	8	amod	_	_
+8	area	_	NN	NN	_	5	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'is',
+        'prep_with': {'mod': 'smallest', 'word': 'area'},
+        'subj': ['state', 'what']}}
+is:(subj:what , subj:the state , prep_with:the smallest area )
+1	what	_	WP	WP	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	total	_	JJ	JJ	_	5	amod	_	_
+5	length	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	all	_	DT	DT	_	8	det	_	_
+8	rivers	_	NNS	NNS	_	6	pobj	_	_
+9	in	_	IN	IN	_	8	prep	_	_
+10	the	_	DT	DT	_	11	det	_	_
+11	usa	_	NN	NN	_	9	pobj	_	_
+12	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'total',
+                    'prep_of': {'prep_in': 'usa', 'word': 'rivers'},
+                    'word': 'length'}}}
+what:(prop_of:the total length of all rivers in the usa )
+1	what	_	WP	WP	_	2	det	_	_
+2	length	_	NN	NN	_	3	dep	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	mississippi	_	NN	NN	_	3	nsubj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'length', 'prop_of': 'mississippi'}}
+length:(prop_of:the mississippi )
+1	what	_	WP	WP	_	3	det	_	_
+2	major	_	JJ	JJ	_	3	amod	_	_
+3	cities	_	NNS	NNS	_	5	nsubjpass	_	_
+4	are	_	VBP	VBP	_	5	auxpass	_	_
+5	located	_	VBN	VBN	_	0	root	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	pennsylvania	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'obj': {'mod': 'major', 'word': 'cities'},
+        'pred': 'located',
+        'prep_in': 'pennsylvania'}}
+located:(obj:what major cities , prep_in:pennsylvania )
+1	what	_	WP	WP	_	2	det	_	_
+2	river	_	NN	NN	_	3	dep	_	_
+3	flows	_	VBZ	VBZ	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	the	_	DT	DT	_	7	det	_	_
+6	most	_	JJS	JJS	_	7	amod	_	_
+7	states	_	NNS	NNS	_	4	pobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'river',
+        'pred': 'flows',
+        'prep_through': {'mod': 'most', 'word': 'states'}}}
+flows:(prep_through:the most states , dep:what river )
+1	what	_	WP	WP	_	2	det	_	_
+2	river	_	NN	NN	_	3	nsubj	_	_
+3	runs	_	VBZ	VBZ	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	the	_	DT	DT	_	6	det	_	_
+6	state	_	NN	NN	_	4	pobj	_	_
+7	with	_	IN	IN	_	6	prep	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	most	_	JJS	JJS	_	10	amod	_	_
+10	cities	_	NNS	NNS	_	7	pobj	_	_
+11	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'runs',
+        'prep_through': {'prep_with': {'mod': 'most', 'word': 'cities'},
+                         'word': 'state'},
+        'subj': 'river'}}
+runs:(subj:what river , prep_through:the state with the most cities )
+1	what	_	WP	WP	_	2	det	_	_
+2	river	_	NN	NN	_	3	nsubj	_	_
+3	traverses	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	3	dobj	_	_
+6	which	_	WDT	WDT	_	7	det	_	_
+7	borders	_	NNS	NNS	_	3	dep	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	most	_	JJS	JJS	_	10	amod	_	_
+10	states	_	NNS	NNS	_	3	dobj	_	_
+11	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'borders',
+        'dobj': ['state', {'mod': 'most', 'word': 'states'}],
+        'pred': 'traverses',
+        'subj': 'river'}}
+traverses:(subj:what river , dobj:the state , dobj:the most states , dep:which borders )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	nsubj	_	_
+3	are	_	VBP	VBP	_	0	root	_	_
+4	in	_	IN	IN	_	3	prep	_	_
+5	states	_	NNS	NNS	_	4	pobj	_	_
+6	that	_	IN	IN	_	8	mark	_	_
+7	border	_	NN	NN	_	8	nsubj	_	_
+8	texas	_	VBZ	VBZ	_	5	dep	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'def': [{'dep': {'xref': '1662'}, 'word': 'states', 'xtarget': '1661'},
+         {'dobj': {'xref': '1661'},
+          'pred': 'texas',
+          'subj': 'border',
+          'xtarget': '1662'}],
+ 'lf': {'pred': 'are', 'prep_in': {'xref': '1661'}, 'subj': 'rivers'},
+ 'sentence': 'what rivers are in states that border texas ?'}
+are:(subj:what rivers , prep_in:states border texas )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	dep	_	_
+3	are	_	VBP	VBP	_	0	root	_	_
+4	in	_	IN	IN	_	3	prep	_	_
+5	texas	_	NNS	NNS	_	4	pobj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'rivers', 'pred': 'are', 'prep_in': 'texas'}}
+are:(prep_in:texas , dep:what rivers )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	nsubj	_	_
+3	are	_	VBP	VBP	_	0	root	_	_
+4	there	_	EX	EX	_	3	expl	_	_
+5	in	_	IN	IN	_	3	prep	_	_
+6	texas	_	NNS	NNS	_	5	pobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'Exists', 'prep_in': 'texas', 'subj': 'rivers'}}
+Exists:(subj:what rivers , prep_in:texas )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	dep	_	_
+3	run	_	VBP	VBP	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	new_york	_	NN	NN	_	4	pobj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'rivers', 'pred': 'run', 'prep_through': 'new_york'}}
+run:(prep_through:new_york , dep:what rivers )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	nsubj	_	_
+3	traverses	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	3	dobj	_	_
+6	which	_	WDT	WDT	_	7	det	_	_
+7	borders	_	NNS	NNS	_	3	dep	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	most	_	JJS	JJS	_	10	amod	_	_
+10	states	_	NNS	NNS	_	3	dobj	_	_
+11	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'borders',
+        'dobj': ['state', {'mod': 'most', 'word': 'states'}],
+        'pred': 'traverses',
+        'subj': 'rivers'}}
+traverses:(subj:what rivers , dobj:the state , dobj:the most states , dep:which borders )
+1	what	_	WP	WP	_	2	det	_	_
+2	state	_	NN	NN	_	5	dep	_	_
+3	bordering	_	VBG	VBG	_	4	amod	_	_
+4	nevada	_	NN	NN	_	5	nsubj	_	_
+5	has	_	VBZ	VBZ	_	0	root	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	largest	_	JJS	JJS	_	8	amod	_	_
+8	population	_	NN	NN	_	5	dobj	_	_
+9	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'largest', 'word': 'population'},
+        'pred': 'has',
+        'subj': {'mod': 'bordering', 'word': 'nevada'}}}
+has:(subj:bordering nevada , dobj:the largest population , dep:what state )
+1	what	_	WP	WP	_	4	dobj	_	_
+2	state	_	VBP	VBP	_	4	aux	_	_
+3	borders	_	NNS	NNS	_	4	nsubj	_	_
+4	new_york	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': 'what', 'pred': 'new_york', 'subj': 'borders'}}
+new_york:(subj:borders , dobj:what )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	borders	_	NNS	NNS	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	states	_	NNS	NNS	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'most', 'word': 'states'},
+        'word': 'borders'}}
+borders:(dobj:the most states , dep:what state )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	contains	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	highest	_	JJS	JJS	_	6	amod	_	_
+6	point	_	NN	NN	_	3	dobj	_	_
+7	of	_	IN	IN	_	6	prep	_	_
+8	those	_	DT	DT	_	11	predet	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	colorado_river	_	NN	NN	_	11	nn	_	_
+11	traverses	_	NNS	NNS	_	7	pobj	_	_
+12	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'highest',
+                 'prep_of': ['colorado_river', 'traverses', 'those'],
+                 'word': 'point'},
+        'pred': 'contains'}}
+contains:(dobj:the highest point of those the colorado_river traverses , dep:what state )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	largest	_	JJS	JJS	_	6	amod	_	_
+6	area	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'largest', 'word': 'area'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:what state , dobj:the largest area )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	largest	_	JJS	JJS	_	6	amod	_	_
+6	capital	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'largest', 'word': 'capital'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:what state , dobj:the largest capital )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	longest	_	JJS	JJS	_	6	amod	_	_
+6	river	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'longest', 'word': 'river'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:what state , dobj:the longest river )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	lowest	_	JJS	JJS	_	7	amod	_	_
+6	population	_	NN	NN	_	7	nn	_	_
+7	density	_	NN	NN	_	3	dobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'lowest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:what state , dobj:the lowest population density )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	most	_	RBS	RBS	_	6	advmod	_	_
+6	major	_	JJ	JJ	_	7	amod	_	_
+7	cities	_	NNS	NNS	_	3	nsubj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'state',
+        'pred': 'has',
+        'subj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'cities'}}}
+has:(subj:the most major cities , dep:what state )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	rivers	_	NNS	NNS	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'most', 'word': 'rivers'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:what state , dobj:the most rivers )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	smallest	_	JJS	JJS	_	7	amod	_	_
+6	urban	_	JJ	JJ	_	7	amod	_	_
+7	population	_	NN	NN	_	3	dobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': ['urban', 'smallest'], 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:what state , dobj:the smallest urban population )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	austin	_	JJ	JJ	_	3	acomp	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'austin', 'prep': 'in', 'prop_of': 'state'}}
+austin:(prop_of:what state , prep:in )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	miami	_	JJ	JJ	_	3	acomp	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'miami', 'prep': 'in', 'prop_of': 'state'}}
+miami:(prop_of:what state , prep:in )
+1	what	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	largest	_	JJS	JJS	_	3	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	population	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'state',
+        'prop_of': {'prep_in': 'population', 'word': 'largest'}}}
+state:(prop_of:the largest in population )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	are	_	VBP	VBP	_	0	root	_	_
+4	next	_	JJ	JJ	_	3	acomp	_	_
+5	to	_	TO	TO	_	4	prep	_	_
+6	arizona	_	NN	NN	_	5	pobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'next', 'prep_to': 'arizona', 'prop_of': 'states'}}
+next:(prop_of:what states , prep_to:arizona )
+1	what	_	WP	WP	_	4	dobj	_	_
+2	states	_	NNS	NNS	_	4	dep	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	florida	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': 'states', 'dobj': 'what', 'pred': 'florida', 'subj': 'border'}}
+florida:(subj:border , dobj:what , dep:states )
+1	what	_	WP	WP	_	4	dobj	_	_
+2	states	_	NNS	NNS	_	4	dep	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	indiana	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': 'states', 'dobj': 'what', 'pred': 'indiana', 'subj': 'border'}}
+indiana:(subj:border , dobj:what , dep:states )
+1	what	_	WP	WP	_	4	dobj	_	_
+2	states	_	NNS	NNS	_	4	dep	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	michigan	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': 'states', 'dobj': 'what', 'pred': 'michigan', 'subj': 'border'}}
+michigan:(subj:border , dobj:what , dep:states )
+1	what	_	WP	WP	_	4	dobj	_	_
+2	states	_	NNS	NNS	_	4	dep	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	montana	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': 'states', 'dobj': 'what', 'pred': 'montana', 'subj': 'border'}}
+montana:(subj:border , dobj:what , dep:states )
+1	what	_	WP	WP	_	2	dep	_	_
+2	states	_	VBZ	VBZ	_	0	root	_	_
+3	border	_	NN	NN	_	4	nn	_	_
+4	new_jersey	_	NN	NN	_	2	dobj	_	_
+5	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'dep': 'what', 'dobj': ['border', 'new_jersey'], 'pred': 'states'}}
+states:(dobj:border new_jersey , dep:what )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	states	_	VBZ	VBZ	_	0	root	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	states	_	VBZ	VBZ	_	2	ccomp	_	_
+5	that	_	IN	IN	_	7	mark	_	_
+6	border	_	NN	NN	_	7	nsubj	_	_
+7	mississippi	_	VBP	VBP	_	4	ccomp	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'comp': {'comp': {'pred': 'mississippi', 'subj': 'border'},
+                 'pred': 'states',
+                 'subj': 'border'},
+        'pred': 'states',
+        'subj': 'what'},
+ 'sentence': 'what states border states that border mississippi ?'}
+states:(subj:what , comp:border states border mississippi )
+1	what	_	WP	WP	_	2	nsubj	_	_
+2	states	_	VBZ	VBZ	_	0	root	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	states	_	VBZ	VBZ	_	2	ccomp	_	_
+5	that	_	IN	IN	_	8	mark	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	ohio	_	NN	NN	_	8	nsubj	_	_
+8	runs	_	VBZ	VBZ	_	4	ccomp	_	_
+9	through	_	RB	RB	_	8	advmod	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'comp': {'comp': {'mod': 'through', 'pred': 'runs', 'subj': 'ohio'},
+                 'pred': 'states',
+                 'subj': 'border'},
+        'pred': 'states',
+        'subj': 'what'},
+ 'sentence': 'what states border states that the ohio runs through ?'}
+states:(subj:what , comp:border states the ohio runs through )
+1	what	_	WP	WP	_	4	dep	_	_
+2	states	_	NNS	NNS	_	4	dep	_	_
+3	border	_	NN	NN	_	4	nn	_	_
+4	texas	_	NNS	NNS	_	0	root	_	_
+5	and	_	CC	CC	_	4	cc	_	_
+6	have	_	VB	VB	_	4	conj	_	_
+7	a	_	DT	DT	_	9	det	_	_
+8	major	_	JJ	JJ	_	9	amod	_	_
+9	river	_	NN	NN	_	6	dobj	_	_
+10	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'conj_and': [{'dep': ['what', 'states'],
+                      'top': 1,
+                      'word': ['border', 'texas']},
+                     {'dobj': {'mod': 'major', 'word': 'river'},
+                      'pred': 'have',
+                      'top': 1}],
+        'pred': 'and'},
+ 'sentence': 'what states border texas and have a major river ?'}
+have:(dobj:a major river )
+border texas:(dep:what , dep:states )
+and:(conj_and:what states border texas and ? , conj_and:have a major river )
+1	what	_	WP	WP	_	2	dep	_	_
+2	states	_	NNS	NNS	_	0	root	_	_
+3	border	_	NN	NN	_	2	dep	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	most	_	RBS	RBS	_	6	advmod	_	_
+6	populous	_	JJ	JJ	_	7	amod	_	_
+7	state	_	NN	NN	_	2	dep	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'dep': ['border',
+                'what',
+                {'mod': {'mod': 'most', 'word': 'populous'},
+                 'word': 'state'}],
+        'word': 'states'}}
+states:(dep:what , dep:border , dep:the most populous state )
+1	what	_	WP	WP	_	2	dep	_	_
+2	states	_	NNS	NNS	_	0	root	_	_
+3	border	_	NN	NN	_	2	dep	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	2	dep	_	_
+6	that	_	WDT	WDT	_	7	nsubj	_	_
+7	borders	_	VBD	VBD	_	5	rcmod	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	most	_	JJS	JJS	_	10	amod	_	_
+10	states	_	NNS	NNS	_	7	dobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'def': [{'mod': {'xref': '1902'}, 'word': 'state', 'xtarget': '1900'}],
+ 'lf': [{'dep': ['what', 'border', {'xref': '1900'}], 'word': 'states'},
+        {'dobj': {'mod': 'most', 'word': 'states'},
+         'pred': 'borders',
+         'subj': {'xref': '1900'},
+         'xtarget': '1902'}],
+ 'sentence': 'what states border the state that borders the most states ?'}
+states:(dep:what , dep:border , dep:the state that borders the most states )
+borders:(subj:the state , dobj:the most states )
+1	what	_	WP	WP	_	2	dep	_	_
+2	states	_	NNS	NNS	_	0	root	_	_
+3	border	_	NN	NN	_	2	dep	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	2	dep	_	_
+6	with	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	most	_	JJS	JJS	_	9	amod	_	_
+9	cities	_	NNS	NNS	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'dep': ['border',
+                'what',
+                {'prep_with': {'mod': 'most', 'word': 'cities'},
+                 'word': 'state'}],
+        'word': 'states'}}
+states:(dep:what , dep:border , dep:the state with the most cities )
+1	what	_	WP	WP	_	2	dep	_	_
+2	states	_	NNS	NNS	_	0	root	_	_
+3	border	_	NN	NN	_	2	dep	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	2	dep	_	_
+6	with	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	10	det	_	_
+8	most	_	RBS	RBS	_	9	advmod	_	_
+9	major	_	JJ	JJ	_	10	amod	_	_
+10	cities	_	NNS	NNS	_	6	pobj	_	_
+11	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'dep': ['border',
+                'what',
+                {'prep_with': {'mod': {'mod': 'most', 'word': 'major'},
+                               'word': 'cities'},
+                 'word': 'state'}],
+        'word': 'states'}}
+states:(dep:what , dep:border , dep:the state with the most major cities )
+1	what	_	WP	WP	_	2	dep	_	_
+2	states	_	NNS	NNS	_	0	root	_	_
+3	border	_	NN	NN	_	2	dep	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	2	dep	_	_
+6	with	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	smallest	_	JJS	JJS	_	9	amod	_	_
+9	area	_	NN	NN	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'dep': ['what',
+                'border',
+                {'prep_with': {'mod': 'smallest', 'word': 'area'},
+                 'word': 'state'}],
+        'word': 'states'}}
+states:(dep:what , dep:border , dep:the state with the smallest area )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	dep	_	_
+3	contain	_	VBP	VBP	_	0	root	_	_
+4	at	_	IN	IN	_	6	quantmod	_	_
+5	least	_	JJS	JJS	_	4	mwe	_	_
+6	one	_	CD	CD	_	8	num	_	_
+7	major	_	JJ	JJ	_	8	amod	_	_
+8	rivers	_	NNS	NNS	_	3	dobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'states',
+        'dobj': {'mod': ['major', {'pobj': 'least', 'word': 'at'}],
+                 'word': ['one', 'rivers']},
+        'pred': 'contain'}}
+contain:(dobj:at least one major rivers , dep:what states )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	6	dobj	_	_
+3	does	_	VBZ	VBZ	_	6	aux	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	delaware_river	_	NN	NN	_	6	nsubj	_	_
+6	run	_	VB	VB	_	0	root	_	_
+7	through	_	RB	RB	_	6	advmod	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'delaware_river'}}
+run:(subj:the delaware_river , dobj:what states , mod:through )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	6	dobj	_	_
+3	does	_	VBZ	VBZ	_	6	aux	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	mississippi_river	_	NN	NN	_	6	nsubj	_	_
+6	run	_	VB	VB	_	0	root	_	_
+7	through	_	RB	RB	_	6	advmod	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'mississippi_river'}}
+run:(subj:the mississippi_river , dobj:what states , mod:through )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	6	dobj	_	_
+3	does	_	VBZ	VBZ	_	6	aux	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	missouri	_	NN	NN	_	6	nsubj	_	_
+6	run	_	VB	VB	_	0	root	_	_
+7	through	_	RB	RB	_	6	advmod	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': 'states', 'mod': 'through', 'pred': 'run', 'subj': 'missouri'}}
+run:(subj:the missouri , dobj:what states , mod:through )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	6	dobj	_	_
+3	does	_	VBZ	VBZ	_	6	aux	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	ohio_river	_	NN	NN	_	6	nsubj	_	_
+6	run	_	VB	VB	_	0	root	_	_
+7	through	_	RB	RB	_	6	advmod	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'ohio_river'}}
+run:(subj:the ohio_river , dobj:what states , mod:through )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	cities	_	NNS	NNS	_	3	dobj	_	_
+5	named	_	VBN	VBN	_	4	vmod	_	_
+6	dallas	_	NNS	NNS	_	5	dep	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'dep': 'dallas', 'pred': 'named'}, 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'}}
+have:(subj:what states , dobj:cities named dallas )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	cities	_	NNS	NNS	_	3	dobj	_	_
+5	named	_	VBN	VBN	_	4	vmod	_	_
+6	plano	_	NN	NN	_	5	dep	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'dep': 'plano', 'pred': 'named'}, 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'}}
+have:(subj:what states , dobj:cities named plano )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	cities	_	NNS	NNS	_	3	dobj	_	_
+5	named	_	VBN	VBN	_	4	vmod	_	_
+6	portland	_	NN	NN	_	5	dep	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'dep': 'portland', 'pred': 'named'},
+                 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'}}
+have:(subj:what states , dobj:cities named portland )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	cities	_	NNS	NNS	_	3	dobj	_	_
+5	named	_	VBN	VBN	_	4	vmod	_	_
+6	rochester	_	NN	NN	_	5	dep	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'dep': 'rochester', 'pred': 'named'},
+                 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'}}
+have:(subj:what states , dobj:cities named rochester )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	cities	_	NNS	NNS	_	3	dobj	_	_
+5	named	_	VBN	VBN	_	4	vmod	_	_
+6	salt_lake_city	_	NN	NN	_	5	dep	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'dep': 'salt_lake_city', 'pred': 'named'},
+                 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'}}
+have:(subj:what states , dobj:cities named salt_lake_city )
+1	what	_	WP	WP	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	dep	_	_
+3	surround	_	VBP	VBP	_	0	root	_	_
+4	kentucky	_	NN	NN	_	3	dobj	_	_
+5	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'states', 'dobj': 'kentucky', 'pred': 'surround'}}
+surround:(dobj:kentucky , dep:what states )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	are	_	VBP	VBP	_	0	root	_	_
+3	mountains	_	NNS	NNS	_	2	xcomp	_	_
+4	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'comp': 'mountains', 'mod': 'where', 'pred': 'are'}}
+are:(mod:where , comp:mountains )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	dallas	_	NNS	NNS	_	2	nsubj	_	_
+4	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where', 'pred': 'is', 'subj': 'dallas'}}
+is:(subj:dallas , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	portland	_	NN	NN	_	2	nsubj	_	_
+4	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where', 'pred': 'is', 'subj': 'portland'}}
+is:(subj:portland , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	chattahoochee	_	JJ	JJ	_	5	amod	_	_
+5	river	_	NN	NN	_	2	nsubj	_	_
+6	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where',
+        'pred': 'is',
+        'subj': {'mod': 'chattahoochee', 'word': 'river'}}}
+is:(subj:the chattahoochee river , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	mountain	_	NN	NN	_	2	nsubj	_	_
+6	of	_	IN	IN	_	5	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	united	_	VBN	VBN	_	9	amod	_	_
+9	states	_	NNS	NNS	_	6	pobj	_	_
+10	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where',
+        'pred': 'is',
+        'subj': {'mod': 'highest',
+                 'prep_of': {'mod': {'pred': 'united'}, 'word': 'states'},
+                 'word': 'mountain'}}}
+is:(subj:the highest mountain of the united states , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	hawaii	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where',
+        'pred': 'is',
+        'subj': {'mod': 'highest', 'prep_in': 'hawaii', 'word': 'point'}}}
+is:(subj:the highest point in hawaii , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	lowest	_	JJS	JJS	_	5	amod	_	_
+5	point	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	maryland	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where',
+        'pred': 'is',
+        'subj': {'mod': 'lowest', 'prep_in': 'maryland', 'word': 'point'}}}
+is:(subj:the lowest point in maryland , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	6	det	_	_
+4	most	_	RBS	RBS	_	5	advmod	_	_
+5	populated	_	JJ	JJ	_	6	amod	_	_
+6	area	_	NN	NN	_	2	nsubj	_	_
+7	of	_	IN	IN	_	6	prep	_	_
+8	new_mexico	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where',
+        'pred': 'is',
+        'subj': {'mod': {'mod': 'most', 'word': 'populated'},
+                 'prep_of': 'new_mexico',
+                 'word': 'area'}}}
+is:(subj:the most populated area of new_mexico , mod:where )
+1	where	_	WRB	WRB	_	2	advmod	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	city	_	NN	NN	_	2	nsubj	_	_
+6	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'mod': 'where',
+        'pred': 'is',
+        'subj': {'mod': 'smallest', 'word': 'city'}}}
+is:(subj:the smallest city , mod:where )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	city	_	NN	NN	_	5	nsubj	_	_
+3	in	_	IN	IN	_	2	prep	_	_
+4	california	_	NN	NN	_	3	pobj	_	_
+5	has	_	VBZ	VBZ	_	0	root	_	_
+6	the	_	DT	DT	_	8	det	_	_
+7	largest	_	JJS	JJS	_	8	amod	_	_
+8	population	_	NN	NN	_	5	dobj	_	_
+9	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'dobj': {'mod': 'largest', 'word': 'population'},
+        'pred': 'has',
+        'subj': {'prep_in': 'california', 'word': 'city'}}}
+has:(subj:which city in california , dobj:the largest population )
+1	which	_	WDT	WDT	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	density	_	NN	NN	_	2	xcomp	_	_
+5	of	_	IN	IN	_	4	prep	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	state	_	NN	NN	_	5	pobj	_	_
+8	that	_	IN	IN	_	16	mark	_	_
+9	the	_	DT	DT	_	11	det	_	_
+10	largest	_	JJS	JJS	_	11	amod	_	_
+11	river	_	NN	NN	_	16	nsubj	_	_
+12	in	_	IN	IN	_	11	prep	_	_
+13	the	_	DT	DT	_	15	det	_	_
+14	united	_	VBN	VBN	_	15	amod	_	_
+15	states	_	NNS	NNS	_	12	pobj	_	_
+16	runs	_	VBZ	VBZ	_	2	ccomp	_	_
+17	through	_	RP	RP	_	16	prt	_	_
+18	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'comp': {'pred': ['runs', 'through'],
+                 'subj': {'mod': 'largest',
+                          'prep_in': {'mod': {'pred': 'united'},
+                                      'word': 'states'},
+                          'word': 'river'}},
+        'pred': 'SameAs',
+        'sameAs_arg': ['which', {'prep_of': 'state', 'word': 'density'}]},
+ 'sentence': 'which is the density of the state that the largest river in the united states runs through ?'}
+SameAs:(sameAs_arg:which , sameAs_arg:the density of the state , comp:the largest river in the united states runs through )
+1	which	_	WDT	WDT	_	2	nsubj	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	highest	_	JJS	JJS	_	5	amod	_	_
+5	peak	_	NN	NN	_	2	nsubj	_	_
+6	not	_	RB	RB	_	2	neg	_	_
+7	in	_	IN	IN	_	2	prep	_	_
+8	alaska	_	NN	NN	_	7	pobj	_	_
+9	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'feats': {'negated': 'negated'},
+        'pred': 'is',
+        'prep_in': 'alaska',
+        'subj': ['which', {'mod': 'highest', 'word': 'peak'}]}}
+is:(subj:which , subj:the highest peak , prep_in:alaska )
+1	which	_	WDT	WDT	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	longest	_	JJS	JJS	_	5	amod	_	_
+5	river	_	NN	NN	_	2	nsubj	_	_
+6	in	_	IN	IN	_	5	prep	_	_
+7	usa	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'which',
+        'prop_of': {'mod': 'longest', 'prep_in': 'usa', 'word': 'river'}}}
+which:(prop_of:the longest river in usa )
+1	which	_	WDT	WDT	_	2	dep	_	_
+2	is	_	VBZ	VBZ	_	0	root	_	_
+3	the	_	DT	DT	_	5	det	_	_
+4	smallest	_	JJS	JJS	_	5	amod	_	_
+5	state	_	NN	NN	_	2	nsubj	_	_
+6	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'pred': 'which', 'prop_of': {'mod': 'smallest', 'word': 'state'}}}
+which:(prop_of:the smallest state )
+1	which	_	WDT	WDT	_	7	nsubj	_	_
+2	of	_	IN	IN	_	1	prep	_	_
+3	the	_	DT	DT	_	4	det	_	_
+4	states	_	NNS	NNS	_	2	pobj	_	_
+5	bordering	_	VBG	VBG	_	4	vmod	_	_
+6	pennsylvania	_	NN	NN	_	5	dobj	_	_
+7	has	_	VBZ	VBZ	_	0	root	_	_
+8	the	_	DT	DT	_	10	det	_	_
+9	largest	_	JJS	JJS	_	10	amod	_	_
+10	population	_	NN	NN	_	7	dobj	_	_
+11	?	_	.	.	_	7	punct	_	_
+
+{'lf': {'dobj': {'mod': 'largest', 'word': 'population'},
+        'pred': 'has',
+        'subj': {'prep_of': {'mod': {'dobj': 'pennsylvania',
+                                     'pred': 'bordering'},
+                             'word': 'states'},
+                 'word': 'which'}}}
+has:(subj:which of the states bordering pennsylvania , dobj:the largest population )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	river	_	NN	NN	_	3	dep	_	_
+3	goes	_	VBZ	VBZ	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	the	_	DT	DT	_	7	det	_	_
+6	most	_	JJS	JJS	_	7	amod	_	_
+7	states	_	NNS	NNS	_	4	pobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'river',
+        'pred': 'goes',
+        'prep_through': {'mod': 'most', 'word': 'states'}}}
+goes:(prep_through:the most states , dep:which river )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	river	_	NN	NN	_	3	dep	_	_
+3	runs	_	VBZ	VBZ	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	states	_	NNS	NNS	_	4	pobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'river',
+        'pred': 'runs',
+        'prep_through': {'mod': 'most', 'word': 'states'}}}
+runs:(prep_through:most states , dep:which river )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	river	_	NN	NN	_	3	dep	_	_
+3	traverses	_	VBZ	VBZ	_	0	root	_	_
+4	most	_	JJS	JJS	_	5	amod	_	_
+5	states	_	NNS	NNS	_	3	dobj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'river',
+        'dobj': {'mod': 'most', 'word': 'states'},
+        'pred': 'traverses'}}
+traverses:(dobj:most states , dep:which river )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	5	nsubj	_	_
+3	do	_	VBP	VBP	_	5	aux	_	_
+4	not	_	RB	RB	_	5	neg	_	_
+5	run	_	VB	VB	_	0	root	_	_
+6	through	_	IN	IN	_	5	prep	_	_
+7	texas	_	NNS	NNS	_	6	pobj	_	_
+8	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'feats': {'negated': 'negated'},
+        'pred': 'run',
+        'prep_through': 'texas',
+        'subj': 'rivers'}}
+run:(subj:which rivers , prep_through:texas )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	5	nsubj	_	_
+3	do	_	VBP	VBP	_	5	aux	_	_
+4	not	_	RB	RB	_	5	neg	_	_
+5	run	_	VB	VB	_	0	root	_	_
+6	through	_	IN	IN	_	5	prep	_	_
+7	usa	_	NN	NN	_	6	pobj	_	_
+8	?	_	.	.	_	5	punct	_	_
+
+{'lf': {'feats': {'negated': 'negated'},
+        'pred': 'run',
+        'prep_through': 'usa',
+        'subj': 'rivers'}}
+run:(subj:which rivers , prep_through:usa )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	dep	_	_
+3	run	_	VBP	VBP	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	states	_	NNS	NNS	_	4	pobj	_	_
+6	that	_	WDT	WDT	_	7	nsubj	_	_
+7	border	_	VBD	VBD	_	5	rcmod	_	_
+8	the	_	DT	DT	_	9	det	_	_
+9	state	_	NN	NN	_	7	dobj	_	_
+10	with	_	IN	IN	_	7	prep	_	_
+11	the	_	DT	DT	_	13	det	_	_
+12	capital	_	NN	NN	_	13	nn	_	_
+13	austin	_	NN	NN	_	10	pobj	_	_
+14	?	_	.	.	_	3	punct	_	_
+
+{'def': [{'mod': {'xref': '2201'}, 'word': 'states', 'xtarget': '2200'}],
+ 'lf': [{'dobj': 'state',
+         'pred': 'border',
+         'prep_with': ['capital', 'austin'],
+         'subj': {'xref': '2200'},
+         'xtarget': '2201'},
+        {'dep': 'rivers', 'pred': 'run', 'prep_through': {'xref': '2200'}}],
+ 'sentence': 'which rivers run through states that border the state with the capital austin ?'}
+run:(prep_through:states that border the state with the capital austin , dep:which rivers )
+border:(subj:states , dobj:the state , prep_with:the capital austin )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	rivers	_	NNS	NNS	_	3	dep	_	_
+3	run	_	VBP	VBP	_	0	root	_	_
+4	through	_	IN	IN	_	3	prep	_	_
+5	states	_	NNS	NNS	_	4	pobj	_	_
+6	with	_	IN	IN	_	5	prep	_	_
+7	fewest	_	JJS	JJS	_	8	amod	_	_
+8	cities	_	NNS	NNS	_	6	pobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'rivers',
+        'pred': 'run',
+        'prep_through': {'prep_with': {'mod': 'fewest', 'word': 'cities'},
+                         'word': 'states'}}}
+run:(prep_through:states with fewest cities , dep:which rivers )
+1	which	_	WDT	WDT	_	3	det	_	_
+2	state	_	NN	NN	_	3	nn	_	_
+3	borders	_	NNS	NNS	_	4	nsubj	_	_
+4	hawaii	_	VBP	VBP	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'pred': 'hawaii', 'subj': ['state', 'borders']}}
+hawaii:(subj:which state borders )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	borders	_	VBD	VBD	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	states	_	NNS	NNS	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'most', 'word': 'states'},
+        'pred': 'borders'}}
+borders:(dobj:the most states , dep:which state )
+1	which	_	WDT	WDT	_	3	det	_	_
+2	state	_	NN	NN	_	3	nn	_	_
+3	capital	_	NN	NN	_	4	nsubj	_	_
+4	has	_	VBZ	VBZ	_	0	root	_	_
+5	the	_	DT	DT	_	7	det	_	_
+6	smallest	_	JJS	JJS	_	7	amod	_	_
+7	population	_	NN	NN	_	4	dobj	_	_
+8	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': {'mod': 'smallest', 'word': 'population'},
+        'pred': 'has',
+        'subj': ['state', 'capital']}}
+has:(subj:which state capital , dobj:the smallest population )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	biggest	_	JJS	JJS	_	6	amod	_	_
+6	population	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'biggest', 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the biggest population )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	greatest	_	JJS	JJS	_	6	amod	_	_
+6	population	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'greatest', 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the greatest population )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	highest	_	JJS	JJS	_	6	amod	_	_
+6	elevation	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'highest', 'word': 'elevation'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the highest elevation )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	highest	_	JJS	JJS	_	6	amod	_	_
+6	point	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'highest', 'word': 'point'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the highest point )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	highest	_	JJS	JJS	_	7	amod	_	_
+6	population	_	NN	NN	_	7	nn	_	_
+7	density	_	NN	NN	_	3	dobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'highest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the highest population density )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	lowest	_	JJS	JJS	_	6	amod	_	_
+6	elevation	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'lowest', 'word': 'elevation'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the lowest elevation )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	lowest	_	JJS	JJS	_	6	amod	_	_
+6	point	_	NN	NN	_	3	dobj	_	_
+7	that	_	IN	IN	_	9	mark	_	_
+8	borders	_	NNS	NNS	_	9	nsubj	_	_
+9	idaho	_	VBP	VBP	_	6	dep	_	_
+10	?	_	.	.	_	3	punct	_	_
+
+{'def': [{'dobj': {'xref': '2296'},
+          'pred': 'idaho',
+          'subj': 'borders',
+          'xtarget': '2299'},
+         {'dep': {'xref': '2299'},
+          'mod': 'lowest',
+          'word': 'point',
+          'xtarget': '2296'}],
+ 'lf': {'dobj': {'xref': '2296'}, 'pred': 'has', 'subj': 'state'},
+ 'sentence': 'which state has the lowest point that borders idaho ?'}
+has:(subj:which state , dobj:the lowest point borders idaho )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	lowest	_	JJS	JJS	_	7	amod	_	_
+6	population	_	NN	NN	_	7	nn	_	_
+7	density	_	NN	NN	_	3	dobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'lowest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the lowest population density )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	most	_	RBS	RBS	_	6	advmod	_	_
+6	major	_	JJ	JJ	_	7	amod	_	_
+7	cities	_	NNS	NNS	_	3	nsubj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dep': 'state',
+        'pred': 'has',
+        'subj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'cities'}}}
+has:(subj:the most major cities , dep:which state )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	most	_	RBS	RBS	_	6	advmod	_	_
+6	major	_	JJ	JJ	_	7	amod	_	_
+7	rivers	_	NNS	NNS	_	3	dobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'rivers'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the most major rivers )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	8	dobj	_	_
+3	has	_	VBZ	VBZ	_	8	aux	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	most	_	RBS	RBS	_	6	advmod	_	_
+6	major	_	JJ	JJ	_	7	amod	_	_
+7	rivers	_	NNS	NNS	_	8	nsubj	_	_
+8	running	_	VBG	VBG	_	0	root	_	_
+9	through	_	IN	IN	_	8	prep	_	_
+10	it	_	PRP	PRP	_	9	pobj	_	_
+11	?	_	.	.	_	8	punct	_	_
+
+{'lf': {'dobj': 'state',
+        'pred': 'running',
+        'prep_through': 'it',
+        'subj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'rivers'}}}
+running:(subj:the most major rivers , dobj:which state , prep_through:it )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	population	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'most', 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the most population )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	most	_	JJS	JJS	_	6	amod	_	_
+6	rivers	_	NNS	NNS	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'most', 'word': 'rivers'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the most rivers )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	8	det	_	_
+5	smallest	_	JJS	JJS	_	8	amod	_	_
+6	average	_	JJ	JJ	_	8	amod	_	_
+7	urban	_	JJ	JJ	_	8	amod	_	_
+8	population	_	NN	NN	_	3	dobj	_	_
+9	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': ['urban', 'smallest', 'average'],
+                 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the smallest average urban population )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	has	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	7	det	_	_
+5	smallest	_	JJS	JJS	_	7	amod	_	_
+6	population	_	NN	NN	_	7	nn	_	_
+7	density	_	NN	NN	_	3	dobj	_	_
+8	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'smallest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'}}
+has:(subj:which state , dobj:the smallest population density )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	nsubj	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	mount_mckinley	_	JJ	JJ	_	3	acomp	_	_
+5	in	_	IN	IN	_	4	prep	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'mount_mckinley', 'prep': 'in', 'prop_of': 'state'}}
+mount_mckinley:(prop_of:which state , prep:in )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	state	_	NN	NN	_	3	dep	_	_
+3	is	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	smallest	_	JJS	JJS	_	3	nsubj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'pred': 'state', 'prop_of': 'smallest'}}
+state:(prop_of:the smallest )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	4	dobj	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	illinois	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': 'states', 'pred': 'illinois', 'subj': 'border'}}
+illinois:(subj:border , dobj:which states )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	4	dobj	_	_
+3	border	_	NN	NN	_	4	nsubj	_	_
+4	kentucky	_	VB	VB	_	0	root	_	_
+5	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dobj': 'states', 'pred': 'kentucky', 'subj': 'border'}}
+kentucky:(subj:border , dobj:which states )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	border	_	NN	NN	_	0	root	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	missouri	_	JJ	JJ	_	6	amod	_	_
+6	river	_	NN	NN	_	3	dobj	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': 'missouri', 'word': 'river'},
+        'subj': 'states',
+        'word': 'border'}}
+border:(subj:which states , dobj:the missouri river )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	border	_	VBZ	VBZ	_	0	root	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	state	_	NN	NN	_	3	dobj	_	_
+6	with	_	IN	IN	_	3	prep	_	_
+7	the	_	DT	DT	_	9	det	_	_
+8	smallest	_	JJS	JJS	_	9	amod	_	_
+9	area	_	NN	NN	_	6	pobj	_	_
+10	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': 'state',
+        'pred': 'border',
+        'prep_with': {'mod': 'smallest', 'word': 'area'},
+        'subj': 'states'}}
+border:(subj:which states , dobj:the state , prep_with:the smallest area )
+1	which	_	WDT	WDT	_	2	nsubj	_	_
+2	states	_	VBZ	VBZ	_	0	root	_	_
+3	capital	_	NN	NN	_	4	nn	_	_
+4	city	_	NN	NN	_	5	nsubj	_	_
+5	is	_	VBZ	VBZ	_	2	ccomp	_	_
+6	the	_	DT	DT	_	7	det	_	_
+7	largest	_	JJS	JJS	_	5	xcomp	_	_
+8	?	_	.	.	_	2	punct	_	_
+
+{'lf': {'comp': {'pred': 'SameAs',
+                 'sameAs_arg': ['largest', ['capital', 'city']]},
+        'pred': 'states',
+        'subj': 'which'}}
+states:(subj:which , comp:capital city is the largest )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	7	dobj	_	_
+3	does	_	VBZ	VBZ	_	7	aux	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	chattahoochee	_	JJ	JJ	_	6	amod	_	_
+6	river	_	NN	NN	_	7	nsubj	_	_
+7	run	_	VB	VB	_	0	root	_	_
+8	through	_	RB	RB	_	7	advmod	_	_
+9	?	_	.	.	_	7	punct	_	_
+
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': {'mod': 'chattahoochee', 'word': 'river'}}}
+run:(subj:the chattahoochee river , dobj:which states , mod:through )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	7	dobj	_	_
+3	does	_	VBZ	VBZ	_	7	aux	_	_
+4	the	_	DT	DT	_	6	det	_	_
+5	longest	_	JJS	JJS	_	6	amod	_	_
+6	river	_	NN	NN	_	7	nsubj	_	_
+7	run	_	VB	VB	_	0	root	_	_
+8	through	_	RB	RB	_	7	advmod	_	_
+9	?	_	.	.	_	7	punct	_	_
+
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': {'mod': 'longest', 'word': 'river'}}}
+run:(subj:the longest river , dobj:which states , mod:through )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	6	dobj	_	_
+3	does	_	VBZ	VBZ	_	6	aux	_	_
+4	the	_	DT	DT	_	5	det	_	_
+5	mississippi	_	NN	NN	_	6	nsubj	_	_
+6	run	_	VB	VB	_	0	root	_	_
+7	through	_	RB	RB	_	6	advmod	_	_
+8	?	_	.	.	_	6	punct	_	_
+
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'mississippi'}}
+run:(subj:the mississippi , dobj:which states , mod:through )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	a	_	DT	DT	_	5	det	_	_
+5	river	_	NN	NN	_	3	dobj	_	_
+6	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': 'river', 'pred': 'have', 'subj': 'states'}}
+have:(subj:which states , dobj:a river )
+1	which	_	WDT	WDT	_	2	det	_	_
+2	states	_	NNS	NNS	_	3	nsubj	_	_
+3	have	_	VBP	VBP	_	0	root	_	_
+4	cities	_	NNS	NNS	_	3	dobj	_	_
+5	named	_	VBN	VBN	_	4	vmod	_	_
+6	austin	_	NN	NN	_	5	dep	_	_
+7	?	_	.	.	_	3	punct	_	_
+
+{'lf': {'dobj': {'mod': {'dep': 'austin', 'pred': 'named'}, 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'}}
+have:(subj:which states , dobj:cities named austin )
+1	which	_	WDT	WDT	_	4	dep	_	_
+2	us	_	PRP	PRP	_	4	dep	_	_
+3	city	_	NN	NN	_	4	dep	_	_
+4	has	_	VBZ	VBZ	_	0	root	_	_
+5	the	_	DT	DT	_	8	det	_	_
+6	highest	_	JJS	JJS	_	8	amod	_	_
+7	population	_	NN	NN	_	8	nn	_	_
+8	density	_	NN	NN	_	4	dobj	_	_
+9	?	_	.	.	_	4	punct	_	_
+
+{'lf': {'dep': ['city', 'us', 'which'],
+        'dobj': {'mod': 'highest', 'word': ['population', 'density']},
+        'pred': 'has'}}
+has:(dobj:the highest population density , dep:which , dep:us , dep:city )
+Processed 280 sentences.
