@@ -265,12 +265,13 @@ class GraphWrapper(digraph):
 
     def lf_get_node_string(self, node, exclude=[]):
         return subgraph_to_string(self, node, exclude=exclude)
-    def lf_fix_nodes(self, lf):
+    def lf_fix_nodes(self, lf, textp=True):
         "Replace nodes with their .lf_texts"
         if isinstance(lf, dict):
             for k in lf.keys():
                 if k == 'node':
-                    lf['text'] = lf[k].lf_get_text(self)
+                    if textp: 
+                        lf['text'] = lf[k].lf_get_text(self)
                 else:
                     self.lf_fix_nodes(lf[k])
         if isinstance(lf, list):
@@ -303,7 +304,7 @@ class GraphWrapper(digraph):
                 self.lf_fix_propositions(e)
     #end def
         
-    def toLogicForm(self):
+    def toLogicForm(self, textp=False):
         self.setPropositions('pdf')
         alist = [(n['uid'], n)
                  for _,node in enumerate(self.nodesMap.values())
@@ -336,7 +337,7 @@ class GraphWrapper(digraph):
 
                 forms=[dic[k] for k in dic.keys()]
                 #self.lf_fix_propositions(forms)
-                self.lf_fix_nodes(forms)
+                self.lf_fix_nodes(forms, textp)
                 forms_top = [form for form in forms if form['top']==1]
                 forms_bot = [form for form in forms if form['top']==0]
                 for form in forms_top:
@@ -344,7 +345,12 @@ class GraphWrapper(digraph):
                 for form in forms_bot:
                     del form['top']
                 forms_top = forms_top if len(forms_top) > 1 else forms_top[0]
-                return {"lf": forms_top if len(forms_bot)==0 else {'lf':forms_top, 'def':forms_bot}}
+                ret = {'lf': forms_top}
+                #if not ('text' in forms_top and self.originalSentence.strip() == forms_top['text'].strip()):
+                ret['sentence']= self.originalSentence
+                if len(forms_bot) > 0:
+                    ret['def']=forms_bot
+                return ret
             for m in movers:
                 edge = dic[m]['rel'][0]
                 self.move_to_target(dic[edge['parent']], edge['rel'], dic[m])
