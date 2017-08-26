@@ -1,0 +1,1407 @@
+{'lf': {'dobj': {'prep_in': 'colorado', 'word': ['all', 'rivers']},
+        'pred': 'name'},
+ 'sentence': 'name all the rivers in colorado ?'}
+{'def': [{'mod': {'xref': '12'}, 'word': 'states', 'xtarget': '10'},
+         {'dobj': {'xref': '10'}, 'pred': 'count', 'xtarget': '9'}],
+ 'lf': [{'dobj': {'mod': {'prepc_than': {'pred': 'has', 'subj': 'alabama'},
+                          'word': 'lower'},
+                  'word': 'elevations'},
+         'pred': 'have',
+         'subj': {'xref': '10'},
+         'xtarget': '12'},
+        {'inquiry': {'xref': '9'}, 'pred': 'what'}],
+ 'sentence': 'count the states which have elevations lower than what alabama has ?'}
+{'lf': {'dobj': {'prep_of': {'prep_in': 'california', 'word': 'rivers'},
+                 'word': 'number'},
+        'iobj': 'me',
+        'pred': 'give'},
+ 'sentence': 'give me the number of rivers in california ?'}
+{'def': [{'mod': {'xref': '32'}, 'word': 'states', 'xtarget': '30'}],
+ 'lf': [{'dobj': {'xref': '30'},
+         'pred': 'utah',
+         'subj': 'border',
+         'xtarget': '32'},
+        {'dobj': {'xref': '30'}, 'iobj': 'me', 'pred': 'give'}],
+ 'sentence': 'give me the states that border utah ?'}
+{'lf': {'inquiry': {'mod': 'high', 'pred': 'is', 'subj': 'mount_mckinley'},
+        'pred': 'how'},
+ 'sentence': 'how high is mount_mckinley ?'}
+{'lf': {'inquiry': {'mod': 'high',
+                    'pred': 'is',
+                    'subj': {'mod': 'highest',
+                             'prep_in': 'america',
+                             'word': 'point'}},
+        'pred': 'how'},
+ 'sentence': 'how high is the highest point in america ?'}
+{'lf': {'inquiry': {'mod': 'high',
+                    'pred': 'is',
+                    'subj': {'mod': 'highest',
+                             'prep_of': 'alabama',
+                             'word': 'point'}},
+        'pred': 'how'},
+ 'sentence': 'how high is the highest point of alabama ?'}
+{'lf': {'inquiry': {'mod': 'large', 'pred': 'is', 'subj': 'alaska'},
+        'pred': 'how'},
+ 'sentence': 'how large is alaska ?'}
+{'lf': {'inquiry': {'mod': 'large', 'pred': 'is', 'subj': 'texas'},
+        'pred': 'how'},
+ 'sentence': 'how large is texas ?'}
+{'lf': {'inquiry': {'mod': 'long', 'pred': 'is', 'subj': 'colorado_river'},
+        'pred': 'how'},
+ 'sentence': 'how long is the colorado_river ?'}
+{'lf': {'inquiry': {'mod': 'long', 'pred': 'is', 'subj': 'delaware_river'},
+        'pred': 'how'},
+ 'sentence': 'how long is the delaware_river ?'}
+{'lf': {'inquiry': {'mod': 'long',
+                    'pred': 'is',
+                    'subj': {'mod': 'longest',
+                             'prep_in': 'california',
+                             'word': 'river'}},
+        'pred': 'how'},
+ 'sentence': 'how long is the longest river in california ?'}
+{'lf': {'inquiry': {'mod': 'long',
+                    'pred': 'is',
+                    'subj': {'mod': 'longest',
+                             'prep_in': 'usa',
+                             'word': 'river'}},
+        'pred': 'how'},
+ 'sentence': 'how long is the longest river in the usa ?'}
+{'lf': {'inquiry': {'mod': 'long',
+                    'pred': 'is',
+                    'subj': {'mod': 'north_platte', 'word': 'river'}},
+        'pred': 'how'},
+ 'sentence': 'how long is the north_platte river ?'}
+{'lf': {'inquiry': {'mod': 'long', 'pred': 'is', 'subj': 'ohio_river'},
+        'pred': 'how'},
+ 'sentence': 'how long is the ohio_river ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'many', 'word': 'capitals'},
+                    'pred': 'have',
+                    'subj': 'rhode_island'},
+        'pred': 'how'},
+ 'sentence': 'how many capitals does rhode_island have ?'}
+{'lf': {'inquiry': {'pred': 'Exists',
+                    'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'},
+                    'subj': {'mod': 'many', 'word': 'cities'}},
+        'pred': 'how'},
+ 'sentence': 'how many cities are there in the united states ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'many', 'word': 'citizens'},
+                    'pred': 'have',
+                    'prep_in': 'usa',
+                    'subj': {'mod': 'biggest', 'word': 'city'}},
+        'pred': 'how'},
+ 'sentence': 'how many citizens does the biggest city have in the usa ?'}
+{'lf': {'inquiry': {'mod': 'there',
+                    'pred': 'are',
+                    'subj': {'mod': 'many', 'word': 'colorado_rivers'}},
+        'pred': 'how'},
+ 'sentence': 'how many colorado_rivers are there ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': 'detroit'},
+        'pred': 'how'},
+ 'sentence': 'how many people live in detroit ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': 'houston'},
+        'pred': 'how'},
+ 'sentence': 'how many people live in houston ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': {'mod': 'minneapolis', 'word': 'minnesota'}},
+        'pred': 'how'},
+ 'sentence': 'how many people live in minneapolis minnesota ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': 'mississippi'},
+        'pred': 'how'},
+ 'sentence': 'how many people live in mississippi ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': 'rhode_island'},
+        'pred': 'how'},
+ 'sentence': 'how many people live in rhode_island ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': {'mod': 'biggest',
+                                'prep_in': {'mod': 'new_york',
+                                            'word': 'state'},
+                                'word': 'city'}},
+        'pred': 'how'},
+ 'sentence': 'how many people live in the biggest city in new_york state ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': {'prep_of': 'texas', 'word': 'capital'}},
+        'pred': 'how'},
+ 'sentence': 'how many people live in the capital of texas ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'people'},
+                    'pred': 'live',
+                    'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'}},
+        'pred': 'how'},
+ 'sentence': 'how many people live in the united states ?'}
+{'lf': {'inquiry': {'pred': 'lived',
+                    'prep_in': 'austin',
+                    'subj': {'mod': 'many', 'word': 'people'}},
+        'pred': 'how'},
+ 'sentence': 'how many people lived in austin ?'}
+{'lf': {'inquiry': {'pred': 'reside',
+                    'prep_in': 'utah',
+                    'subj': {'mod': 'many', 'word': 'people'}},
+        'pred': 'how'},
+ 'sentence': 'how many people reside in utah ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'residents'},
+                    'pred': 'live',
+                    'prep_in': 'texas'},
+        'pred': 'how'},
+ 'sentence': 'how many residents live in texas ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'rivers'},
+                    'pred': 'are',
+                    'prep_in': 'iowa'},
+        'pred': 'how'},
+ 'sentence': 'how many rivers are in iowa ?'}
+{'lf': {'inquiry': {'inquiry': {'dobj': {'mod': 'most', 'word': 'rivers'},
+                                'pred': 'has',
+                                'prep_in': 'state',
+                                'prop_of': {'mod': 'many',
+                                            'word': 'rivers'}},
+                    'pred': 'that'},
+        'pred': 'how'},
+ 'sentence': 'how many rivers are in the state that has the most rivers ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'many', 'word': 'rivers'},
+                    'pred': 'have',
+                    'subj': 'colorado'},
+        'pred': 'how'},
+ 'sentence': 'how many rivers does colorado have ?'}
+{'lf': {'inquiry': {'dep': {'mod': 'many', 'word': 'states'},
+                    'pred': 'are',
+                    'prep_in': 'usa'},
+        'pred': 'how'},
+ 'sentence': 'how many states are in the usa ?'}
+{'lf': {'inquiry': {'mod': 'there',
+                    'pred': 'are',
+                    'subj': {'mod': 'many', 'word': 'states'}},
+        'pred': 'how'},
+ 'sentence': 'how many states are there ?'}
+{'lf': {'inquiry': {'pred': 'Exists',
+                    'prep_in': 'usa',
+                    'subj': {'mod': 'many', 'word': 'states'}},
+        'pred': 'how'},
+ 'sentence': 'how many states are there in the usa ?'}
+{'lf': {'inquiry': {'dep': 'states',
+                    'mod': 'many',
+                    'pred': 'iowa',
+                    'subj': 'border'},
+        'pred': 'how'},
+ 'sentence': 'how many states border iowa ?'}
+{'lf': {'inquiry': {'dobj': 'state',
+                    'prep_with': {'mod': 'largest', 'word': 'population'},
+                    'subj': {'mod': 'many', 'word': 'states'},
+                    'word': 'border'},
+        'pred': 'how'},
+ 'sentence': 'how many states border the state with the largest population ?'}
+{'lf': {'inquiry': {'dobj': 'rivers',
+                    'feats': {'negated': 'negated'},
+                    'pred': 'have',
+                    'subj': {'mod': 'many', 'word': 'states'}},
+        'pred': 'how'},
+ 'sentence': 'how many states do not have rivers ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'tennessee', 'word': 'border'},
+                    'pred': 'does',
+                    'subj': {'mod': 'many', 'word': 'states'}},
+        'pred': 'how'},
+ 'sentence': 'how many states does tennessee border ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'many', 'word': 'states'},
+                    'pred': 'have',
+                    'subj': 'usa'},
+        'pred': 'how'},
+ 'sentence': 'how many states does usa have ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'higher',
+                             'prep_than': {'mod': 'highest',
+                                           'prep_of': 'state',
+                                           'prep_with': {'mod': 'largest',
+                                                         'prep_in': 'us',
+                                                         'word': ['capital',
+                                                                  'city']},
+                                           'word': 'point'},
+                             'word': 'point'},
+                    'pred': 'have',
+                    'subj': {'mod': 'many', 'word': 'states'}},
+        'pred': 'how'},
+ 'sentence': 'how many states have a higher point than the highest point of the state with the largest capital city in the us ?'}
+{'lf': {'inquiry': {'mod': {'dep': 'population', 'word': 'much'},
+                    'pred': 'have',
+                    'subj': 'texas'},
+        'pred': 'how'},
+ 'sentence': 'how much population does texas have ?'}
+{'lf': {'inquiry': {'mod': 'tall', 'pred': 'is', 'subj': 'mount_mckinley'},
+        'pred': 'how'},
+ 'sentence': 'how tall is mount_mckinley ?'}
+{'lf': {'inquiry': {'mod': 'tall',
+                    'pred': 'is',
+                    'subj': {'mod': 'highest',
+                             'prep_in': 'montana',
+                             'word': 'point'}},
+        'pred': 'how'},
+ 'sentence': 'how tall is the highest point in montana ?'}
+{'def': [{'dobj': {'xref': '383'}, 'pred': 'iowa', 'xtarget': '382'},
+         {'mod': {'xref': '386'}, 'word': 'borders', 'xtarget': '383'}],
+ 'lf': [{'inquiry': {'xref': '382'}, 'pred': 'how'},
+        {'arg': {'xref': '383'},
+         'mod': 'many',
+         'word': 'states',
+         'xtarget': '386'}],
+ 'sentence': 'iowa borders how many states ?'}
+{'lf': {'dobj': {'mod': 'major', 'prep_in': 'florida', 'word': 'rivers'},
+        'pred': 'name'},
+ 'sentence': 'name the major rivers in florida ?'}
+{'lf': {'prep_of': {'prep_in': 'boulder', 'word': 'people'}, 'word': 'number'},
+ 'sentence': 'number of people in boulder ?'}
+{'lf': {'prep_of': {'mod': {'dobj': 'iowa', 'pred': 'bordering'},
+                    'word': 'states'},
+        'word': 'number'},
+ 'sentence': 'number of states bordering iowa ?'}
+{'lf': {'prep_in': 'new_york', 'word': 'rivers'},
+ 'sentence': 'rivers in new_york ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'prep': {'dep': {'pred': 'state'}, 'word': 'in'},
+                    'subj': 'san_antonio'},
+        'pred': 'what'},
+ 'sentence': 'san_antonio is in what state ?'}
+{'lf': {'inquiry': {'dep': {'pred': 'are',
+                            'prep_in': 'texas',
+                            'subj': 'cities'},
+                    'dobj': 'me',
+                    'pred': 'tell'},
+        'pred': 'what'},
+ 'sentence': 'tell me what cities are in texas ?'}
+{'lf': {'pred': 'run',
+        'prep_through': 'states',
+        'subj': {'mod': 'longest', 'prep_in': 'texas', 'word': 'river'}},
+ 'sentence': 'through which states does the longest river in texas run ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'prep_in': 'texas',
+                                   'word': ['all', 'rivers']}},
+        'pred': 'what'},
+ 'sentence': 'what are all the rivers in texas ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_in': 'texas', 'word': ['capital', 'city']}},
+ 'sentence': 'what is the capital city in texas ?'}
+{'def': [{'mod': {'xref': '460'}, 'word': 'states', 'xtarget': '459'},
+         {'pred': 'SameAs', 'sameAs_arg': {'xref': '457'}, 'xtarget': '463'},
+         {'prep_of': {'xref': '459'}, 'word': 'capitals', 'xtarget': '457'}],
+ 'lf': [{'inquiry': {'xref': '463'}, 'pred': 'what'},
+        {'dobj': {'xref': '459'},
+         'pred': 'missouri',
+         'subj': 'border',
+         'xtarget': '460'}],
+ 'sentence': 'what are the capitals of states that border missouri ?'}
+{'def': [{'mod': {'xref': '470'}, 'word': 'states', 'xtarget': '469'},
+         {'prep_in': {'xref': '469'}, 'word': 'cities', 'xtarget': '467'},
+         {'pred': 'SameAs', 'sameAs_arg': {'xref': '467'}, 'xtarget': '474'}],
+ 'lf': [{'inquiry': {'xref': '474'}, 'pred': 'what'},
+        {'pred': 'runs',
+         'prep_through': {'xref': '469'},
+         'subj': 'mississippi',
+         'xtarget': '470'}],
+ 'sentence': 'what are the cities in states through which the mississippi runs ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'prep_of': 'state',
+                                   'prep_with': {'mod': 'highest',
+                                                 'word': 'point'},
+                                   'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the cities of the state with the highest point ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_of': ['all', 'states'],
+                    'word': 'points'}},
+ 'sentence': 'what are the highest points of all the states ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': 'alabama',
+                    'subj': {'mod': 'major', 'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major cities in alabama ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': 'alaska',
+                    'subj': {'mod': 'major', 'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major cities in alaska ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': 'new_york',
+                    'subj': {'mod': 'major', 'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major cities in new_york ?'}
+{'def': [{'mod': ['major', {'xref': '528'}],
+          'prep_in': 'states',
+          'word': 'cities',
+          'xtarget': '525'},
+         {'pred': 'SameAs', 'sameAs_arg': {'xref': '525'}, 'xtarget': '533'}],
+ 'lf': [{'inquiry': {'xref': '533'}, 'pred': 'what'},
+        {'pred': 'runs',
+         'prep_through': {'xref': '525'},
+         'subj': 'mississippi',
+         'xtarget': '528'}],
+ 'sentence': 'what are the major cities in states through which the mississippi runs ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': {'prep_of': 'california', 'word': 'state'},
+                    'subj': {'mod': 'major', 'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major cities in the state of california ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': 'usa',
+                    'subj': {'mod': 'major', 'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major cities in the usa ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': 'vermont',
+                    'subj': {'mod': 'major', 'word': 'cities'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major cities in vermont ?'}
+{'lf': {'inquiry': {'pred': 'are',
+                    'prep_in': 'ohio',
+                    'subj': {'mod': 'major', 'word': 'rivers'}},
+        'pred': 'what'},
+ 'sentence': 'what are the major rivers in ohio ?'}
+{'lf': {'inquiry': {'pred': 'state',
+                    'prop_of': ['population',
+                                'us',
+                                {'prep_of': 'each', 'word': 'densities'}]},
+        'pred': 'what'},
+ 'sentence': 'what are the population densities of each us state ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'mississippi', 'word': 'population'}},
+ 'sentence': 'what is the population of mississippi ?'}
+{'def': [{'mod': {'xref': '592'}, 'word': 'states', 'xtarget': '591'},
+         {'pred': 'SameAs', 'sameAs_arg': {'xref': '589'}, 'xtarget': '596'},
+         {'prep_of': {'xref': '591'},
+          'word': 'populations',
+          'xtarget': '589'}],
+ 'lf': [{'inquiry': {'xref': '596'}, 'pred': 'what'},
+        {'pred': 'runs',
+         'prep_through': {'xref': '591'},
+         'subj': 'mississippi_river',
+         'xtarget': '592'}],
+ 'sentence': 'what are the populations of states through which the mississippi_river runs ?'}
+{'def': [{'pred': 'SameAs', 'sameAs_arg': {'xref': '600'}, 'xtarget': '607'},
+         {'prep_of': {'xref': '602'},
+          'word': 'populations',
+          'xtarget': '600'},
+         {'mod': {'xref': '603'}, 'word': 'states', 'xtarget': '602'}],
+ 'lf': [{'pred': 'runs',
+         'prep_through': {'xref': '602'},
+         'subj': 'mississippi',
+         'xtarget': '603'},
+        {'inquiry': {'xref': '607'}, 'pred': 'what'}],
+ 'sentence': 'what are the populations of states through which the mississippi runs ?'}
+{'def': [{'mod': {'xref': '614'}, 'word': 'states', 'xtarget': '613'},
+         {'prep_of': {'xref': '613'},
+          'word': 'populations',
+          'xtarget': '611'},
+         {'pred': 'SameAs', 'sameAs_arg': {'xref': '611'}, 'xtarget': '617'}],
+ 'lf': [{'inquiry': {'xref': '617'}, 'pred': 'what'},
+        {'dobj': {'xref': '613'},
+         'pred': 'texas',
+         'subj': 'border',
+         'xtarget': '614'}],
+ 'sentence': 'what are the populations of states which border texas ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'prep_of': {'mod': 'major',
+                                               'prep_of': 'texas',
+                                               'word': 'cities'},
+                                   'word': 'populations'}},
+        'pred': 'what'},
+ 'sentence': 'what are the populations of the major cities of texas ?'}
+{'lf': {'inquiry': {'pred': 'are', 'prep_in': 'alaska', 'subj': 'rivers'},
+        'pred': 'what'},
+ 'sentence': 'what are the rivers in alaska ?'}
+{'lf': {'dobj': {'mod': 'most', 'word': 'people'},
+        'pred': 'has',
+        'subj': 'city'},
+ 'sentence': 'what city has the most people ?'}
+{'lf': {'dobj': {'mod': 'highest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': {'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'},
+                 'word': 'city'}},
+ 'sentence': 'what city in the united states has the highest population density ?'}
+{'lf': {'inquiry': {'pred': 'capital',
+                    'prep_of': {'prep_with': {'mod': 'lowest',
+                                              'word': 'point'},
+                                'word': 'state'}},
+        'pred': 'what'},
+ 'sentence': 'what is capital of the state with the lowest point ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'florida', 'word': 'area'}},
+ 'sentence': 'what is the area of florida ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'ohio', 'word': 'area'}},
+ 'sentence': 'what is the area of ohio ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': ['texas', 'state'], 'word': 'area'}},
+ 'sentence': 'what is the area of the texas state ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'wisconsin', 'word': 'area'}},
+ 'sentence': 'what is the area of wisconsin ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': ['american', 'biggest'],
+                                   'prep_in': {'prep_with': 'river',
+                                               'word': 'state'},
+                                   'word': 'city'}},
+        'pred': 'what'},
+ 'sentence': 'what is the biggest american city in a state with a river ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'biggest',
+                                   'prep_in': 'us',
+                                   'word': ['capital', 'city']}},
+        'pred': 'what'},
+ 'sentence': 'what is the biggest capital city in the us ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'biggest', 'prep_in': 'kansas', 'word': 'city'}},
+ 'sentence': 'what is the biggest city in kansas ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'biggest', 'prep_in': 'louisiana', 'word': 'city'}},
+ 'sentence': 'what is the biggest city in louisiana ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'california', 'word': 'capital'}},
+ 'sentence': 'what is the capital of california ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'colorado', 'word': 'capital'}},
+ 'sentence': 'what is the capital of colorado ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'illinois', 'word': 'capital'}},
+ 'sentence': 'what is the capital of illinois ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'iowa', 'word': 'capital'}},
+ 'sentence': 'what is the capital of iowa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'massachusetts', 'word': 'capital'}},
+ 'sentence': 'what is the capital of massachusetts ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'new_jersey', 'word': 'capital'}},
+ 'sentence': 'what is the capital of new_jersey ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'new_york', 'word': 'capital'}},
+ 'sentence': 'what is the capital of new_york ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'north_dakota', 'word': 'capital'}},
+ 'sentence': 'what is the capital of north_dakota ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'ohio', 'word': 'capital'}},
+ 'sentence': 'what is the capital of ohio ?'}
+{'def': [{'pred': 'SameAs', 'sameAs_arg': {'xref': '805'}, 'xtarget': '813'},
+         {'mod': {'xref': '808'}, 'word': 'states', 'xtarget': '807'},
+         {'prep_of': {'xref': '807'}, 'word': 'capital', 'xtarget': '805'}],
+ 'lf': [{'dobj': {'mod': {'dep': 'durham', 'pred': 'named'},
+                  'word': 'cities'},
+         'pred': 'have',
+         'subj': {'xref': '807'},
+         'xtarget': '808'},
+        {'inquiry': {'xref': '813'}, 'pred': 'what'}],
+ 'sentence': 'what is the capital of states that have cities named durham ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'florida', 'word': 'state'},
+                    'word': 'capital'}},
+ 'sentence': 'what is the capital of the florida state ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'smallest', 'word': 'state'},
+                    'word': 'capital'}},
+ 'sentence': 'what is the capital of the smallest state ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'prep_with': {'mod': 'largest',
+                                              'word': 'population'},
+                                'word': 'state'},
+                    'word': 'capital'}},
+ 'sentence': 'what is the capital of the state with the largest population ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'prep_with': {'mod': 'largest',
+                                              'word': ['population',
+                                                       'density']},
+                                'word': 'state'},
+                    'word': 'capital'}},
+ 'sentence': 'what is the capital of the state with the largest population density ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'state',
+                    'prep_with': {'mod': 'longest', 'word': 'river'},
+                    'word': 'capital'}},
+ 'sentence': 'what is the capital of the state with the longest river ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'prep_with': {'mod': 'most', 'word': 'inhabitants'},
+                    'subj': {'prep_of': 'state', 'word': 'capital'}},
+        'pred': 'what'},
+ 'sentence': 'what is the capital of the state with the most inhabitants ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'pred': 'combined'},
+                    'prep_of': ['50', 'states'],
+                    'word': 'area'}},
+ 'sentence': 'what is the combined area of all 50 states ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'new_york', 'word': 'density'}},
+ 'sentence': 'what is the density of the new_york ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'wyoming', 'word': 'high_point'}},
+ 'sentence': 'what is the high_point of wyoming ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_in': 'texas',
+                    'word': 'elevation'}},
+ 'sentence': 'what is the highest elevation in texas ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_in': {'mod': {'pred': 'united'}, 'word': 'states'},
+                    'word': 'elevation'}},
+ 'sentence': 'what is the highest elevation in the united states ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'highest',
+                                   'prep_in': 'us',
+                                   'word': 'mountain'}},
+        'pred': 'what'},
+ 'sentence': 'what is the highest mountain in the us ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'us', 'word': 'mountain'}},
+ 'sentence': 'what is the highest mountain in us ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'delaware', 'word': 'point'}},
+ 'sentence': 'what is the highest point in delaware ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'iowa', 'word': 'point'}},
+ 'sentence': 'what is the highest point in iowa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'maine', 'word': 'point'}},
+ 'sentence': 'what is the highest point in maine ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'montana', 'word': 'point'}},
+ 'sentence': 'what is the highest point in montana ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_in': {'prep_in': 'meters', 'word': 'nevada'},
+                    'word': 'point'}},
+ 'sentence': 'what is the highest point in nevada in meters ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'highest',
+                                   'prep_in': {'mod': {'dobj': 'georgia',
+                                                       'pred': 'bordering'},
+                                               'word': 'states'},
+                                   'word': 'point'}},
+        'pred': 'what'},
+ 'sentence': 'what is the highest point in states bordering georgia ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'highest',
+                                   'prep_in': {'prep_with': ['capital',
+                                                             'austin'],
+                                               'word': 'state'},
+                                   'word': 'point'}},
+        'pred': 'what'},
+ 'sentence': 'what is the highest point in the state with capital austin ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'highest',
+                                   'prep_in': {'mod': {'dobj': 'colorado',
+                                                       'pred': 'bordering'},
+                                               'word': 'states'},
+                                   'word': 'point'}},
+        'pred': 'what'},
+ 'sentence': 'what is the highest point in the states bordering colorado ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'usa', 'word': 'point'}},
+ 'sentence': 'what is the highest point in the usa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_in': 'virginia', 'word': 'point'}},
+ 'sentence': 'what is the highest point in virginia ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest',
+                    'prep_of': {'prep_with': {'mod': 'smallest',
+                                              'word': ['population',
+                                                       'density']},
+                                'word': 'state'},
+                    'word': 'point'}},
+ 'sentence': 'what is the highest point of the state with the smallest population density ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'highest', 'prep_of': 'usa', 'word': 'point'}},
+ 'sentence': 'what is the highest point of the usa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': 'usa',
+                    'word': ['capital', 'city']}},
+ 'sentence': 'what is the largest capital city in the usa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': 'california',
+                    'word': 'city'}},
+ 'sentence': 'what is the largest city in california ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': 'rhode_island',
+                    'word': 'city'}},
+ 'sentence': 'what is the largest city in rhode_island ?'}
+{'def': [{'mod': ['largest', {'xref': '1090'}],
+          'prep_in': {'mod': 'smallest', 'word': 'state'},
+          'word': 'city',
+          'xtarget': '1087'},
+         {'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1087'},
+          'xtarget': '1096'}],
+ 'lf': [{'pred': 'runs',
+         'prep_through': {'xref': '1087'},
+         'subj': 'mississippi',
+         'xtarget': '1090'},
+        {'inquiry': {'xref': '1096'}, 'pred': 'what'}],
+ 'sentence': 'what is the largest city in smallest state through which the mississippi runs ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': {'mod': 'smallest',
+                                'prep_in': 'usa',
+                                'word': 'state'},
+                    'word': 'city'}},
+ 'sentence': 'what is the largest city in the smallest state in the usa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'largest',
+                    'prep_in': {'mod': 'washington', 'word': 'state'},
+                    'word': 'river'}},
+ 'sentence': 'what is the largest river in washington state ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': ['largest',
+                            {'dobj': 'arkansas', 'pred': 'bordering'}],
+                    'word': 'state'}},
+ 'sentence': 'what is the largest state bordering arkansas ?'}
+{'def': [{'mod': ['largest', {'xref': '1133'}],
+          'word': 'state',
+          'xtarget': '1130'},
+         {'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1130'},
+          'xtarget': '1136'}],
+ 'lf': [{'inquiry': {'xref': '1136'}, 'pred': 'what'},
+        {'dobj': 'texas',
+         'subj': {'xref': '1130'},
+         'word': 'borders',
+         'xtarget': '1133'}],
+ 'sentence': 'what is the largest state that borders texas ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'dep': 'least', 'word': 'populous'},
+                    'word': 'state'}},
+ 'sentence': 'what is the least populous state ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'colorado_river', 'word': 'length'}},
+ 'sentence': 'what is the length of the colorado_river ?'}
+{'def': [{'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1156'},
+          'xtarget': '1164'},
+         {'mod': ['longest', {'xref': '1161'}],
+          'word': 'river',
+          'xtarget': '1158'},
+         {'prep_of': {'xref': '1158'}, 'word': 'length', 'xtarget': '1156'}],
+ 'lf': [{'inquiry': {'xref': '1164'}, 'pred': 'what'},
+        {'pred': 'runs',
+         'prep_through': 'texas',
+         'subj': {'xref': '1158'},
+         'xtarget': '1161'}],
+ 'sentence': 'what is the length of the longest river that runs through texas ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'mississippi_river', 'word': 'length'}},
+ 'sentence': 'what is the length of the mississippi_river ?'}
+{'def': [{'mod': {'xref': '1178'},
+          'prep_of': 'river',
+          'word': 'length',
+          'xtarget': '1176'},
+         {'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1176'},
+          'xtarget': '1185'}],
+ 'lf': [{'inquiry': {'xref': '1185'}, 'pred': 'what'},
+        {'pred': 'flows',
+         'prep_through': {'mod': 'most', 'word': 'states'},
+         'subj': {'xref': '1176'},
+         'xtarget': '1178'}],
+ 'sentence': 'what is the length of the river that flows through the most states ?'}
+{'def': [{'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1189'},
+          'xtarget': '1198'},
+         {'mod': {'xref': '1191'},
+          'prep_of': 'river',
+          'word': 'length',
+          'xtarget': '1189'}],
+ 'lf': [{'pred': 'runs',
+         'prep_through': {'mod': 'most', 'word': 'states'},
+         'subj': {'xref': '1189'},
+         'xtarget': '1191'},
+        {'inquiry': {'xref': '1198'}, 'pred': 'what'}],
+ 'sentence': 'what is the length of the river that runs through the most states ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'longest', 'prep_in': 'florida', 'word': 'river'}},
+ 'sentence': 'what is the longest river in florida ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'longest',
+                    'prep_in': {'mod': 'largest', 'word': 'state'},
+                    'word': 'river'}},
+ 'sentence': 'what is the longest river in the largest state ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'longest',
+                                   'prep_in': 'state',
+                                   'prep_with': {'mod': {'mod': 'most',
+                                                         'word': 'major'},
+                                                 'word': 'cities'},
+                                   'word': 'river'}},
+        'pred': 'what'},
+ 'sentence': 'what is the longest river in the state with the most major cities ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'longest',
+                                   'prep_in': 'states',
+                                   'prep_that': ['border', 'nebraska'],
+                                   'word': 'river'}},
+        'pred': 'what'},
+ 'sentence': 'what is the longest river in the states that border nebraska ?'}
+{'def': [{'mod': ['longest', {'xref': '1250'}],
+          'word': 'river',
+          'xtarget': '1247'},
+         {'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1247'},
+          'xtarget': '1256'},
+         {'mod': {'xref': '1253'}, 'word': 'state', 'xtarget': '1251'}],
+ 'lf': [{'inquiry': {'xref': '1256'}, 'pred': 'what'},
+        {'dobj': {'xref': '1251'},
+         'pred': 'indiana',
+         'subj': 'borders',
+         'xtarget': '1253'},
+        {'pred': 'flows',
+         'prep_through': {'xref': '1251'},
+         'subj': {'xref': '1247'},
+         'xtarget': '1250'}],
+ 'sentence': 'what is the longest river that flows through a state that borders indiana ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest', 'prep_in': 'arkansas', 'word': 'point'}},
+ 'sentence': 'what is the lowest point in arkansas ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': 'massachusetts',
+                    'word': 'point'}},
+ 'sentence': 'what is the lowest point in massachusetts ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': 'mississippi',
+                    'word': 'point'}},
+ 'sentence': 'what is the lowest point in mississippi ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': {'prep_in': 'meters', 'word': 'nebraska'},
+                    'word': 'point'}},
+ 'sentence': 'what is the lowest point in nebraska in meters ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest',
+                    'prep_in': {'prep_of': 'california', 'word': 'state'},
+                    'word': 'point'}},
+ 'sentence': 'what is the lowest point in the state of california ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'lowest', 'prep_in': 'usa', 'word': 'point'}},
+ 'sentence': 'what is the lowest point in usa ?'}
+{'def': [{'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1311'},
+          'xtarget': '1321'},
+         {'mod': 'lowest',
+          'prep_of': {'xref': '1314'},
+          'word': 'point',
+          'xtarget': '1311'},
+         {'mod': {'xref': '1316'}, 'word': 'states', 'xtarget': '1314'}],
+ 'lf': [{'mod': 'through',
+         'pred': 'runs',
+         'prep_through': {'xref': '1314'},
+         'subj': 'colorado_river',
+         'xtarget': '1316'},
+        {'inquiry': {'xref': '1321'}, 'pred': 'what'}],
+ 'sentence': 'what is the lowest point of all states through which the colorado_river runs through ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'maximum',
+                    'prep_of': 'san_francisco',
+                    'word': 'elevation'}},
+ 'sentence': 'what is the maximum elevation of san_francisco ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'mod': 'most', 'word': 'dense'},
+                    'prep_in': 'usa',
+                    'word': 'state'}},
+ 'sentence': 'what is the most dense state in the usa ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'mod': 'most', 'word': 'populous'},
+                    'word': 'city'}},
+ 'sentence': 'what is the most populous city ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': {'mod': 'most', 'word': 'populous'},
+                    'word': 'state'}},
+ 'sentence': 'what is the most populous state ?'}
+{'def': [{'mod': [{'mod': 'most', 'word': 'populous'}, {'xref': '1363'}],
+          'word': 'state',
+          'xtarget': '1359'},
+         {'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1359'},
+          'xtarget': '1367'}],
+ 'lf': [{'inquiry': {'xref': '1367'}, 'pred': 'what'},
+        {'pred': 'runs',
+         'prep_through': {'xref': '1359'},
+         'subj': 'mississippi',
+         'xtarget': '1363'}],
+ 'sentence': 'what is the most populous state through which the mississippi runs ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'maine', 'word': ['population', 'density']}},
+ 'sentence': 'what is the population density of maine ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'largest', 'word': 'state'},
+                    'word': ['population', 'density']}},
+ 'sentence': 'what is the population density of the largest state ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'alaska', 'word': 'population'}},
+ 'sentence': 'what is the population of alaska ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'boulder', 'word': 'population'}},
+ 'sentence': 'what is the population of boulder ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'erie', 'word': 'pennsylvania'},
+                    'word': 'population'}},
+ 'sentence': 'what is the population of erie pennsylvania ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'hawaii', 'word': 'population'}},
+ 'sentence': 'what is the population of hawaii ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'houston', 'word': 'population'}},
+ 'sentence': 'what is the population of houston ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'maryland', 'word': 'population'}},
+ 'sentence': 'what is the population of maryland ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'new_mexico', 'word': 'population'}},
+ 'sentence': 'what is the population of new_mexico ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'new_york', 'word': 'city'},
+                    'word': 'population'}},
+ 'sentence': 'what is the population of new_york city ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'san_antonio', 'word': 'population'}},
+ 'sentence': 'what is the population of san_antonio ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'tempe', 'word': 'arizona'},
+                    'word': 'population'}},
+ 'sentence': 'what is the population of tempe arizona ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'largest',
+                                'prep_in': 'state',
+                                'prep_with': {'mod': 'largest',
+                                              'word': 'area'},
+                                'word': 'city'},
+                    'word': 'population'}},
+ 'sentence': 'what is the population of the largest city in the state with the largest area ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'mod': 'smallest', 'word': 'state'},
+                    'word': 'population'}},
+ 'sentence': 'what is the population of the smallest state ?'}
+{'def': [{'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1487'},
+          'xtarget': '1496'},
+         {'mod': {'xref': '1489'},
+          'prep_of': 'state',
+          'word': 'population',
+          'xtarget': '1487'}],
+ 'lf': [{'inquiry': {'xref': '1496'}, 'pred': 'what'},
+        {'dobj': {'mod': 'most', 'word': 'states'},
+         'pred': 'borders',
+         'subj': {'xref': '1487'},
+         'xtarget': '1489'}],
+ 'sentence': 'what is the population of the state that borders the most states ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': {'prep_with': {'mod': 'highest',
+                                              'word': ['population',
+                                                       'density']},
+                                'word': 'state'},
+                    'word': 'population'}},
+ 'sentence': 'what is the population of the state with the highest population density ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'tucson', 'word': 'population'}},
+ 'sentence': 'what is the population of tucson ?'}
+{'lf': {'pred': 'what', 'prop_of': {'prep_of': 'utah', 'word': 'population'}},
+ 'sentence': 'what is the population of utah ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'prep_of': 'washington', 'word': 'population'}},
+ 'sentence': 'what is the population of washington ?'}
+{'lf': {'inquiry': {'pred': 'SameAs',
+                    'sameAs_arg': {'mod': 'smallest',
+                                   'prep_in': 'us',
+                                   'word': 'city'}},
+        'pred': 'what'},
+ 'sentence': 'what is the smallest city in the us ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'smallest', 'prep_in': 'usa', 'word': 'city'}},
+ 'sentence': 'what is the smallest city in the usa ?'}
+{'lf': {'inquiry': {'dobj': 'wyoming',
+                    'pred': 'bordering',
+                    'subj': {'mod': 'smallest', 'word': 'state'}},
+        'pred': 'what'},
+ 'sentence': 'what is the smallest state bordering wyoming ?'}
+{'def': [{'mod': ['smallest', {'xref': '1565'}],
+          'word': 'state',
+          'xtarget': '1562'},
+         {'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1562'},
+          'xtarget': '1570'}],
+ 'lf': [{'inquiry': {'xref': '1570'}, 'pred': 'what'},
+        {'dobj': {'mod': 'most', 'word': 'states'},
+         'pred': 'borders',
+         'subj': {'xref': '1562'},
+         'xtarget': '1565'}],
+ 'sentence': 'what is the smallest state that borders the most states ?'}
+{'def': [{'pred': 'SameAs',
+          'sameAs_arg': {'xref': '1574'},
+          'xtarget': '1582'},
+         {'mod': ['smallest', {'xref': '1577'}],
+          'word': 'state',
+          'xtarget': '1574'}],
+ 'lf': [{'inquiry': {'xref': '1582'}, 'pred': 'what'},
+        {'dobj': {'xref': '1574'},
+         'mod': 'through',
+         'pred': 'runs',
+         'subj': 'mississippi_river',
+         'xtarget': '1577'}],
+ 'sentence': 'what is the smallest state that the mississippi_river runs through ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'prep_with': {'mod': 'largest', 'word': 'area'},
+                    'subj': 'state'},
+        'pred': 'what'},
+ 'sentence': 'what is the state with the largest area ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'prep_with': {'mod': 'smallest', 'word': 'area'},
+                    'subj': 'state'},
+        'pred': 'what'},
+ 'sentence': 'what is the state with the smallest area ?'}
+{'lf': {'pred': 'what',
+        'prop_of': {'mod': 'total',
+                    'prep_of': {'prep_in': 'usa', 'word': 'rivers'},
+                    'word': 'length'}},
+ 'sentence': 'what is the total length of all rivers in the usa ?'}
+{'lf': {'pred': 'length', 'prop_of': 'mississippi'},
+ 'sentence': 'what length is the mississippi ?'}
+{'lf': {'obj': {'mod': 'major', 'word': 'cities'},
+        'pred': 'located',
+        'prep_in': 'pennsylvania'},
+ 'sentence': 'what major cities are located in pennsylvania ?'}
+{'lf': {'dep': 'river',
+        'pred': 'flows',
+        'prep_through': {'mod': 'most', 'word': 'states'}},
+ 'sentence': 'what river flows through the most states ?'}
+{'lf': {'pred': 'runs',
+        'prep_through': {'prep_with': {'mod': 'most', 'word': 'cities'},
+                         'word': 'state'},
+        'subj': 'river'},
+ 'sentence': 'what river runs through the state with the most cities ?'}
+{'lf': {'dep': 'borders',
+        'dobj': ['state', {'mod': 'most', 'word': 'states'}],
+        'pred': 'traverses',
+        'subj': 'river'},
+ 'sentence': 'what river traverses the state which borders the most states ?'}
+{'def': [{'dep': {'xref': '1662'}, 'word': 'states', 'xtarget': '1661'},
+         {'dobj': {'xref': '1661'},
+          'pred': 'texas',
+          'subj': 'border',
+          'xtarget': '1662'}],
+ 'lf': {'pred': 'are', 'prep_in': {'xref': '1661'}, 'subj': 'rivers'},
+ 'sentence': 'what rivers are in states that border texas ?'}
+{'lf': {'dep': 'rivers', 'pred': 'are', 'prep_in': 'texas'},
+ 'sentence': 'what rivers are in texas ?'}
+{'lf': {'pred': 'Exists', 'prep_in': 'texas', 'subj': 'rivers'},
+ 'sentence': 'what rivers are there in texas ?'}
+{'lf': {'dep': 'rivers', 'pred': 'run', 'prep_through': 'new_york'},
+ 'sentence': 'what rivers run through new_york ?'}
+{'lf': {'dep': 'borders',
+        'dobj': ['state', {'mod': 'most', 'word': 'states'}],
+        'pred': 'traverses',
+        'subj': 'rivers'},
+ 'sentence': 'what rivers traverses the state which borders the most states ?'}
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'largest', 'word': 'population'},
+        'pred': 'has',
+        'subj': {'mod': 'bordering', 'word': 'nevada'}},
+ 'sentence': 'what state bordering nevada has the largest population ?'}
+{'lf': {'inquiry': {'pred': 'new_york', 'subj': 'borders'}, 'pred': 'what'},
+ 'sentence': 'what state borders new_york ?'}
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'most', 'word': 'states'},
+        'word': 'borders'},
+ 'sentence': 'what state borders the most states ?'}
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'highest',
+                 'prep_of': ['colorado_river', 'traverses', 'those'],
+                 'word': 'point'},
+        'pred': 'contains'},
+ 'sentence': 'what state contains the highest point of those the colorado_river traverses ?'}
+{'lf': {'dobj': {'mod': 'largest', 'word': 'area'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'what state has the largest area ?'}
+{'lf': {'dobj': {'mod': 'largest', 'word': 'capital'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'what state has the largest capital ?'}
+{'lf': {'dobj': {'mod': 'longest', 'word': 'river'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'what state has the longest river ?'}
+{'lf': {'dobj': {'mod': 'lowest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'what state has the lowest population density ?'}
+{'lf': {'dep': 'state',
+        'pred': 'has',
+        'subj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'cities'}},
+ 'sentence': 'what state has the most major cities ?'}
+{'lf': {'dobj': {'mod': 'most', 'word': 'rivers'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'what state has the most rivers ?'}
+{'lf': {'dobj': {'mod': ['urban', 'smallest'], 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'what state has the smallest urban population ?'}
+{'lf': {'pred': 'austin', 'prep': 'in', 'prop_of': 'state'},
+ 'sentence': 'what state is austin in ?'}
+{'lf': {'pred': 'miami', 'prep': 'in', 'prop_of': 'state'},
+ 'sentence': 'what state is miami in ?'}
+{'lf': {'pred': 'state',
+        'prop_of': {'prep_in': 'population', 'word': 'largest'}},
+ 'sentence': 'what state is the largest in population ?'}
+{'lf': {'pred': 'next', 'prep_to': 'arizona', 'prop_of': 'states'},
+ 'sentence': 'what states are next to arizona ?'}
+{'lf': {'inquiry': {'dep': 'states', 'pred': 'florida', 'subj': 'border'},
+        'pred': 'what'},
+ 'sentence': 'what states border florida ?'}
+{'lf': {'inquiry': {'dep': 'states', 'pred': 'indiana', 'subj': 'border'},
+        'pred': 'what'},
+ 'sentence': 'what states border indiana ?'}
+{'lf': {'inquiry': {'dep': 'states', 'pred': 'michigan', 'subj': 'border'},
+        'pred': 'what'},
+ 'sentence': 'what states border michigan ?'}
+{'lf': {'inquiry': {'dep': 'states', 'pred': 'montana', 'subj': 'border'},
+        'pred': 'what'},
+ 'sentence': 'what states border montana ?'}
+{'lf': {'inquiry': {'dobj': ['border', 'new_jersey'], 'pred': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border new_jersey ?'}
+{'lf': {'inquiry': {'comp': {'comp': {'pred': 'mississippi',
+                                      'subj': 'border'},
+                             'pred': 'states',
+                             'subj': 'border'},
+                    'pred': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border states that border mississippi ?'}
+{'lf': {'inquiry': {'comp': {'comp': {'mod': 'through',
+                                      'pred': 'runs',
+                                      'subj': 'ohio'},
+                             'pred': 'states',
+                             'subj': 'border'},
+                    'pred': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border states that the ohio runs through ?'}
+{'lf': {'inquiry': {'conj_and': [{'dep': 'states',
+                                  'word': ['border', 'texas']},
+                                 {'dobj': {'mod': 'major',
+                                           'word': 'river'},
+                                  'pred': 'have'}],
+                    'pred': 'and'},
+        'pred': 'what'},
+ 'sentence': 'what states border texas and have a major river ?'}
+{'lf': {'inquiry': {'dep': ['border',
+                            {'mod': {'mod': 'most', 'word': 'populous'},
+                             'word': 'state'}],
+                    'word': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border the most populous state ?'}
+{'def': [{'dep': ['border', {'xref': '1900'}],
+          'word': 'states',
+          'xtarget': '1896'},
+         {'mod': {'xref': '1902'}, 'word': 'state', 'xtarget': '1900'}],
+ 'lf': [{'inquiry': {'xref': '1896'}, 'pred': 'what'},
+        {'dobj': {'mod': 'most', 'word': 'states'},
+         'pred': 'borders',
+         'subj': {'xref': '1900'},
+         'xtarget': '1902'}],
+ 'sentence': 'what states border the state that borders the most states ?'}
+{'lf': {'inquiry': {'dep': ['border',
+                            {'prep_with': {'mod': 'most',
+                                           'word': 'cities'},
+                             'word': 'state'}],
+                    'word': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border the state with the most cities ?'}
+{'lf': {'inquiry': {'dep': ['border',
+                            {'prep_with': {'mod': {'mod': 'most',
+                                                   'word': 'major'},
+                                           'word': 'cities'},
+                             'word': 'state'}],
+                    'word': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border the state with the most major cities ?'}
+{'lf': {'inquiry': {'dep': ['border',
+                            {'prep_with': {'mod': 'smallest',
+                                           'word': 'area'},
+                             'word': 'state'}],
+                    'word': 'states'},
+        'pred': 'what'},
+ 'sentence': 'what states border the state with the smallest area ?'}
+{'lf': {'dep': 'states',
+        'dobj': {'mod': ['major', {'pobj': 'least', 'word': 'at'}],
+                 'word': ['one', 'rivers']},
+        'pred': 'contain'},
+ 'sentence': 'what states contain at least one major rivers ?'}
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'delaware_river'},
+ 'sentence': 'what states does the delaware_river run through ?'}
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'mississippi_river'},
+ 'sentence': 'what states does the mississippi_river run through ?'}
+{'lf': {'dobj': 'states', 'mod': 'through', 'pred': 'run', 'subj': 'missouri'},
+ 'sentence': 'what states does the missouri run through ?'}
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'ohio_river'},
+ 'sentence': 'what states does the ohio_river run through ?'}
+{'lf': {'dobj': {'mod': {'dep': 'dallas', 'pred': 'named'}, 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'},
+ 'sentence': 'what states have cities named dallas ?'}
+{'lf': {'dobj': {'mod': {'dep': 'plano', 'pred': 'named'}, 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'},
+ 'sentence': 'what states have cities named plano ?'}
+{'lf': {'dobj': {'mod': {'dep': 'portland', 'pred': 'named'},
+                 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'},
+ 'sentence': 'what states have cities named portland ?'}
+{'lf': {'dobj': {'mod': {'dep': 'rochester', 'pred': 'named'},
+                 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'},
+ 'sentence': 'what states have cities named rochester ?'}
+{'lf': {'dobj': {'mod': {'dep': 'salt_lake_city', 'pred': 'named'},
+                 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'},
+ 'sentence': 'what states have cities named salt_lake_city ?'}
+{'lf': {'dep': 'states', 'dobj': 'kentucky', 'pred': 'surround'},
+ 'sentence': 'what states surround kentucky ?'}
+{'lf': {'inquiry': {'comp': 'mountains', 'pred': 'are'}, 'pred': 'where'},
+ 'sentence': 'where are mountains ?'}
+{'lf': {'inquiry': {'pred': 'is', 'subj': 'dallas'}, 'pred': 'where'},
+ 'sentence': 'where is dallas ?'}
+{'lf': {'inquiry': {'pred': 'is', 'subj': 'portland'}, 'pred': 'where'},
+ 'sentence': 'where is portland ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'subj': {'mod': 'chattahoochee', 'word': 'river'}},
+        'pred': 'where'},
+ 'sentence': 'where is the chattahoochee river ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'subj': {'mod': 'highest',
+                             'prep_of': {'mod': {'pred': 'united'},
+                                         'word': 'states'},
+                             'word': 'mountain'}},
+        'pred': 'where'},
+ 'sentence': 'where is the highest mountain of the united states ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'subj': {'mod': 'highest',
+                             'prep_in': 'hawaii',
+                             'word': 'point'}},
+        'pred': 'where'},
+ 'sentence': 'where is the highest point in hawaii ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'subj': {'mod': 'lowest',
+                             'prep_in': 'maryland',
+                             'word': 'point'}},
+        'pred': 'where'},
+ 'sentence': 'where is the lowest point in maryland ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'subj': {'mod': {'mod': 'most', 'word': 'populated'},
+                             'prep_of': 'new_mexico',
+                             'word': 'area'}},
+        'pred': 'where'},
+ 'sentence': 'where is the most populated area of new_mexico ?'}
+{'lf': {'inquiry': {'pred': 'is',
+                    'subj': {'mod': 'smallest', 'word': 'city'}},
+        'pred': 'where'},
+ 'sentence': 'where is the smallest city ?'}
+{'lf': {'dobj': {'mod': 'largest', 'word': 'population'},
+        'pred': 'has',
+        'subj': {'prep_in': 'california', 'word': 'city'}},
+ 'sentence': 'which city in california has the largest population ?'}
+{'lf': {'inquiry': {'comp': {'pred': ['runs', 'through'],
+                             'subj': {'mod': 'largest',
+                                      'prep_in': {'mod': {'pred': 'united'},
+                                                  'word': 'states'},
+                                      'word': 'river'}},
+                    'pred': 'SameAs',
+                    'sameAs_arg': {'prep_of': 'state', 'word': 'density'}},
+        'pred': 'which'},
+ 'sentence': 'which is the density of the state that the largest river in the united states runs through ?'}
+{'lf': {'inquiry': {'feats': {'negated': 'negated'},
+                    'pred': 'is',
+                    'prep_in': 'alaska',
+                    'subj': {'mod': 'highest', 'word': 'peak'}},
+        'pred': 'which'},
+ 'sentence': 'which is the highest peak not in alaska ?'}
+{'lf': {'pred': 'which',
+        'prop_of': {'mod': 'longest', 'prep_in': 'usa', 'word': 'river'}},
+ 'sentence': 'which is the longest river in usa ?'}
+{'lf': {'pred': 'which', 'prop_of': {'mod': 'smallest', 'word': 'state'}},
+ 'sentence': 'which is the smallest state ?'}
+{'lf': {'inquiry': {'dobj': {'mod': 'largest', 'word': 'population'},
+                    'pred': 'has'},
+        'pred': 'which',
+        'prep_of': {'mod': {'dobj': 'pennsylvania', 'pred': 'bordering'},
+                    'word': 'states'}},
+ 'sentence': 'which of the states bordering pennsylvania has the largest population ?'}
+{'lf': {'dep': 'river',
+        'pred': 'goes',
+        'prep_through': {'mod': 'most', 'word': 'states'}},
+ 'sentence': 'which river goes through the most states ?'}
+{'lf': {'dep': 'river',
+        'pred': 'runs',
+        'prep_through': {'mod': 'most', 'word': 'states'}},
+ 'sentence': 'which river runs through most states ?'}
+{'lf': {'dep': 'river',
+        'dobj': {'mod': 'most', 'word': 'states'},
+        'pred': 'traverses'},
+ 'sentence': 'which river traverses most states ?'}
+{'lf': {'feats': {'negated': 'negated'},
+        'pred': 'run',
+        'prep_through': 'texas',
+        'subj': 'rivers'},
+ 'sentence': 'which rivers do not run through texas ?'}
+{'lf': {'feats': {'negated': 'negated'},
+        'pred': 'run',
+        'prep_through': 'usa',
+        'subj': 'rivers'},
+ 'sentence': 'which rivers do not run through usa ?'}
+{'def': [{'mod': {'xref': '2201'}, 'word': 'states', 'xtarget': '2200'}],
+ 'lf': [{'dobj': 'state',
+         'pred': 'border',
+         'prep_with': ['capital', 'austin'],
+         'subj': {'xref': '2200'},
+         'xtarget': '2201'},
+        {'dep': 'rivers', 'pred': 'run', 'prep_through': {'xref': '2200'}}],
+ 'sentence': 'which rivers run through states that border the state with the capital austin ?'}
+{'lf': {'dep': 'rivers',
+        'pred': 'run',
+        'prep_through': {'prep_with': {'mod': 'fewest', 'word': 'cities'},
+                         'word': 'states'}},
+ 'sentence': 'which rivers run through states with fewest cities ?'}
+{'lf': {'pred': 'hawaii', 'subj': ['state', 'borders']},
+ 'sentence': 'which state borders hawaii ?'}
+{'lf': {'dep': 'state',
+        'dobj': {'mod': 'most', 'word': 'states'},
+        'pred': 'borders'},
+ 'sentence': 'which state borders the most states ?'}
+{'lf': {'dobj': {'mod': 'smallest', 'word': 'population'},
+        'pred': 'has',
+        'subj': ['state', 'capital']},
+ 'sentence': 'which state capital has the smallest population ?'}
+{'lf': {'dobj': {'mod': 'biggest', 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the biggest population ?'}
+{'lf': {'dobj': {'mod': 'greatest', 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the greatest population ?'}
+{'lf': {'dobj': {'mod': 'highest', 'word': 'elevation'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the highest elevation ?'}
+{'lf': {'dobj': {'mod': 'highest', 'word': 'point'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the highest point ?'}
+{'lf': {'dobj': {'mod': 'highest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the highest population density ?'}
+{'lf': {'dobj': {'mod': 'lowest', 'word': 'elevation'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the lowest elevation ?'}
+{'def': [{'dobj': {'xref': '2296'},
+          'pred': 'idaho',
+          'subj': 'borders',
+          'xtarget': '2299'},
+         {'dep': {'xref': '2299'},
+          'mod': 'lowest',
+          'word': 'point',
+          'xtarget': '2296'}],
+ 'lf': {'dobj': {'xref': '2296'}, 'pred': 'has', 'subj': 'state'},
+ 'sentence': 'which state has the lowest point that borders idaho ?'}
+{'lf': {'dobj': {'mod': 'lowest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the lowest population density ?'}
+{'lf': {'dep': 'state',
+        'pred': 'has',
+        'subj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'cities'}},
+ 'sentence': 'which state has the most major cities ?'}
+{'lf': {'dobj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'rivers'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the most major rivers ?'}
+{'lf': {'dobj': 'state',
+        'pred': 'running',
+        'prep_through': 'it',
+        'subj': {'mod': {'mod': 'most', 'word': 'major'}, 'word': 'rivers'}},
+ 'sentence': 'which state has the most major rivers running through it ?'}
+{'lf': {'dobj': {'mod': 'most', 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the most population ?'}
+{'lf': {'dobj': {'mod': 'most', 'word': 'rivers'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the most rivers ?'}
+{'lf': {'dobj': {'mod': ['urban', 'smallest', 'average'],
+                 'word': 'population'},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the smallest average urban population ?'}
+{'lf': {'dobj': {'mod': 'smallest', 'word': ['population', 'density']},
+        'pred': 'has',
+        'subj': 'state'},
+ 'sentence': 'which state has the smallest population density ?'}
+{'lf': {'pred': 'mount_mckinley', 'prep': 'in', 'prop_of': 'state'},
+ 'sentence': 'which state is mount_mckinley in ?'}
+{'lf': {'pred': 'state', 'prop_of': 'smallest'},
+ 'sentence': 'which state is the smallest ?'}
+{'lf': {'dobj': 'states', 'pred': 'illinois', 'subj': 'border'},
+ 'sentence': 'which states border illinois ?'}
+{'lf': {'dobj': 'states', 'pred': 'kentucky', 'subj': 'border'},
+ 'sentence': 'which states border kentucky ?'}
+{'lf': {'dobj': {'mod': 'missouri', 'word': 'river'},
+        'subj': 'states',
+        'word': 'border'},
+ 'sentence': 'which states border the missouri river ?'}
+{'lf': {'dobj': 'state',
+        'pred': 'border',
+        'prep_with': {'mod': 'smallest', 'word': 'area'},
+        'subj': 'states'},
+ 'sentence': 'which states border the state with the smallest area ?'}
+{'lf': {'inquiry': {'comp': {'pred': 'SameAs',
+                             'sameAs_arg': ['largest', ['capital', 'city']]},
+                    'pred': 'states'},
+        'pred': 'which'},
+ 'sentence': 'which states capital city is the largest ?'}
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': {'mod': 'chattahoochee', 'word': 'river'}},
+ 'sentence': 'which states does the chattahoochee river run through ?'}
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': {'mod': 'longest', 'word': 'river'}},
+ 'sentence': 'which states does the longest river run through ?'}
+{'lf': {'dobj': 'states',
+        'mod': 'through',
+        'pred': 'run',
+        'subj': 'mississippi'},
+ 'sentence': 'which states does the mississippi run through ?'}
+{'lf': {'dobj': 'river', 'pred': 'have', 'subj': 'states'},
+ 'sentence': 'which states have a river ?'}
+{'lf': {'dobj': {'mod': {'dep': 'austin', 'pred': 'named'}, 'word': 'cities'},
+        'pred': 'have',
+        'subj': 'states'},
+ 'sentence': 'which states have cities named austin ?'}
+{'lf': {'inquiry': {'dep': ['city', 'us'],
+                    'dobj': {'mod': 'highest',
+                             'word': ['population', 'density']},
+                    'pred': 'has'},
+        'pred': 'which'},
+ 'sentence': 'which us city has the highest population density ?'}
+Processed 280 sentences.
