@@ -241,7 +241,7 @@ class Node:
         36. WRB        Wh-adverb
         """
         return self.pos().startswith("W")
-    
+
     def __hash__(self):
         return self.__str__().__hash__()
     

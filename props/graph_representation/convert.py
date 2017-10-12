@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from props.proposition_structure.syntactic_item import get_verbal_features
 from props.graph_representation import newNode
 from props.graph_representation.word import Word, NO_INDEX

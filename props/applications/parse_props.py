@@ -1,14 +1,19 @@
 """
 Usage:
+<<<<<<< HEAD
   parse_props.py [FILE] [-g|-t] [-l] [-c] [--original] [--oie] [--dep] [--tokenized] [--dontfilter] 
+=======
+  parse_props.py [FILE] (-g|-t) [--original] [--oie] [--dep] [--tokenized] [--dontfilter|--corenlp-json-input]
+>>>>>>> 4f0b826010d134f612f98721876ffd2d6fe8fd5c
   parse_props.py (-h|--help)
 
 Parse sentences into the PropS representation scheme
 
 Arguments:
   FILE   input file composed of one sentence per line. if not specified, will use stdin instead
-  
+
 Options:
+<<<<<<< HEAD
   -h             display this help
   -t             print textual PropS representation
   -g             print graphical representation (in svg format)
@@ -19,6 +24,17 @@ Options:
   --dep          print the intermediate dependency representation 
   --tokenized    specifies that the input file is tokenized
   --dontfilter   skip pre-filtering the input file to only printable characters
+=======
+  -h                      Display this help
+  -t                      Print textual PropS representation
+  -g                      Print graphical representation (in svg format)
+  --original              Print original sentence
+  --oie                   Pint open-ie like extractions
+  --dep                   Print the intermediate dependency representation 
+  --tokenized             Specifies that the input file is tokenized
+  --dontfilter            Skip pre-filtering the input file to only printable characters
+  --corenlp-json-input    Take Stanford's output json as input (either from STDIN or from file).
+>>>>>>> 4f0b826010d134f612f98721876ffd2d6fe8fd5c
 """
 
 #!/usr/bin/env python
@@ -27,7 +43,8 @@ from __future__ import print_function
 import os, sys, string
 HOME_DIR = os.environ.get("PROPEXTRACTION_HOME_DIR", './')+"/"
 
-import run  
+import run
+import json
 from props.webinterface import bottle
 from props.applications.viz_tree import DepTreeVisualizer
 from props.applications.run import load_berkeley
@@ -38,9 +55,9 @@ import codecs
 from cStringIO import StringIO
 import sys,time,datetime
 from subprocess import call
-import svg_stack as ss
 from docopt import docopt
 from props.applications.run import parseSentences
+
 from pprint import pprint
 import json
 
@@ -49,10 +66,14 @@ import sys
 from props.utils.lf_utils import lf_clean
 from props.utils.lf_utils import to_de_bruijn
 
+import logging
+
+
 def main(arguments):
-    
-    load_berkeley(not arguments["--tokenized"])
-    
+    if not(arguments["--corenlp-json-input"]):
+        #Initialize Berekeley parser when using raw input 
+        load_berkeley(not arguments["--tokenized"])
+
     outputType = 'html'
     sep = "<br>"
     if True or arguments['-t']:
@@ -60,11 +81,19 @@ def main(arguments):
         sep = "\n"
         
     graphical = (outputType=='html')
-    
-    if arguments["--dontfilter"]:
+
+    # Parse according to source input
+    if arguments["--corenlp-json-input"]:
+        # Parse accroding to input method
+        sents = (json.loads("".join(arguments["FILE"])) \
+                 if isinstance(arguments["FILE"], list) \
+                 else json.load(arguments["FILE"]))["sentences"]
+
+    elif arguments["--dontfilter"]:
         sents = [x for x in arguments["FILE"]]
-    else:    
+    else:
         sents = [filter(lambda x: x in string.printable, s) for s in arguments["FILE"]] 
+
 
     numSent = 0
     for sent in sents:
@@ -76,7 +105,10 @@ def main(arguments):
         if (arguments["--original"]):
             print(sent)
 
-        gs = parseSentences(sent,HOME_DIR)
+        gs = parseSentences(sent,
+                            HOME_DIR,
+                            stanford_json_sent = arguments["--corenlp-json-input"])
+
         g,tree = gs[0]
         dot = g.drawToFile("","svg")   
         
@@ -110,11 +142,14 @@ def main(arguments):
     
 
 if __name__ == "__main__":
+    logging.basicConfig(level = logging.INFO)
     arguments = docopt(__doc__)
+    logging.debug(arguments)
     if arguments["FILE"]:
         arguments["FILE"] = open(arguments["FILE"])
     else:
-        arguments["FILE"] = sys.stdin
+        arguments["FILE"] = [s for s in sys.stdin]
+
     main(arguments)
 
 

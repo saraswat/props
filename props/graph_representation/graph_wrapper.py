@@ -731,7 +731,6 @@ class GraphWrapper(digraph):
             self.add_edge(edge=(possessiveNode, possessed),
                           label=POSSESSED_LABEL)
 
-            
     def do_questions(self):
         """
         Identify questions and introduce appropriate structure
@@ -757,8 +756,7 @@ class GraphWrapper(digraph):
 
             # 3. Mark that the Wh-question node is a predicate
             wh_question.isPredicate = True
- 
- 
+
     def head(self, node):
         incidents = node.incidents()
         while (node.isPredicate) and ("xcomp" in incidents):

@@ -40,5 +40,7 @@ These seem to be imperative sentences with a question mark added at the end of t
 Not sure how to represent these, since their underlying syntactic analysis will differ from wh-questions.
 
 ### Examples (sentences)
+
 * *Give me the number of rivers in california?*
 * *Count the states which have elevations lower than what alabama has?*
+

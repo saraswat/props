@@ -25,7 +25,11 @@ Find more details, examples, and an online demo at the [project page](http:/www.
 
 ## Full Installation (with Berkeley Parser)
 
+<<<<<<< HEAD
 Run `sudo -E python ./setup.py install` from the props root directory.
+=======
+Run 'sudo -E python ./setup.py install' from the props root directory.
+>>>>>>> 4f0b826010d134f612f98721876ffd2d6fe8fd5c
 This will install several python packages and other resources which PropS uses and relies upon (see [requirements.txt](props/install/requirements.txt) and [install.sh](props/install/install.sh) for the complete list).
 
 MacOS users might run into issues installing JPype. An instruction to manually install JPype on MacOS can be found on the [berkely parser python interface repository](https://github.com/emcnany/berkeleyinterface#installation-and-dependencies).
@@ -36,6 +40,11 @@ MacOS users might run into issues installing JPype. An instruction to manually i
 * java 7 (make sure to set the JAVA_HOME enviroment variable (e.g., /usr/lib/[*your_java_folder*])
 
 ### Testing 
+<<<<<<< HEAD
+=======
+
+Run 'python ./unit_tests/sanity_test.py'
+>>>>>>> 4f0b826010d134f612f98721876ffd2d6fe8fd5c
 
 Run `python ./unit_tests/sanity_test.py`
 
