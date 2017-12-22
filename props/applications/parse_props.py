@@ -1,10 +1,6 @@
 """
 Usage:
-<<<<<<< HEAD
-  parse_props.py [FILE] [-g|-t] [-l] [-c] [--original] [--oie] [--dep] [--tokenized] [--dontfilter] 
-=======
-  parse_props.py [FILE] (-g|-t) [--original] [--oie] [--dep] [--tokenized] [--dontfilter|--corenlp-json-input]
->>>>>>> 4f0b826010d134f612f98721876ffd2d6fe8fd5c
+  parse_props.py [FILE] (-g|-t) (-l|-c) [--original] [--oie] [--dep] [--tokenized] [--dontfilter|--corenlp-json-input]
   parse_props.py (-h|--help)
 
 Parse sentences into the PropS representation scheme
@@ -13,33 +9,22 @@ Arguments:
   FILE   input file composed of one sentence per line. if not specified, will use stdin instead
 
 Options:
-<<<<<<< HEAD
-  -h             display this help
-  -t             print textual PropS representation
-  -g             print graphical representation (in svg format)
-  -l             print logical form 
-  -c             print compact logical form 
-  --original     print original sentence
-  --oie          print open-ie like extractions
-  --dep          print the intermediate dependency representation 
-  --tokenized    specifies that the input file is tokenized
-  --dontfilter   skip pre-filtering the input file to only printable characters
-=======
   -h                      Display this help
   -t                      Print textual PropS representation
   -g                      Print graphical representation (in svg format)
+  -l                      Print logical form
+  -c                      Print compact logical form
   --original              Print original sentence
   --oie                   Pint open-ie like extractions
   --dep                   Print the intermediate dependency representation 
   --tokenized             Specifies that the input file is tokenized
   --dontfilter            Skip pre-filtering the input file to only printable characters
   --corenlp-json-input    Take Stanford's output json as input (either from STDIN or from file).
->>>>>>> 4f0b826010d134f612f98721876ffd2d6fe8fd5c
 """
 
 #!/usr/bin/env python
 #coding:utf8
-from __future__ import print_function
+
 import os, sys, string
 HOME_DIR = os.environ.get("PROPEXTRACTION_HOME_DIR", './')+"/"
 
@@ -59,10 +44,7 @@ from docopt import docopt
 from props.applications.run import parseSentences
 
 from pprint import pprint
-import json
-
 import sys
-
 from props.utils.lf_utils import lf_clean
 from props.utils.lf_utils import to_de_bruijn
 
@@ -76,7 +58,7 @@ def main(arguments):
 
     outputType = 'html'
     sep = "<br>"
-    if True or arguments['-t']:
+    if arguments['-t']:
         outputType = 'pdf'
         sep = "\n"
         
@@ -98,7 +80,7 @@ def main(arguments):
     numSent = 0
     for sent in sents:
         # be kind to the downstream chain -- do not send blank lines!
-        if sent.strip() == '':
+        if isinstance(sent, basestring) and sent.strip() == '':
             continue
         numSent=numSent+1
         # print sentence (only if in graphical mode)
